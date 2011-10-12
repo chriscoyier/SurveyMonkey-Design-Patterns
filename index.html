@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>SurveyMonkey Design Patterns</title>
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/toolbox.css">
+    <link rel="stylesheet" href="css/patterns-structure.css">
+    
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/tables.css">
+    
+  </head>
+
+  <body>
+    
+    <header>
+      <div class="container">
+        <h1><a href="#" class="logo">SurveyMonkey</a> Design Patterns</h1>
+        
+        <ul class="group">
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#dropdowns">Dropdown Menus</a></li>
+          <li><a href="#forms">Form Elements</a></li>
+          <li><a href="#lightboxes">Lightboxes</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#grids">Grids</a></li>
+          <li><a href="#colors">Color Palette</a></li>
+          <li><a href="#tabs">Tabs</a></li>
+          <li><a href="#icons">Icons</a></li>
+          <li><a href="#notifications">Notifications</a></li>
+        </ul>
+      </div>
+    </header>
+    
+    <section id="buttons" class="container group">
+    
+      <h2>Buttons</h2>
+    
+      <div class="about">
+                
+        <h4>Standard Class</h4>
+        <ul>
+          <li><code>btn</code></li>
+        </ul>
+        <h4>Size Variations</h4>
+        <ul>
+          <li><code>btn-small</code></li>
+          <li><code>btn-large</code></li>
+        </ul>
+        <h4>Style Variations</h4>
+        <ul>
+          <li><code>no-border</code></li>
+          <li><code>no-shadow</code></li>
+          <li><code>emphasize</code> (bold)</li>
+        </ul>
+        <h4>Colors</h4>
+        <ul>
+          <li><code>teal</code></li>
+          <li><code>grey</code></li>
+          <li><code>dark-grey</code></li>
+          <li><code>yellow</code></li>
+          <li><code>green</code></li>
+        </ul>
+      </div>
+      
+      <div class="info">
+        
+        <h3>Standard Buttons</h3>
+        
+        <table>
+          <tr>
+            <th> </th>
+            <th>btn</th>
+            <th>btn-small</th>
+            <th>btn-large</th>
+            <th>emphasize</th>
+            <th>no-border</th>
+            <th>no-shadow</th>
+          </tr>
+          <tr>
+            <th>
+              btn
+            </th>
+            <td>
+              <a href="#" class="btn">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-small">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-large">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn emphasize">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn no-border">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn no-shadow">Button</a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              dark-grey
+            </th>
+            <td>
+              <a href="#" class="btn dark-grey">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn dark-grey btn-small">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn dark-grey btn-large">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn dark-grey emphasize">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn dark-grey no-border">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn dark-grey no-shadow">Button</a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              teal
+            </th>
+            <td>
+              <a href="#" class="btn teal">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn teal btn-small">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn teal btn-large">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn teal emphasize">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn teal no-border">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn teal no-shadow">Button</a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              yellow
+            </th>
+            <td>
+              <a href="#" class="btn yellow">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn yellow btn-small">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn yellow btn-large">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn yellow emphasize">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn yellow no-border">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn yellow no-shadow">Button</a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              green
+            </th>
+            <td>
+              <a href="#" class="btn green">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn green btn-small">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn green btn-large">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn green emphasize">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn green no-border">Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn green no-shadow">Button</a>
+            </td>
+          </tr>
+        </table>
+        
+        <h3>Arrow Buttons</h3>
+        
+        <table>
+          <tr>
+            <th> </th>
+            <th>Right</th>
+            <th>Left</th>
+            <th>Up</th>
+            <th>Down</th>
+          </tr>
+          <tr>
+            <th>
+              small light
+            </th>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-horiz btn-arrow-small-right-light teal btn-small">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-small-horiz btn-arrow-small-left-light teal btn-small"><span></span>Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-up-light teal btn-small">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-light teal btn-small">Button<span></span></a>
+          </tr>
+          <tr>
+            <th>
+              small medium
+            </th>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-horiz btn-arrow-small-right-medium dark-grey btn-small">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-small-horiz btn-arrow-small-left-medium dark-grey btn-small"><span></span>Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-up-medium dark-grey btn-small">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-medium dark-grey btn-small">Button<span></span></a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              small dark
+            </th>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-horiz btn-arrow-small-right-dark btn-small">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-small-horiz btn-arrow-small-left-dark btn-small"><span></span>Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-up-dark btn-small">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark btn-small">Button<span></span></a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              standard light
+            </th>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-horiz btn-arrow-standard-right-light teal">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-standard-horiz btn-arrow-standard-left-light teal"><span></span>Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-up-light teal">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-light teal">Button<span></span></a>
+          </tr>
+          <tr>
+            <th>
+              standard medium
+            </th>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-horiz btn-arrow-standard-right-medium dark-grey">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-standard-horiz btn-arrow-standard-left-medium dark-grey"><span></span>Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-up-medium dark-grey">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-medium dark-grey">Button<span></span></a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              standard dark
+            </th>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-horiz btn-arrow-standard-right-dark">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-standard-horiz btn-arrow-standard-left-dark"><span></span>Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-up-dark">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-dark">Button<span></span></a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              large light
+            </th>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-horiz btn-arrow-large-right-light teal btn-large">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-large-horiz btn-arrow-large-left-light teal btn-large"><span></span>Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-up-light teal btn-large">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-down-light teal btn-large">Button<span></span></a>
+          </tr>
+          <tr>
+            <th>
+              large medium
+            </th>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-horiz btn-arrow-large-right-medium dark-grey btn-large">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-large-horiz btn-arrow-large-left-medium dark-grey btn-large"><span></span>Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-up-medium dark-grey btn-large">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-down-medium dark-grey btn-large">Button<span></span></a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              large dark
+            </th>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-horiz btn-arrow-large-right-dark btn-large">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-large-horiz btn-arrow-large-left-dark btn-large"><span></span>Button</a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-up-dark btn-large">Button<span></span></a>
+            </td>
+            <td>
+              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-down-dark btn-large">Button<span></span></a>
+            </td>
+          </tr>
+        </table>
+        
+        <h3>Menu Buttons</h3>
+        
+        <table>
+          <tr>
+            <th>with actions</th>
+            <td>
+              <span class="btn-menu">
+                  <a class="btn btn-menu-left btn-menu-arrow-left grey" href="#">Button<span></span></a>
+                  <a class="btn btn-menu-right grey" href="#">Button</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th>double</th>
+            <td>
+              <span class="btn-menu">
+                  <a class="btn btn-menu-left grey" href="#">Button</a>
+                  <a class="btn btn-menu-right grey" href="#">Button</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th>triple</th>
+            <td>
+              <span class="btn-menu">
+                  <a class="btn btn-menu-left btn-txt-secondary grey" href="#">Button</a>
+                  <a class="btn btn-menu-middle btn-txt-secondary grey" href="#">Button</a>
+                  <a class="btn btn-menu-right btn-txt-secondary grey" href="#">Button</a>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <th>combo function</th>
+            <td>
+              <span class="btn-menu">
+                  <a href="#" class="btn btn-menu-left grey">Button</a>
+                  <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark grey"><span></span></a>
+              </span>
+            </td>
+          </tr>
+        </table>
+        
+      </div>
+      
+    </section>
+    
+    <section id="dropdowns" class="container group">
+      
+      <div class="about">
+        <h2>Dropdown Menus</h2>
+      </div>
+      
+      <div class="info">
+      </div>
+      
+    </section>
+    
+    <section id="form" class="container group">
+      
+      <div class="about">
+        <h2>Form Elements</h2>
+      </div>
+      
+      <div class="info">
+      </div>
+      
+    </section>
+    
+    <section id="lightboxes" class="container group">
+      
+      <div class="about">
+        <h2>Lightboxes</h2>
+      </div>
+      
+      <div class="info">
+      </div>
+      
+    </section>
+    
+    <section id="tables" class="container group">
+      
+      <div class="about">
+        <h2>Tables</h2>
+      </div>
+      
+      <div class="info">
+      </div>
+      
+    </section>
+
+    <section id="typography" class="container group">
+      
+      <div class="about">
+        <h2>Typography</h2>
+      </div>
+      
+      <div class="info">
+      </div>
+      
+    </section>
+    
+    <section id="grids" class="container group">
+      
+      <div class="about">
+        <h2>Grids</h2>
+      </div>
+      
+      <div class="info">
+      </div>
+      
+    </section>
+    
+    <section id="colors" class="container group">
+      
+      <div class="about">
+        <h2>Colors</h2>
+      </div>
+      
+      <div class="info">
+      </div>
+      
+    </section>
+    
+    <section id="tabs" class="container group">
+      
+      <div class="about">
+        <h2>Tabs</h2>
+      </div>
+      
+      <div class="info">
+      </div>
+      
+    </section>
+    
+    <section id="icons" class="container group">
+      
+      <div class="about">
+        <h2>Icons</h2>
+      </div>
+      
+      <div class="info">
+      </div>
+      
+    </section>
+    
+    <section id="notifications" class="container group">
+      
+      <div class="about">
+        <h2>Notifications</h2>
+      </div>
+      
+      <div class="info">
+      </div>
+      
+    </section>
+
+  </body>
+
+</html>

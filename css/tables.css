@@ -1,0 +1,19 @@
+/* Some stuff in normalize.css */
+
+table {
+  width: 100%;
+  margin: 0 0 10px 0;
+}
+table td,
+table th {
+  vertical-align: middle;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+table th {
+  text-align: left;
+}
+
+table.zebra tr:nth-child(odd) {
+  
+}

@@ -1,0 +1,98 @@
+header {
+  background: #5B5A4B;
+  padding: 40px 0;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 235px;
+  height: 29px;
+  display: block;
+  text-indent: -9999px;
+  background: url(../images/logo.png) no-repeat;
+}
+
+header h1 {
+  color: white;
+  font-size: 80px;
+}
+
+header ul,
+header li {
+  padding: 0;
+  list-style: none;
+}
+header li {
+  width: 25%;
+  float: left;
+}
+header a, header a:visited {
+  color: #A6A69D;
+}
+header a:hover {
+  color: white;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  margin: 100px 0;
+  background: #ccc;
+}
+
+section.container {
+  background: -webkit-linear-gradient(left, #EAEADE, #EAEADE 20%, white 20%, white);
+  background:    -moz-linear-gradient(left, #EAEADE, #EAEADE 20%, white 20%, white);
+  background:     -ms-linear-gradient(left, #EAEADE, #EAEADE 20%, white 20%, white);
+  background:      -o-linear-gradient(left, #EAEADE, #EAEADE 20%, white 20%, white);
+  position: relative;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+section.container h2 {
+  position: absolute;
+  top: -160px;
+  left: 0;
+  font-size: 80px;
+  color: #5B5A4B;
+}
+.about:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  width: 9999px;
+  background: #EAEADE;
+}
+.about {
+  width: 19%;
+  float: left;
+  padding: 10px 10px 0 0;
+}
+.info {
+  width: 78%; 
+  float: right;
+}
+.info h3 {
+  background: #EAEADE;
+  padding: 10px;
+  margin: 0 0 10px 0;
+}
+.info h3 ~ h3 {
+  margin-top: 50px;
+}
+.about h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #5B5A4B;
+  margin: 5px 0;
+  color: #5B5A4B;
+}
+.about li {
+  font-size: 12px;
+}

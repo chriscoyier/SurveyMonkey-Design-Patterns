@@ -1,0 +1,12 @@
+html {
+  font: 16px/1.4 San-Serif;
+}
+
+pre {
+  background: #333;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  font: 12px Monaco, MonoSpace;
+  margin: 0;
+}
