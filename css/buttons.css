@@ -341,20 +341,29 @@ input.btn {
 	background: #DFC235;
 	text-shadow: 0 1px 0 #FCFC85;
 	background: -webkit-gradient(linear, left top, left bottom, from(#F8F777), to(#DFC235));
-	background: -moz-linear-gradient(top,  #F8F777,  #DFC235);
+	background: -webkit-linear-gradient(#F8F777,  #DFC235);
+	background: -moz-linear-gradient(#F8F777,  #DFC235);
+	background: -ms-linear-gradient(#F8F777,  #DFC235);
+	background: -o-linear-gradient(#F8F777,  #DFC235);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F8F777', endColorstr='#DFC235');
 }
 .yellow:hover {
 	border: solid 1px #999; 
 	background: #EDCE38;
 	background: -webkit-gradient(linear, left top, left bottom, from(#FCFC85), to(#EDCE38));
-	background: -moz-linear-gradient(top,  #FCFC85,  #EDCE38);
+	background: -webkit-linear-gradient(#FCFC85,  #EDCE38);
+	background: -moz-linear-gradient(#FCFC85,  #EDCE38);
+	background: -ms-linear-gradient(#FCFC85,  #EDCE38);
+	background: -o-linear-gradient(#FCFC85,  #EDCE38);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCFC85', endColorstr='#EDCE38');
 }
 .yellow:active {
 	background: #FAF476;
 	background: -webkit-gradient(linear, left top, left bottom, from(#F7E258), to(#FAF476));
-	background: -moz-linear-gradient(top,  #F7E258,  #FAF476);
+	background: -webkit-linear-gradient(#F7E258,  #FAF476);
+	background: -moz-linear-gradient(#F7E258,  #FAF476);
+	background: -ms-linear-gradient(#F7E258,  #FAF476);
+	background: -o-linear-gradient(#F7E258,  #FAF476);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F7E258', endColorstr='#FAF476');v
 }
 
