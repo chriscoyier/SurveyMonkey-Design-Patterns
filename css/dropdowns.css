@@ -132,6 +132,9 @@
 .main-nav > li.open:after {
 	opacity: 1;
 }
+.main-nav > li > ul > li {
+  margin: 0;
+}
 .main-nav > li > ul > li > a {
 	font-size: 12px;
   font-weight: normal;
