@@ -4,14 +4,18 @@ table {
   width: 100%;
   margin: 0 0 10px 0;
 }
-table td,
-table th {
+td,
+th {
   vertical-align: middle;
-  padding: 10px 0;
+  padding: 10px;
   border-bottom: 1px solid #ccc;
 }
-table th {
+th {
   text-align: left;
+  vertical-align: bottom;
+}
+tr:hover {
+  background: #eee;
 }
 
 table.zebra tr:nth-child(odd) {
