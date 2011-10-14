@@ -1,0 +1,25 @@
+.tabs {
+  padding: 0 10px;
+  border-bottom: 1px solid #999;
+}
+.tabs li {
+  background-color: #CBCBCB;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0;
+}
+.tabs a {
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+}
+.tabs .current {
+    background-color: #FFFFFF;
+    border-color: #999999 #999999;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    bottom: -1px;
+    position: relative;
+}

@@ -1,0 +1,159 @@
+.main-nav {
+	list-style: none;
+}
+.main-nav > li > ul {
+	/* Accessible hiding? */
+	position: absolute;
+	top: -9999px;
+	left: -9999px;	
+	max-height: 0;
+	overflow: hidden;
+	/* Coming back up - much faster */
+	-webkit-transition: max-height 0.2s ease;
+	-moz-transition:    max-height 0.2s ease;
+	-ms-transition:     max-height 0.2s ease;
+	-o-transition:      max-height 0.2s ease;
+	background: #f2f2f1;
+	border: 1px solid #999;
+	/* Negative spread so shadow only comes off bottom */
+	-webkit-box-shadow: 0 3px 2px 0px rgba(0,0,0,0.3);
+	-moz-box-shadow:    0 3px 2px 0px rgba(0,0,0,0.3);
+	box-shadow:         0 3px 2px 0px rgba(0,0,0,0.3);
+}
+/* Child selectors are only IE 7 and up,
+   and have a bug related to HTML comments.
+   Other option: just use classes */
+.main-nav > li,
+.main-nav > li > a {
+	float: left;
+	position: relative;
+}
+.main-nav > li.active > a {
+  color: #86A32D
+}
+.main-nav > li.active:before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  right: -5px;
+  top: 100%;
+  height: 20px;
+  background: url(../images/menu-shadow.png) no-repeat;
+  background-size: 100% 100%;
+}
+.main-nav a {
+	text-decoration: none;
+	font: bold 16px Sans-Serif; /* Defaults to Helvetica on Mac and Arial on PC (ideal) */
+	padding: 10px 20px; /* Large clickable areas */
+	color: #888;
+}
+.main-nav > li:first-child > a {
+	padding-left: 0; /* To keep Home and Logo lined up */
+}
+.main-nav > li.has-submenu {
+	padding-right: 15px;
+}
+.main-nav > li.has-submenu > a:after {
+	content: "";
+	position: absolute;
+	left: 100%;
+	top: 10px;
+	margin-left: -13px;
+	width: 15px;
+	height: 13px;
+  background: url(../images/dropdownarrow.png);
+}
+.main-nav > li.has-submenu.open > a:after {
+	background-position: 0 -13px;
+}
+.main-nav > li.open > ul {
+  position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 100;
+	width: 210px;
+	max-height: 2000px; /* For animation */
+	/* Going down, slower */
+	-webkit-transition: max-height 1.5s ease;
+	-moz-transition:    max-height 1.5s ease;
+	-ms-transition:     max-height 1.5s ease;
+	-o-transition:      max-height 1.5s ease;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius:  5px;
+	-moz-border-radius-bottomright:     5px;
+	-moz-border-radius-bottomleft:      5px;
+	border-bottom-right-radius:         5px;
+	border-bottom-left-radius:          5px;
+  padding: 0 0 10px 0;
+  margin: 0;
+  list-style: none;
+}
+/* Multiple background support - IE 9 and up? */
+.main-nav > li.open {
+	background-image: 
+		-webkit-linear-gradient(top, #f2f2f1, #999),
+		-webkit-linear-gradient(top, #f2f2f1, #999);
+	background-image: 
+		-moz-linear-gradient(top, #f2f2f1, #999),
+		-moz-linear-gradient(top, #f2f2f1, #999);
+	background-image: 
+		-ms-linear-gradient(top, #f2f2f1, #999),
+		-ms-linear-gradient(top, #f2f2f1, #999);
+	background-image: 
+		-o-linear-gradient(top, #f2f2f1, #999),
+		-o-linear-gradient(top, #f2f2f1, #999);
+	background-position:
+		top left,
+		top right;
+	background-repeat:
+		no-repeat,
+		no-repeat;
+	background-size:
+		1px 100%,
+		1px 100%;
+}
+.main-nav > li.open > a,
+.main-nav > li > a:hover {
+	color: #5B5A4B;
+}
+/* Hides connection between menu bar and drop down */
+.main-nav > li:after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 1px;
+	width: 99%; /* Ghetto */
+	height: 1px;
+	background: #f2f2f1;
+	opacity: 0;
+	z-index: 101;
+}
+.main-nav > li.open:after {
+	opacity: 1;
+}
+.main-nav > li > ul > li > a {
+	font-size: 12px;
+  font-weight: normal;
+	color: #5B5A4B;
+	display: block;
+	padding: 10px 20px;
+	border-bottom: 1px solid #e4e4e4;
+}
+.main-nav > li > ul > li.has-submenu > a {
+	border-bottom: 0;
+}
+.main-nav > li > ul > li a:hover {
+	background: #e4e4e4;
+	color: #407480;
+}
+.main-nav > li > ul > li > ul > li > a {
+	font-weight: normal;
+	display: block;
+	color: #5B5A4B;
+	padding: 10px 0 10px 30px;
+	font-size: 12px;
+	border-top: 1px solid #e4e4e4;
+}
+.main-nav > li > ul > li > ul > li:last-child > a {
+	border-bottom: 1px solid #e4e4e4;
+}
