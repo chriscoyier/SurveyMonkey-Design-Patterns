@@ -27,6 +27,7 @@
 .main-nav > li > a {
 	float: left;
 	position: relative;
+	margin: 0;
 }
 .main-nav > li.active > a {
   color: #86A32D
