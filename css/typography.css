@@ -45,6 +45,13 @@ p {
   margin: 0 0 20px 0;
 }
 
+a {
+  color: #00898B;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 blockquote {
   font-family: Georgia, Serif;
   font-style: italic;
