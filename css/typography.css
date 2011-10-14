@@ -1,5 +1,61 @@
 html {
-  font: 16px/1.4 San-Serif;
+  font: 14px/1.4 San-Serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 32px;
+}
+h4 {
+  font-size: 26px;
+}
+h5 {
+  font-size: 21px;
+}
+h6 {
+  font-size: 18px;
+}
+.bar {
+  background: #EAEADE;
+  padding: 10px;
+}
+
+ul, ol {
+  margin: 0 0 20px 20px;
+  padding: 0;
+}
+ul ol, ul ul, ol ul, ol ol {
+  margin-bottom: 0;
+}
+li {
+  margin: 4px 0;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+blockquote {
+  font-family: Georgia, Serif;
+  font-style: italic;
+  margin: 0 0 20px 0;
+  padding: 0 0 0 20px;
+}
+blockquote p {
+  margin: 0 0 5px 0;
+}
+blockquote p:last-child {
+  margin: 0 0 20px 0;
 }
 
 pre {
