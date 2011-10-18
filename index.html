@@ -20,11 +20,11 @@
     <link rel="stylesheet" href="css/tabs.css">
   </head>
 
-  <body>
+  <body id="top">
       
     <div class="notification">
       <strong>Please note:</strong>
-      VERY MUCH a work in progress. Do not use.
+      VERY MUCH a work in progress. Do not use. <a href="https://surveymonkey.wufoo.com/forms/feedback-on-design-patterns/">Feedback</a>
     </div>
     
     <header>
@@ -49,7 +49,7 @@
     
     <section class="container group">
     
-      <h2 id="buttons">Buttons</h2>
+      <h2 id="buttons">Buttons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
     
       <div class="about">
                 
@@ -80,18 +80,20 @@
       
       <div class="info">
         
-        <h3 class="bar">Standard Buttons</h3>
-        
-        <table>
+        <table class="row-highlighting">
+          <caption><span>Standard Buttons</span></caption>
+          <thead>
           <tr>
             <th> </th>
             <th>btn</th>
             <th>btn-small</th>
             <th>btn-large</th>
-            <th>emphasize</th>
+            <th>no-emphasize</th>
             <th>no-border</th>
-            <th>no-shadow</th>
+            <th>shadow</th>
           </tr>
+          </thead>
+          <tbody>
           <tr>
             <th>
               btn
@@ -106,13 +108,13 @@
               <a href="#" class="btn btn-large">Button</a>
             </td>
             <td>
-              <a href="#" class="btn emphasize">Button</a>
+              <a href="#" class="btn no-emphasize">Button</a>
             </td>
             <td>
               <a href="#" class="btn no-border">Button</a>
             </td>
             <td>
-              <a href="#" class="btn no-shadow">Button</a>
+              <a href="#" class="btn shadow">Button</a>
             </td>
           </tr>
           <tr>
@@ -129,13 +131,13 @@
               <a href="#" class="btn dark-grey btn-large">Button</a>
             </td>
             <td>
-              <a href="#" class="btn dark-grey emphasize">Button</a>
+              <a href="#" class="btn dark-grey no-emphasize">Button</a>
             </td>
             <td>
               <a href="#" class="btn dark-grey no-border">Button</a>
             </td>
             <td>
-              <a href="#" class="btn dark-grey no-shadow">Button</a>
+              <a href="#" class="btn dark-grey shadow">Button</a>
             </td>
           </tr>
           <tr>
@@ -152,13 +154,13 @@
               <a href="#" class="btn teal btn-large">Button</a>
             </td>
             <td>
-              <a href="#" class="btn teal emphasize">Button</a>
+              <a href="#" class="btn teal no-emphasize">Button</a>
             </td>
             <td>
               <a href="#" class="btn teal no-border">Button</a>
             </td>
             <td>
-              <a href="#" class="btn teal no-shadow">Button</a>
+              <a href="#" class="btn teal shadow">Button</a>
             </td>
           </tr>
           <tr>
@@ -175,13 +177,13 @@
               <a href="#" class="btn yellow btn-large">Button</a>
             </td>
             <td>
-              <a href="#" class="btn yellow emphasize">Button</a>
+              <a href="#" class="btn yellow no-emphasize">Button</a>
             </td>
             <td>
               <a href="#" class="btn yellow no-border">Button</a>
             </td>
             <td>
-              <a href="#" class="btn yellow no-shadow">Button</a>
+              <a href="#" class="btn yellow shadow">Button</a>
             </td>
           </tr>
           <tr>
@@ -198,20 +200,20 @@
               <a href="#" class="btn green btn-large">Button</a>
             </td>
             <td>
-              <a href="#" class="btn green emphasize">Button</a>
+              <a href="#" class="btn green no-emphasize">Button</a>
             </td>
             <td>
               <a href="#" class="btn green no-border">Button</a>
             </td>
             <td>
-              <a href="#" class="btn green no-shadow">Button</a>
+              <a href="#" class="btn green shadow">Button</a>
             </td>
           </tr>
+          </tbody>
         </table>
         
-        <h3 class="bar">Arrow Buttons</h3>
-        
-        <table>
+        <table class="row-highlighting">
+          <caption><span>Arrow Buttons</span></caption>
           <tr>
             <th> </th>
             <th>Right</th>
@@ -371,9 +373,8 @@
           </tr>
         </table>
         
-        <h3 class="bar">Menu Buttons</h3>
-        
         <table>
+          <caption><span>Menu Buttons</span>
           <tr>
             <th>with actions</th>
             <td>
@@ -419,7 +420,7 @@
     
     <section class="container group">
       
-      <h2 id="dropdowns">Dropdown Menus</h2>
+      <h2 id="dropdowns">Dropdown Menus <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>There are "logged in" and "logged out" headers.</p>
@@ -465,7 +466,7 @@
     
     <section class="container group">
       
-      <h2 id="forms">Form Elements</h2>
+      <h2 id="forms">Form Elements <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>This is based on <a href="http://formalize.me/">Formalize</a>, which utilizes YUI for some cross-browser normalization.</p>
@@ -676,7 +677,7 @@
     
     <section class="container group">
       
-      <h2 id="lightboxes">Lightboxes</h2>
+      <h2 id="lightboxes">Lightboxes <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>Popups. Should some be modal and others not?</p>
@@ -695,7 +696,7 @@
     
     <section class="container group">
       
-      <h2 id="tables">Tables</h2>
+      <h2 id="tables">Tables <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>Tables are for tabular data only.</p>
@@ -706,25 +707,24 @@
       <div class="info">
         
         <table>
-        		<thead>
+          <caption><span>Regular Table</span></caption>
+        	<thead>
         		<tr>
-        			<th>First Name</th>
-        			<th>Last Name</th>
+        			<th>First</th>
+        			<th>Last</th>
         			<th>Job Title</th>
-        			<th>Favorite Color</th>
-        			<th>Wars or Trek?</th>
-        			<th>Date of Birth</th>
+        			<th>Color</th>
+        			<th>City</th>
         			<th>GPA</th>
-        			<th>Arbitrary Data</th>
+        			<th>Data</th>
         		</tr>
-        		</thead>
-        		<tbody>
+        	</thead>
+        	<tbody>
         		<tr>
         			<td>James</td>
         			<td>Matman</td>
         			<td>Chief Sandwich Eater</td>
         			<td>Lettuce Green</td>
-        			<td>January 13, 1979</td>
         			<td>Gotham City</td>
         			<td>3.1</td>
         			<td>RBX-12</td>
@@ -734,9 +734,7 @@
         		  <td>Tick</td>
         		  <td>Crimefighter Sorta</td>
         		  <td>Blue</td>
-        		  <td>July 19, 1968</td>
         		  <td>Athens</td>
-
         		  <td>N/A</td>
         		  <td>Edlund, Ben (July 1996).</td>
         		</tr>
@@ -745,7 +743,6 @@
         		  <td>Smurf</td>
         		  <td>Giving Exploding Presents</td>
         		  <td>Smurflow</td>
-        		  <td>Smurfuary Smurfteenth, 1945</td>
         		  <td>New Smurf City</td>
         		  <td>4.Smurf</td>
         		  <td>One</td>
@@ -755,7 +752,6 @@
         		  <td>Beyler</td>
         		  <td>Sales Representative</td>
         		  <td>Red</td>
-        		  <td>July 5, 1956</td>
         		  <td>Paris</td>
         		  <td>3.4</td>
         		  <td>3451</td>
@@ -765,14 +761,148 @@
         		  <td>Cool</td>
         		  <td>Tree Crusher</td>
         		  <td>Blue</td>
-        		  <td>December 13, 1982</td>
         		  <td>Las Vegas</td>
         		  <td>1.9</td>
         		  <td>Under the couch</td>
         		</tr>
-
         		</tbody>
         	</table>
+        	
+        	<table class="zebra">
+        	  <caption><span>Zebra Striped</span></caption>
+          	<thead>
+          		<tr>
+          			<th>First Name</th>
+          			<th>Last Name</th>
+          			<th>Job Title</th>
+          			<th>Favorite Color</th>
+          			<th>Wars or Trek?</th>
+          			<th>Date of Birth</th>
+          			<th>GPA</th>
+          			<th>Arbitrary Data</th>
+          		</tr>
+          	</thead>
+          	<tbody>
+          		<tr>
+          			<td>James</td>
+          			<td>Matman</td>
+          			<td>Chief Sandwich Eater</td>
+          			<td>Lettuce Green</td>
+          			<td>January 13, 1979</td>
+          			<td>Gotham City</td>
+          			<td>3.1</td>
+          			<td>RBX-12</td>
+          		</tr>
+          		<tr>
+          		  <td>The</td>
+          		  <td>Tick</td>
+          		  <td>Crimefighter Sorta</td>
+          		  <td>Blue</td>
+          		  <td>July 19, 1968</td>
+          		  <td>Athens</td>
+          		  <td>N/A</td>
+          		  <td>Edlund, Ben (July 1996).</td>
+          		</tr>
+          		<tr>
+          		  <td>Jokey</td>
+          		  <td>Smurf</td>
+          		  <td>Giving Exploding Presents</td>
+          		  <td>Smurflow</td>
+          		  <td>Smurfuary Smurfteenth, 1945</td>
+          		  <td>New Smurf City</td>
+          		  <td>4.Smurf</td>
+          		  <td>One</td>
+          		</tr>
+          		<tr>
+          		  <td>Cindy</td>
+          		  <td>Beyler</td>
+          		  <td>Sales Representative</td>
+          		  <td>Red</td>
+          		  <td>July 5, 1956</td>
+          		  <td>Paris</td>
+          		  <td>3.4</td>
+          		  <td>3451</td>
+          		</tr>
+          		<tr>
+          		  <td>Captain</td>
+          		  <td>Cool</td>
+          		  <td>Tree Crusher</td>
+          		  <td>Blue</td>
+          		  <td>December 13, 1982</td>
+          		  <td>Las Vegas</td>
+          		  <td>1.9</td>
+          		  <td>Under the couch</td>
+          		</tr>
+          		</tbody>
+          	</table>
+          	          
+          <table class="row-highlighting">
+            <caption><span>Row Highlighting</span></caption>
+          	<thead>
+          		<tr>
+          			<th>First Name</th>
+          			<th>Last Name</th>
+          			<th>Job Title</th>
+          			<th>Favorite Color</th>
+          			<th>Wars or Trek?</th>
+          			<th>Date of Birth</th>
+          			<th>GPA</th>
+          			<th>Arbitrary Data</th>
+          		</tr>
+          	</thead>
+          	<tbody>
+          		<tr>
+          			<td>James</td>
+          			<td>Matman</td>
+          			<td>Chief Sandwich Eater</td>
+          			<td>Lettuce Green</td>
+          			<td>January 13, 1979</td>
+          			<td>Gotham City</td>
+          			<td>3.1</td>
+          			<td>RBX-12</td>
+          		</tr>
+          		<tr>
+          		  <td>The</td>
+          		  <td>Tick</td>
+          		  <td>Crimefighter Sorta</td>
+          		  <td>Blue</td>
+          		  <td>July 19, 1968</td>
+          		  <td>Athens</td>
+          		  <td>N/A</td>
+          		  <td>Edlund, Ben (July 1996).</td>
+          		</tr>
+          		<tr>
+          		  <td>Jokey</td>
+          		  <td>Smurf</td>
+          		  <td>Giving Exploding Presents</td>
+          		  <td>Smurflow</td>
+          		  <td>Smurfuary Smurfteenth, 1945</td>
+          		  <td>New Smurf City</td>
+          		  <td>4.Smurf</td>
+          		  <td>One</td>
+          		</tr>
+          		<tr>
+          		  <td>Cindy</td>
+          		  <td>Beyler</td>
+          		  <td>Sales Representative</td>
+          		  <td>Red</td>
+          		  <td>July 5, 1956</td>
+          		  <td>Paris</td>
+          		  <td>3.4</td>
+          		  <td>3451</td>
+          		</tr>
+          		<tr>
+          		  <td>Captain</td>
+          		  <td>Cool</td>
+          		  <td>Tree Crusher</td>
+          		  <td>Blue</td>
+          		  <td>December 13, 1982</td>
+          		  <td>Las Vegas</td>
+          		  <td>1.9</td>
+          		  <td>Under the couch</td>
+          		</tr>
+          		</tbody>
+          	</table>
         
       </div>
       
@@ -780,7 +910,7 @@
 
     <section class="container group">
       
-      <h2 id="typography">Typography</h2>
+      <h2 id="typography">Typography <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>Web design <em>is</em> typography.</p>
@@ -848,7 +978,7 @@
     
     <section class="container group">
       
-      <h2 id="grids">Grids</h2>
+      <h2 id="grids">Grids <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>Discussion happening on whether to use inline-block or floats...</p>
@@ -876,7 +1006,7 @@
     
     <section class="container group">
       
-      <h2 id="colors">Colors</h2>
+      <h2 id="colors">Colors <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>Purty!</p>
@@ -956,7 +1086,7 @@
     
     <section class="container group">
       
-      <h2 id="tabs">Tabs</h2>
+      <h2 id="tabs">Tabs <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>For some of these, each tab will likely be a unique URL. For others, they will be same-page tabs where the content changes via JavaScript. We may want to consider giving even same-page tabs linkabke, unique URLs as well (<a href="http://css-tricks.com/14415-better-linkable-tabs/">link</a>).
@@ -980,7 +1110,7 @@
     
     <section class="container group">
       
-      <h2 id="icons">Icons</h2>
+      <h2 id="icons">Icons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>These are <a href="http://pictos.drewwilson.com/">Pictos</a> icons. Shown here using the font, where each character is a different icon. This makes them scalable and colorable, but they are also available as images if we want to go the sprite route.</p>
@@ -1213,7 +1343,7 @@
     
     <section class="container group">
       
-      <h2 id="notifications">Notifications</h2>
+      <h2 id="notifications">Notifications <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>Bars, e.g. "Upgrade" bar.</p>

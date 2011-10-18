@@ -2,22 +2,56 @@
 
 table {
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  border-collapse: separate;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 td,
 th {
   vertical-align: middle;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 th {
   text-align: left;
   vertical-align: bottom;
 }
-tr:hover {
-  background: #eee;
+tbody tr:last-child td,
+tbody tr:last-child th {
+  border: 0;
+}
+thead th {
+  border-bottom: 1px solid #ddd;
 }
 
-table.zebra tr:nth-child(odd) {
-  
+caption span {
+  display: inline-block;
+  background-color: #5e5e4e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5e5e4e), to(#323227)); 
+  background-image: -webkit-linear-gradient(top, #5e5e4e, #323227); 
+  background-image:    -moz-linear-gradient(top, #5e5e4e, #323227); 
+  background-image:     -ms-linear-gradient(top, #5e5e4e, #323227); 
+  background-image:      -o-linear-gradient(top, #5e5e4e, #323227); 
+  background-image:         linear-gradient(top, #5e5e4e, #323227);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#5e5e4e', EndColorStr='#323227');
+  padding: 4px 16px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+table.zebra tbody tr:nth-child(odd) {
+  background: #F9F9F9;
+}
+
+table.row-highlighting tbody tr:hover {
+  background: #eee;
 }

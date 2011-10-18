@@ -30,7 +30,7 @@
 	margin: 0;
 }
 .main-nav > li.active > a {
-  color: #86A32D
+  color: #86A32D;
 }
 .main-nav > li.active:before {
   content: "";
@@ -115,7 +115,7 @@
 }
 .main-nav > li.open > a,
 .main-nav > li > a:hover {
-	color: #5B5A4B;
+	color: #86A32D;
 }
 /* Hides connection between menu bar and drop down */
 .main-nav > li:after {

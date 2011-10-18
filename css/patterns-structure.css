@@ -17,6 +17,10 @@ header {
   background: url(../images/logo.png) no-repeat;
 }
 
+.back-to-top {
+  font-size: 12px;
+}
+
 header h1 {
   color: white;
   font-size: 80px;
