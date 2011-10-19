@@ -9,9 +9,7 @@
 	font-style: normal;
 }
 
-.Pictos {
-	font-weight: normal; 
-	font-style: normal;
-	line-height: normal; 
+.icon {
 	font-family: 'Pictos', sans-serif;
+	font-size: 30px;
 }

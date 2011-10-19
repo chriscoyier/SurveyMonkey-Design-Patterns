@@ -55,3 +55,8 @@ table.zebra tbody tr:nth-child(odd) {
 table.row-highlighting tbody tr:hover {
   background: #eee;
 }
+
+table.center-cells td,
+table.center-cells th {
+  text-align: center;
+}

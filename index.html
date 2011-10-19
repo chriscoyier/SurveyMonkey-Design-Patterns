@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/formalize.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" href="css/help-popout.css">
+    <link rel="stylesheet" href="css/animations.css">
   </head>
 
   <body id="top">
@@ -43,6 +45,9 @@
           <li><a href="#tabs">Tabs</a></li>
           <li><a href="#icons">Icons</a></li>
           <li><a href="#notifications">Notifications</a></li>
+          <li><a href="#help">Help Popouts</a></li>
+          <li><a href="#sprite">Sprite</a></li>
+          <li><a href="#sprite">Animations / Transitions</a></li>
         </ul>
       </div>
     </header>
@@ -469,7 +474,7 @@
       <h2 id="forms">Form Elements <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
-        <p>This is based on <a href="http://formalize.me/">Formalize</a>, which utilizes YUI for some cross-browser normalization.</p>
+        <p>This is based on <a href="http://formalize.me/">Formalize</a>.</p>
       </div>
       
       <div class="info">
@@ -1117,9 +1122,9 @@
       </div>
       
       <div class="info">
-        <table>
+        <table class="center-cells">
       		<tbody>
-      			<tr class="Pictos" style="font-size:30px">
+      			<tr class="icon">
       				<td>a</td>
       				<td>b</td>
       				<td>c</td>
@@ -1133,6 +1138,24 @@
       				<td>k</td>
       				<td>l</td>
       				<td>m</td>
+      			</tr>
+      			<tr>
+      				<td>a</td>
+      				<td>b</td>
+      				<td>c</td>
+      				<td>d</td>
+      				<td>e</td>
+      				<td>f</td>		
+      				<td>g</td>
+      				<td>h</td>
+      				<td>i</td>
+      				<td>j</td>
+      				<td>k</td>
+      				<td>l</td>
+      				<td>m</td>
+      			</tr>
+      			
+      		  <tr class="icon">
       				<td>n</td>
       				<td>o</td>
       				<td>p</td>
@@ -1147,20 +1170,7 @@
       				<td>y</td>
       				<td>z</td>
       			</tr>
-      			<tr style="color:#bbb">
-      				<td>a</td>
-      				<td>b</td>
-      				<td>c</td>
-      				<td>d</td>
-      				<td>e</td>
-      				<td>f</td>		
-      				<td>g</td>
-      				<td>h</td>
-      				<td>i</td>
-      				<td>j</td>
-      				<td>k</td>
-      				<td>l</td>
-      				<td>m</td>
+      			<tr>
       				<td>n</td>
       				<td>o</td>
       				<td>p</td>
@@ -1177,9 +1187,10 @@
       			</tr>
       		</tbody>
       	</table>
-      	<table>
+      	
+      	<table class="center-cells">
       		<tbody>
-      			<tr class="Pictos" style="font-size:30px">
+      			<tr class="icon">
       				<td>A</td>
       				<td>B</td>
       				<td>C</td>
@@ -1193,6 +1204,24 @@
       				<td>K</td>
       				<td>L</td>
       				<td>M</td>
+      			</tr>
+      			<tr>
+      				<td>A</td>
+      				<td>B</td>
+      				<td>C</td>
+      				<td>D</td>
+      				<td>E</td>
+      				<td>F</td>		
+      				<td>G</td>
+      				<td>H</td>
+      				<td>I</td>
+      				<td>J</td>
+      				<td>K</td>
+      				<td>L</td>
+      				<td>M</td>
+      			</tr>
+      			
+      			<tr class="icon">
       				<td>N</td>
       				<td>O</td>
       				<td>P</td>
@@ -1207,20 +1236,7 @@
       				<td>Y</td>
       				<td>Z</td>
       			</tr>
-      			<tr style="color:#bbb">
-      				<td>A</td>
-      				<td>B</td>
-      				<td>C</td>
-      				<td>D</td>
-      				<td>E</td>
-      				<td>F</td>		
-      				<td>G</td>
-      				<td>H</td>
-      				<td>I</td>
-      				<td>J</td>
-      				<td>K</td>
-      				<td>L</td>
-      				<td>M</td>
+      			<tr>
       				<td>N</td>
       				<td>O</td>
       				<td>P</td>
@@ -1237,9 +1253,10 @@
       			</tr>
       		</tbody>
       	</table>
-      	<table>
+      	
+      	<table class="center-cells">
       		<tbody>
-      			<tr class="Pictos" style="font-size:30px">
+      			<tr class="icon">
       				<td>`</td>
       				<td>1</td>
       				<td>2</td>
@@ -1251,18 +1268,8 @@
       				<td>8</td>
       				<td>9</td>
       				<td>0</td>
-      				<td>-</td>
-      				<td>=</td>
-      				<td>[</td>
-      				<td>]</td>
-      				<td>\</td>
-      				<td>;</td>
-      				<td>'</td>
-      				<td>,</td>
-      				<td>.</td>
-      				<td>/</td>
       			</tr>
-      			<tr style="color:#bbb">
+      			<tr>
       				<td>`</td>
       				<td>1</td>
       				<td>2</td>
@@ -1274,6 +1281,9 @@
       				<td>8</td>
       				<td>9</td>
       				<td>0</td>
+      			</tr>
+      			
+      			<tr class="icon">
       				<td>-</td>
       				<td>=</td>
       				<td>[</td>
@@ -1284,12 +1294,27 @@
       				<td>,</td>
       				<td>.</td>
       				<td>/</td>
+      				<td> </td>
+      			</tr>
+      			<tr>
+      				<td>-</td>
+      				<td>=</td>
+      				<td>[</td>
+      				<td>]</td>
+      				<td>\</td>
+      				<td>;</td>
+      				<td>'</td>
+      				<td>,</td>
+      				<td>.</td>
+      				<td>/</td>
+      				<td> </td>
       			</tr>
       		</tbody>
       	</table>
-      	<table>
+      	
+      	<table class="center-cells">
       		<tbody>
-      			<tr class="Pictos" style="font-size:30px">
+      			<tr class="icon">
       				<td>~</td>
       				<td>!</td>
       				<td>@</td>
@@ -1301,18 +1326,8 @@
       				<td>*</td>
       				<td>(</td>
       				<td>)</td>
-      				<td>_</td>
-      				<td>+</td>
-      				<td>{</td>
-      				<td>}</td>
-      				<td>|</td>
-      				<td>:</td>
-      				<td>"</td>
-      				<td><</td>
-      				<td>></td>
-      				<td>?</td>
       			</tr>
-      			<tr style="color:#bbb">
+      			<tr>
       				<td>~</td>
       				<td>!</td>
       				<td>@</td>
@@ -1324,6 +1339,9 @@
       				<td>*</td>
       				<td>(</td>
       				<td>)</td>
+      			</tr>
+      			
+      		  <tr class="icon">
       				<td>_</td>
       				<td>+</td>
       				<td>{</td>
@@ -1334,6 +1352,20 @@
       				<td><</td>
       				<td>></td>
       				<td>?</td>
+      				<td> </td>
+      			</tr>
+      			<tr>
+      				<td>_</td>
+      				<td>+</td>
+      				<td>{</td>
+      				<td>}</td>
+      				<td>|</td>
+      				<td>:</td>
+      				<td>"</td>
+      				<td><</td>
+      				<td>></td>
+      				<td>?</td>
+      				<td> </td>
       			</tr>
       		</tbody>
       	</table>
@@ -1362,6 +1394,79 @@
       
     </section>
     
+    <section class="container group">
+      
+      <h2 id="help">Help Popouts <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+      
+      <div class="about">
+        <p>Hover over them for more information.</p>
+      </div>
+      
+      <div class="info">
+        
+        <div class="q">
+					<span>?</span>
+					<div class="popout">
+						<h5>View Clips</h5>
+						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+						<a href="#">Learn more »</a>
+					</div>
+				</div>
+				
+				Top Left
+				
+				<br>
+				
+				<div class="q">
+					<span>?</span>
+					<div class="popout">
+						<h5>View Clips</h5>
+						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+						<a href="#">Learn more »</a>
+					</div>
+				</div>
+				
+				Top Right
+				
+				
+      </div>
+      
+    </section>
+    
+    <section class="container group">
+      
+      <h2 id="sprite">Sprite <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+      
+      <div class="about">
+        <p>This is the global site sprite. Sprites are excellent for site performance (less HTTP Requests).</p>
+      </div>
+      
+      <div class="info">
+        
+      </div>
+      
+    </section>
+    
+    <section class="container group">
+      
+      <h2 id="animations">Animations <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+      
+      <div class="about">
+        <p>Reusable bits of common animations</p>
+        <p>Ideas:</p>
+        <ul>
+          <li>Shake</li>
+          <li>Fade in/out</li>
+          <li>Slide in/out</li>
+        </ul>
+      </div>
+      
+      <div class="info">
+        
+      </div>
+      
+    </section>
+    
     <footer>
       <div class="container">
         &copy;2011 SurveyMonkey
@@ -1370,10 +1475,9 @@
     
     <!-- ONLY for demo purposes, should replace w/ actual production JS when possible -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.formalize.js"></script>
+    <script src="js/jquery.hoverIntent.js"></script>
     <script src="js/demo.js"></script>
-    
-    <script src="js/yui-min.js"></script>
-    <script src="js/yui.formalize.js"></script>
 
   </body>
 
