@@ -161,3 +161,45 @@
 .main-nav > li > ul > li > ul > li:last-child > a {
 	border-bottom: 1px solid #e4e4e4;
 }
+
+
+/* Logged in */
+.logged-in .main-nav a {
+  color: #999;
+}
+.logged-in .main-nav > li.active > a {
+  color: white;
+}
+.logged-in .main-nav > li > ul {
+  border-color: #343329;
+  background: #4B4A3C;
+}
+.logged-in .main-nav > li > ul > li > a {
+  color: #ccc;
+  border-color: #343329;
+}
+.logged-in .main-nav > li > ul > li > a:hover {
+  background: #343329; 
+  color: #eee;
+}
+.logged-in .main-nav > li > a:hover,
+.logged-in .main-nav > li.open > a {
+  color: white;
+}
+.logged-in .main-nav > li:after {
+  background: #4B4A3C; 
+}
+.logged-in .main-nav > li.open {
+	background-image: 
+		-webkit-linear-gradient(top, #4B4A3C, #343329),
+		-webkit-linear-gradient(top, #4B4A3C, #343329);
+	background-image: 
+		-moz-linear-gradient(top, #4B4A3C, #343329),
+		-moz-linear-gradient(top, #4B4A3C, #343329);
+	background-image: 
+		-ms-linear-gradient(top, #4B4A3C, #343329),
+		-ms-linear-gradient(top, #4B4A3C, #343329);
+	background-image: 
+		-o-linear-gradient(top, #4B4A3C, #343329),
+		-o-linear-gradient(top, #4B4A3C, #343329);
+}
