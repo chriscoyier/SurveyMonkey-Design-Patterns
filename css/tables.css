@@ -26,19 +26,16 @@ thead th {
   border-bottom: 1px solid #ddd;
 }
 
+caption {
+  text-align: left;
+  padding-left: 10px;
+}
 caption span {
   display: inline-block;
-  background-color: #5e5e4e;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#5e5e4e), to(#323227)); 
-  background-image: -webkit-linear-gradient(top, #5e5e4e, #323227); 
-  background-image:    -moz-linear-gradient(top, #5e5e4e, #323227); 
-  background-image:     -ms-linear-gradient(top, #5e5e4e, #323227); 
-  background-image:      -o-linear-gradient(top, #5e5e4e, #323227); 
-  background-image:         linear-gradient(top, #5e5e4e, #323227);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#5e5e4e', EndColorStr='#323227');
-  padding: 4px 16px;
-  color: white;
-  font-size: 16px;
+  background: #ddd;
+  color: black;
+  padding: 4px 10px 3px;
+  font-size: 12px;
   font-weight: bold;
   -webkit-border-top-left-radius: 4px;
   -webkit-border-top-right-radius: 4px;
