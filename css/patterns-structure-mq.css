@@ -1,0 +1,36 @@
+@media (max-width: 480px) {
+  .container {
+    width: auto;
+    padding: 10px;
+  }
+  header h1, 
+  section.container > h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  header .logo {
+    margin-bottom: 10px;
+  }
+  .back-to-top {
+    display: block;
+  }
+  .about, .info {
+    float: none;
+    width: auto;
+    padding: 0;
+  }
+  .about {
+    background: #EAEADE;
+    padding: 10px;
+    margin: 0 0 20px 0;
+  }
+  .about:before {
+    display: none;
+  }
+  section.container {
+    background: none;
+  }
+  section.container > h2 {
+    position: static;
+  }
+}
