@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/typography.css">
     <link rel="stylesheet" href="css/toolbox.css">
     <link rel="stylesheet" href="css/patterns-structure.css">
+    <link rel="stylesheet" href="css/patterns-structure-mq.css">
     
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/tables.css">
@@ -432,39 +433,78 @@
       </div>
       
       <div class="info">
-        <div class="demo-header">
-        			<ul class="main-nav group">
-        				<li class="active">
-        					<a href="#">Home</a>
-        				</li>
-        				<li>
-        					<a href="#">Take a Tour</a>
-        					<ul>
-        								<li><a href="">Create Surveys</a></li>
-        								<li><a href="">Collect Responses</a></li>
-        								<li><a href="">Analyze Results</a></li>
-        					</ul>
-        				</li>
-        				<li>
-        					<a href="#">Resources</a>
-        					<ul>
-        								<li><a href="">Customer Feedback</a></li>
-        								<li><a href="">Product Feedback</a></li>
-        								<li><a href="">Market Research</a></li>
-        								<li><a href="">Employee Satisfaction</a></li>
-        								<li><a href="">Performance Review</a></li>
-                        <li><a href="">Healthcare</a></li>
-                        <li><a href="">Event</a></li>
-                        <li><a href="">Education</a></li>
-                        <li><a href="">Non-Profit</a></li>
-                        <li><a href="">Automated Phone</a></li>
-        					</ul>
-        				</li>
-        				<li>
-        					<a href="#">Plans &amp; Pricing</a>
-        				</li>
-        			</ul>
-        		</div>
+        
+        <h3>Logged Out</h3>
+        
+        <div class="demo-header logged-out">
+    			<ul class="main-nav group">
+    				<li class="active">
+    					<a href="#">Home</a>
+    				</li>
+    				<li>
+    					<a href="#">Take a Tour</a>
+    					<ul>
+    								<li><a href="">Create Surveys</a></li>
+    								<li><a href="">Collect Responses</a></li>
+    								<li><a href="">Analyze Results</a></li>
+    					</ul>
+    				</li>
+    				<li>
+    					<a href="#">Resources</a>
+    					<ul>
+    								<li><a href="">Customer Feedback</a></li>
+    								<li><a href="">Product Feedback</a></li>
+    								<li><a href="">Market Research</a></li>
+    								<li><a href="">Employee Satisfaction</a></li>
+    								<li><a href="">Performance Review</a></li>
+                    <li><a href="">Healthcare</a></li>
+                    <li><a href="">Event</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">Non-Profit</a></li>
+                    <li><a href="">Automated Phone</a></li>
+    					</ul>
+    				</li>
+    				<li>
+    					<a href="#">Plans &amp; Pricing</a>
+    				</li>
+    			</ul>
+    		</div>
+    		
+    		<h3>Logged In</h3>
+    		
+    		<div class="demo-header logged-in">
+    			<ul class="main-nav group">
+    				<li class="active">
+    					<a href="#">Home</a>
+    				</li>
+    				<li>
+    					<a href="#">Take a Tour</a>
+    					<ul>
+    								<li><a href="">Create Surveys</a></li>
+    								<li><a href="">Collect Responses</a></li>
+    								<li><a href="">Analyze Results</a></li>
+    					</ul>
+    				</li>
+    				<li>
+    					<a href="#">Resources</a>
+    					<ul>
+    								<li><a href="">Customer Feedback</a></li>
+    								<li><a href="">Product Feedback</a></li>
+    								<li><a href="">Market Research</a></li>
+    								<li><a href="">Employee Satisfaction</a></li>
+    								<li><a href="">Performance Review</a></li>
+                    <li><a href="">Healthcare</a></li>
+                    <li><a href="">Event</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">Non-Profit</a></li>
+                    <li><a href="">Automated Phone</a></li>
+    					</ul>
+    				</li>
+    				<li>
+    					<a href="#">Plans &amp; Pricing</a>
+    				</li>
+    			</ul>
+    		</div>
       </div>
       
     </section>
@@ -1015,6 +1055,7 @@
       
       <div class="about">
         <p>Purty!</p>
+        <p>Not seen: #4B4A3C - BG of logged in header</p>
       </div>
       
       <div class="info">
@@ -1030,7 +1071,7 @@
               <code>bg-light</code>
             </td>
             <td>
-              <div class="color-swatch bg-white"></div>
+              <div class="color-swatch bg-white" style="border: 1px solid #ccc"></div>
               <code>bg-white</code>
             </td>
             <td>
@@ -1400,35 +1441,98 @@
       
       <div class="about">
         <p>Hover over them for more information.</p>
+        <p>Top left requires no additional class</p>
       </div>
       
       <div class="info">
         
-        <div class="q">
-					<span>?</span>
-					<div class="popout">
-						<h5>View Clips</h5>
-						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-						<a href="#">Learn more »</a>
-					</div>
-				</div>
-				
-				Top Left
-				
-				<br>
-				
-				<div class="q">
-					<span>?</span>
-					<div class="popout">
-						<h5>View Clips</h5>
-						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-						<a href="#">Learn more »</a>
-					</div>
-				</div>
-				
-				Top Right
-				
-				
+        <table>
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Normal</th>
+              <th>With Tip</th>
+              <th>With Pro Feature</th>
+            </tr>
+          </thead>
+          <tr>
+            <th>Top Left / Default</th>
+            <td>
+              <div class="q">
+      					<span>?</span>
+      					<div class="popout">
+      						<h5>View Clips</h5>
+      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+      						<a href="#">Learn more »</a>
+      					</div>
+      				</div>
+      			</td>
+      			<td>
+      			  
+      			</td>
+      			<td>
+      			  
+      			</td>
+			    </tr>
+			    <tr>
+			      <th>Top Right</th>
+			      <td>
+			        <div class="q q-top-right">
+      					<span>?</span>
+      					<div class="popout">
+      						<h5>View Clips</h5>
+      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+      						<a href="#">Learn more »</a>
+      					</div>
+      				</div>
+    				</td>
+			      <td>
+      			  
+      			</td>
+      			<td>
+      			  
+      			</td>
+			    </tr>
+			    <tr>
+			      <th>Bottom Left</th>
+			      <td>
+			        <div class="q q-bottom-left">
+      					<span>?</span>
+      					<div class="popout">
+      						<h5>View Clips</h5>
+      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+      						<a href="#">Learn more »</a>
+      					</div>
+      				</div>
+			      </td>
+			      <td>
+      			  
+      			</td>
+      			<td>
+      			  
+      			</td>
+			    </tr>
+			    <tr>
+			      <th>Bottom Right</th>
+			      <td>
+			        <div class="q q-bottom-right">
+      					<span>?</span>
+      					<div class="popout">
+      						<h5>View Clips</h5>
+      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+      						<a href="#">Learn more »</a>
+      					</div>
+      				</div>
+			      </td>
+			      <td>
+      			  
+      			</td>
+      			<td>
+      			  
+      			</td>
+			    </tr>
+			  </table>
+
       </div>
       
     </section>
