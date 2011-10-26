@@ -28,6 +28,7 @@
 	border: 5px solid black;
 	background: white;
 	position: absolute;
+	box-shadow: 4px 4px 5px rgba(0,0,0,0.4);
 	
 	/* Hide by default */
 	top: -9999px;
@@ -35,8 +36,23 @@
 }
 .q.open .popout {
   left: 172%;
-	top: -12px;
+	top: -15px;
 }
+.q.q-top-right.open .popout {
+  left: auto;
+  right: 172%;
+}
+.q.q-bottom-left.open .popout {
+  top: auto;
+  bottom: -23px;
+}
+.q.q-bottom-right.open .popout {
+  top: auto;
+  left: auto;
+  right: 172%;
+  bottom: -23px;
+}
+
 .popout h5, .popout p, .popout li {
 	color: #333;
 	text-transform: uppercase;
@@ -50,18 +66,39 @@
 .popout a {
 	color: #2E898A;
 }
+
+/* This could easily be an extra element (IE 7) */
 .popout:before {
 	content: "";
 	position: absolute;
 	width: 0;
 	height: 0;
-	border-bottom: 10px solid transparent;
-	border-left: 10px solid transparent;
-	border-right: 10px solid black;
-	border-top: 10px solid black;
+	width: 15px;
+	height: 22px;
+	background: url(../images/popout-arrows.png) 0 -22px no-repeat;
 	top: 15px;
 	left: -20px;
 }
+.q-top-right .popout:before {
+  background-position: -15px -22px;
+  left: auto;
+  right: -20px;
+}
+.q-bottom-left .popout:before {
+  background-position: 0 -22px;
+  right: -20px;
+  top: auto;
+  bottom: 5px;
+}
+.q-bottom-right .popout:before {
+  background-position: -15px -22px;
+  top: auto;
+  left: auto;
+  right: -20px;
+  bottom: 5px;
+}
+
+
 .popout ul {
 	list-style: disc;
 	margin: 0 0 5px 20px;
