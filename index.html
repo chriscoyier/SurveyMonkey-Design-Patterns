@@ -13,6 +13,7 @@
     
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/tables.css">
+    <link rel="stylesheet" href="css/grids.css">
     <link rel="stylesheet" href="css/notifications.css">
     <link rel="stylesheet" href="css/dropdowns.css">
     <link rel="stylesheet" href="css/colors.css">
@@ -53,7 +54,7 @@
       </div>
     </header>
     
-    <section class="container group">
+    <section class="container group buttons">
     
       <h2 id="buttons">Buttons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
     
@@ -424,7 +425,7 @@
       
     </section>
     
-    <section class="container group">
+    <section class="container group dropdowns">
       
       <h2 id="dropdowns">Dropdown Menus <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -509,7 +510,7 @@
       
     </section>
     
-    <section class="container group">
+    <section class="container group forms">
       
       <h2 id="forms">Form Elements <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -720,7 +721,7 @@
       
     </section>
     
-    <section class="container group">
+    <section class="container group lightboxes">
       
       <h2 id="lightboxes">Lightboxes <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -739,7 +740,7 @@
       
     </section>
     
-    <section class="container group">
+    <section class="container group tables">
       
       <h2 id="tables">Tables <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -953,7 +954,7 @@
       
     </section>
 
-    <section class="container group">
+    <section class="container group typography">
       
       <h2 id="typography">Typography <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1021,7 +1022,7 @@
       
     </section>
     
-    <section class="container group">
+    <section class="container group grids">
       
       <h2 id="grids">Grids <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1031,25 +1032,71 @@
         <p>Proposed:</p>
         
         <ul>
-          <li>10/980/10</li>
-          <li>10/300/20/660/10</li>
-          <li>10/200/20/760/10</li>
-          <li>10/760/20/200/10</li>
-          <li>10/735/20/225/10</li>
-          <li>10/200/20/535/20/225/10</li>
+          <li>no grid: 10/980/10</li>
+          <li><code>grid1</code>: 10/300/20/660/10</li>
+          <li><code>grid2</code>:10/200/20/760/10</li>
+          <li><code>grid3</code>:10/760/20/200/10</li>
+          <li><code>grid4</code>:10/735/20/225/10</li>
+          <li><code>grid5</code>:10/200/20/535/20/225/10</li>
         </ul>
-        
-        <p>We can easily do the math on these and make them % if we want to go fluid/responsive.</p>
-        
+                
         <p>Do we allow grids within grids?</p>
       </div>
       
       <div class="info">
+        
+        <h3>Grid 1</h3>
+        
+        <div class="grid grid1 group example-grid">
+          <div class="col col1">
+          </div>
+          <div class="col col2">
+          </div>
+        </div>
+        
+        <h3>Grid 2</h3>
+        
+        <div class="grid grid2 group example-grid">
+          <div class="col col1">
+          </div>
+          <div class="col col2">
+          </div>
+        </div>
+        
+        <h3>Grid 3</h3>
+        
+        <div class="grid grid3 group example-grid">
+          <div class="col col1">
+          </div>
+          <div class="col col2">
+          </div>
+        </div>
+        
+        <h3>Grid 4</h3>
+        
+        <div class="grid grid4 group example-grid">
+          <div class="col col1">
+          </div>
+          <div class="col col2">
+          </div>
+        </div>
+        
+        <h3>Grid 5</h3>
+        
+        <div class="grid grid5 group example-grid">
+          <div class="col col1">
+          </div>
+          <div class="col col2">
+          </div>
+          <div class="col col3">
+          </div>
+        </div>
+        
       </div>
       
     </section>
     
-    <section class="container group">
+    <section class="container group colors">
       
       <h2 id="colors">Colors <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1130,7 +1177,7 @@
       
     </section>
     
-    <section class="container group">
+    <section class="container group tabs">
       
       <h2 id="tabs">Tabs <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1154,7 +1201,7 @@
       
     </section>
     
-    <section class="container group">
+    <section class="container group icons">
       
       <h2 id="icons">Icons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1414,7 +1461,7 @@
       
     </section>
     
-    <section class="container group">
+    <section class="container group notifications">
       
       <h2 id="notifications">Notifications <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1435,7 +1482,7 @@
       
     </section>
     
-    <section class="container group">
+    <section class="container group popouts">
       
       <h2 id="help">Help Popouts <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1537,21 +1584,23 @@
       
     </section>
     
-    <section class="container group">
+    <section class="container group sprite">
       
       <h2 id="sprite">Sprite <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
       <div class="about">
         <p>This is the global site sprite. Sprites are excellent for site performance (less HTTP Requests).</p>
+        
+        <p>Good resource for getting position/dimensions: <a href="http://www.spritecow.com/">SpriteCow</a></p>
       </div>
       
       <div class="info">
-        
+        <img src="images/sprite.png">
       </div>
       
     </section>
     
-    <section class="container group">
+    <section class="container group animations">
       
       <h2 id="animations">Animations <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1577,7 +1626,6 @@
       </div>
     </footer>
     
-    <!-- ONLY for demo purposes, should replace w/ actual production JS when possible -->
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.formalize.js"></script>
     <script src="js/jquery.hoverIntent.js"></script>

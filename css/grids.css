@@ -1,0 +1,63 @@
+/* Relies on .group clearfix in toolbox.css */
+
+/*
+Based on 1,000px 
+----------------
+grid1  10/300/20/660/10
+grid2  10/200/20/760/10
+grid3  10/760/20/200/10
+grid4  10/735/20/225/10
+grid5  10/200/20/540/20/200/10 (LAST COLUMN ADJUSTED DOWN)
+*/
+
+.grid {
+  /*padding: 0 1%;*/
+}
+
+.col {
+  float: left;
+}
+
+.grid1 .col1 {
+  width: 30%;
+  margin: 0 2% 0 1%;
+}
+.grid1 .col2 {
+  width: 66%;
+}
+
+.grid2 .col1 {
+  width: 20%;
+  margin: 0 2% 0 1%;
+}
+.grid2 .col2 {
+  width: 76%;
+}
+
+.grid3 .col1 {
+  width: 76%;
+  margin: 0 2% 0 1%;
+}
+.grid3 .col2 {
+  width: 20%;
+}
+
+.grid4 .col1 {
+  width: 73.5%;
+  margin: 0 2% 0 1%;
+}
+.grid4 .col2 {
+  width: 22.5%;
+}
+
+.grid5 .col1 {
+  width: 20%;
+  margin: 0 2% 0 1%;
+}
+.grid5 .col2 {
+  width: 53.5%;
+  margin: 0 2% 0 0;
+}
+.grid5 .col3 {
+  width: 20.5%;
+}
