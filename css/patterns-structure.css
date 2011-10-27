@@ -106,6 +106,7 @@ section.container > h2 {
 }
 
 
+/* Colors */
 .color-swatch {
   width: 100px;
   height: 100px;
@@ -119,6 +120,16 @@ section.container > h2 {
 /* Dropdowns */
 .logged-in {
   background: #4B4A3C;
+}
+
+
+/* Grids */
+.example-grid {
+  border: 1px solid #ccc;
+}
+.example-grid .col {
+  background: #ccc;
+  min-height: 50px;
 }
 
 
