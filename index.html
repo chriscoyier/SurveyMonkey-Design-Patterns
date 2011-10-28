@@ -50,11 +50,12 @@
           <li><a href="#help">Help Popouts</a></li>
           <li><a href="#sprite">Sprite</a></li>
           <li><a href="#sprite">Animations / Transitions</a></li>
+          <li><a href="#accordion">Accordion</a></li>
         </ul>
       </div>
     </header>
     
-    <section class="container group buttons">
+    <section class="container group demo-buttons">
     
       <h2 id="buttons">Buttons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
     
@@ -425,7 +426,7 @@
       
     </section>
     
-    <section class="container group dropdowns">
+    <section class="container group demo-dropdowns">
       
       <h2 id="dropdowns">Dropdown Menus <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -442,16 +443,16 @@
     				<li class="active">
     					<a href="#">Home</a>
     				</li>
-    				<li>
-    					<a href="#">Take a Tour</a>
+    				<li class="has-submenu">
+    					<a href="#">Take a Tour</a> <span class="dropdown-arrow"></span>
     					<ul>
     								<li><a href="">Create Surveys</a></li>
     								<li><a href="">Collect Responses</a></li>
     								<li><a href="">Analyze Results</a></li>
     					</ul>
     				</li>
-    				<li>
-    					<a href="#">Resources</a>
+    				<li class="has-submenu">
+    					<a href="#">Resources</a> <span class="dropdown-arrow"></span>
     					<ul>
     								<li><a href="">Customer Feedback</a></li>
     								<li><a href="">Product Feedback</a></li>
@@ -478,16 +479,16 @@
     				<li class="active">
     					<a href="#">Home</a>
     				</li>
-    				<li>
-    					<a href="#">Take a Tour</a>
+    				<li class="has-submenu">
+    					<a href="#">Take a Tour</a> <span class="dropdown-arrow"></span>
     					<ul>
     								<li><a href="">Create Surveys</a></li>
     								<li><a href="">Collect Responses</a></li>
     								<li><a href="">Analyze Results</a></li>
     					</ul>
     				</li>
-    				<li>
-    					<a href="#">Resources</a>
+    				<li class="has-submenu">
+    					<a href="#">Resources</a> <span class="dropdown-arrow"></span>
     					<ul>
     								<li><a href="">Customer Feedback</a></li>
     								<li><a href="">Product Feedback</a></li>
@@ -510,7 +511,7 @@
       
     </section>
     
-    <section class="container group forms">
+    <section class="container group demo-forms">
       
       <h2 id="forms">Form Elements <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -721,7 +722,7 @@
       
     </section>
     
-    <section class="container group lightboxes">
+    <section class="container group demo-lightboxes">
       
       <h2 id="lightboxes">Lightboxes <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -740,7 +741,7 @@
       
     </section>
     
-    <section class="container group tables">
+    <section class="container group demo-tables">
       
       <h2 id="tables">Tables <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -811,150 +812,169 @@
         		  <td>1.9</td>
         		  <td>Under the couch</td>
         		</tr>
+        	</tbody>
+      	</table>
+      	
+      	<table class="zebra">
+      	  <caption><span>Zebra Striped</span></caption>
+        	<thead>
+        		<tr>
+        			<th>First Name</th>
+        			<th>Last Name</th>
+        			<th>Job Title</th>
+        			<th>Favorite Color</th>
+        			<th>Wars or Trek?</th>
+        			<th>Date of Birth</th>
+        			<th>GPA</th>
+        			<th>Arbitrary Data</th>
+        		</tr>
+        	</thead>
+        	<tbody>
+        		<tr>
+        			<td>James</td>
+        			<td>Matman</td>
+        			<td>Chief Sandwich Eater</td>
+        			<td>Lettuce Green</td>
+        			<td>January 13, 1979</td>
+        			<td>Gotham City</td>
+        			<td>3.1</td>
+        			<td>RBX-12</td>
+        		</tr>
+        		<tr>
+        		  <td>The</td>
+        		  <td>Tick</td>
+        		  <td>Crimefighter Sorta</td>
+        		  <td>Blue</td>
+        		  <td>July 19, 1968</td>
+        		  <td>Athens</td>
+        		  <td>N/A</td>
+        		  <td>Edlund, Ben (July 1996).</td>
+        		</tr>
+        		<tr>
+        		  <td>Jokey</td>
+        		  <td>Smurf</td>
+        		  <td>Giving Exploding Presents</td>
+        		  <td>Smurflow</td>
+        		  <td>Smurfuary Smurfteenth, 1945</td>
+        		  <td>New Smurf City</td>
+        		  <td>4.Smurf</td>
+        		  <td>One</td>
+        		</tr>
+        		<tr>
+        		  <td>Cindy</td>
+        		  <td>Beyler</td>
+        		  <td>Sales Representative</td>
+        		  <td>Red</td>
+        		  <td>July 5, 1956</td>
+        		  <td>Paris</td>
+        		  <td>3.4</td>
+        		  <td>3451</td>
+        		</tr>
+        		<tr>
+        		  <td>Captain</td>
+        		  <td>Cool</td>
+        		  <td>Tree Crusher</td>
+        		  <td>Blue</td>
+        		  <td>December 13, 1982</td>
+        		  <td>Las Vegas</td>
+        		  <td>1.9</td>
+        		  <td>Under the couch</td>
+        		</tr>
+        	</tbody>
+      	</table>
+        	          
+        <table class="row-highlighting">
+          <caption><span>Row Highlighting</span></caption>
+        	<thead>
+        		<tr>
+        			<th>First Name</th>
+        			<th>Last Name</th>
+        			<th>Job Title</th>
+        			<th>Favorite Color</th>
+        			<th>Wars or Trek?</th>
+        			<th>Date of Birth</th>
+        			<th>GPA</th>
+        			<th>Arbitrary Data</th>
+        		</tr>
+        	</thead>
+        	<tbody>
+        		<tr>
+        			<td>James</td>
+        			<td>Matman</td>
+        			<td>Chief Sandwich Eater</td>
+        			<td>Lettuce Green</td>
+        			<td>January 13, 1979</td>
+        			<td>Gotham City</td>
+        			<td>3.1</td>
+        			<td>RBX-12</td>
+        		</tr>
+        		<tr>
+        		  <td>The</td>
+        		  <td>Tick</td>
+        		  <td>Crimefighter Sorta</td>
+        		  <td>Blue</td>
+        		  <td>July 19, 1968</td>
+        		  <td>Athens</td>
+        		  <td>N/A</td>
+        		  <td>Edlund, Ben (July 1996).</td>
+        		</tr>
+        		<tr>
+        		  <td>Jokey</td>
+        		  <td>Smurf</td>
+        		  <td>Giving Exploding Presents</td>
+        		  <td>Smurflow</td>
+        		  <td>Smurfuary Smurfteenth, 1945</td>
+        		  <td>New Smurf City</td>
+        		  <td>4.Smurf</td>
+        		  <td>One</td>
+        		</tr>
+        		<tr>
+        		  <td>Cindy</td>
+        		  <td>Beyler</td>
+        		  <td>Sales Representative</td>
+        		  <td>Red</td>
+        		  <td>July 5, 1956</td>
+        		  <td>Paris</td>
+        		  <td>3.4</td>
+        		  <td>3451</td>
+        		</tr>
+        		<tr>
+        		  <td>Captain</td>
+        		  <td>Cool</td>
+        		  <td>Tree Crusher</td>
+        		  <td>Blue</td>
+        		  <td>December 13, 1982</td>
+        		  <td>Las Vegas</td>
+        		  <td>1.9</td>
+        		  <td>Under the couch</td>
+        		</tr>
         		</tbody>
         	</table>
         	
-        	<table class="zebra">
-        	  <caption><span>Zebra Striped</span></caption>
-          	<thead>
-          		<tr>
-          			<th>First Name</th>
-          			<th>Last Name</th>
-          			<th>Job Title</th>
-          			<th>Favorite Color</th>
-          			<th>Wars or Trek?</th>
-          			<th>Date of Birth</th>
-          			<th>GPA</th>
-          			<th>Arbitrary Data</th>
-          		</tr>
-          	</thead>
-          	<tbody>
-          		<tr>
-          			<td>James</td>
-          			<td>Matman</td>
-          			<td>Chief Sandwich Eater</td>
-          			<td>Lettuce Green</td>
-          			<td>January 13, 1979</td>
-          			<td>Gotham City</td>
-          			<td>3.1</td>
-          			<td>RBX-12</td>
-          		</tr>
-          		<tr>
-          		  <td>The</td>
-          		  <td>Tick</td>
-          		  <td>Crimefighter Sorta</td>
-          		  <td>Blue</td>
-          		  <td>July 19, 1968</td>
-          		  <td>Athens</td>
-          		  <td>N/A</td>
-          		  <td>Edlund, Ben (July 1996).</td>
-          		</tr>
-          		<tr>
-          		  <td>Jokey</td>
-          		  <td>Smurf</td>
-          		  <td>Giving Exploding Presents</td>
-          		  <td>Smurflow</td>
-          		  <td>Smurfuary Smurfteenth, 1945</td>
-          		  <td>New Smurf City</td>
-          		  <td>4.Smurf</td>
-          		  <td>One</td>
-          		</tr>
-          		<tr>
-          		  <td>Cindy</td>
-          		  <td>Beyler</td>
-          		  <td>Sales Representative</td>
-          		  <td>Red</td>
-          		  <td>July 5, 1956</td>
-          		  <td>Paris</td>
-          		  <td>3.4</td>
-          		  <td>3451</td>
-          		</tr>
-          		<tr>
-          		  <td>Captain</td>
-          		  <td>Cool</td>
-          		  <td>Tree Crusher</td>
-          		  <td>Blue</td>
-          		  <td>December 13, 1982</td>
-          		  <td>Las Vegas</td>
-          		  <td>1.9</td>
-          		  <td>Under the couch</td>
-          		</tr>
-          		</tbody>
-          	</table>
-          	          
-          <table class="row-highlighting">
-            <caption><span>Row Highlighting</span></caption>
-          	<thead>
-          		<tr>
-          			<th>First Name</th>
-          			<th>Last Name</th>
-          			<th>Job Title</th>
-          			<th>Favorite Color</th>
-          			<th>Wars or Trek?</th>
-          			<th>Date of Birth</th>
-          			<th>GPA</th>
-          			<th>Arbitrary Data</th>
-          		</tr>
-          	</thead>
-          	<tbody>
-          		<tr>
-          			<td>James</td>
-          			<td>Matman</td>
-          			<td>Chief Sandwich Eater</td>
-          			<td>Lettuce Green</td>
-          			<td>January 13, 1979</td>
-          			<td>Gotham City</td>
-          			<td>3.1</td>
-          			<td>RBX-12</td>
-          		</tr>
-          		<tr>
-          		  <td>The</td>
-          		  <td>Tick</td>
-          		  <td>Crimefighter Sorta</td>
-          		  <td>Blue</td>
-          		  <td>July 19, 1968</td>
-          		  <td>Athens</td>
-          		  <td>N/A</td>
-          		  <td>Edlund, Ben (July 1996).</td>
-          		</tr>
-          		<tr>
-          		  <td>Jokey</td>
-          		  <td>Smurf</td>
-          		  <td>Giving Exploding Presents</td>
-          		  <td>Smurflow</td>
-          		  <td>Smurfuary Smurfteenth, 1945</td>
-          		  <td>New Smurf City</td>
-          		  <td>4.Smurf</td>
-          		  <td>One</td>
-          		</tr>
-          		<tr>
-          		  <td>Cindy</td>
-          		  <td>Beyler</td>
-          		  <td>Sales Representative</td>
-          		  <td>Red</td>
-          		  <td>July 5, 1956</td>
-          		  <td>Paris</td>
-          		  <td>3.4</td>
-          		  <td>3451</td>
-          		</tr>
-          		<tr>
-          		  <td>Captain</td>
-          		  <td>Cool</td>
-          		  <td>Tree Crusher</td>
-          		  <td>Blue</td>
-          		  <td>December 13, 1982</td>
-          		  <td>Las Vegas</td>
-          		  <td>1.9</td>
-          		  <td>Under the couch</td>
-          		</tr>
-          		</tbody>
-          	</table>
+        	<div class="selling-points-box">
+      	    <div class="selling-point selling-point1">
+      	        <span class="number">100%</span><br>
+      	        <span class="desc">of the Fortune 100</span>
+      	    </div>
+              <div class="selling-point selling-point2">
+                  <span class="number">99%</span><br>
+                  <span class="desc">customer satisfaction</span>
+              </div>
+              <div class="selling-point selling-point3">
+                  <span class="number">8+ million </span><br>
+                  <span class="desc">customers</span>
+              </div>
+              <div class="selling-point selling-point4">
+                  <span class="number">190+</span><br>
+                  <span class="desc">countries worldwide</span>
+              </div>
+          </div>
         
       </div>
       
     </section>
 
-    <section class="container group typography">
+    <section class="container group demo-typography">
       
       <h2 id="typography">Typography <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1011,8 +1031,14 @@
            </li>
            <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
         </ul>
+        
+        <ul class="checked-list">
+          <li>No software to install. No complicated instruction manuals. Just open a browser and go.</li>
+          <li>The basics are always free.</li>
+          <li>Advanced features and customization available for a very low monthly fee.</li>
+        </ul>
 
-<pre><code>#header h1 a { 
+        <pre><code>#header h1 a { 
 	display: block; 
 	width: 300px; 
 	height: 80px; 
@@ -1022,7 +1048,7 @@
       
     </section>
     
-    <section class="container group grids">
+    <section class="container group demo-grids">
       
       <h2 id="grids">Grids <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1096,7 +1122,7 @@
       
     </section>
     
-    <section class="container group colors">
+    <section class="container group demo-colors">
       
       <h2 id="colors">Colors <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1177,7 +1203,7 @@
       
     </section>
     
-    <section class="container group tabs">
+    <section class="container group demo-tabs">
       
       <h2 id="tabs">Tabs <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1201,7 +1227,7 @@
       
     </section>
     
-    <section class="container group icons">
+    <section class="container group demo-icons">
       
       <h2 id="icons">Icons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1461,7 +1487,7 @@
       
     </section>
     
-    <section class="container group notifications">
+    <section class="container group demo-notifications">
       
       <h2 id="notifications">Notifications <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1482,7 +1508,7 @@
       
     </section>
     
-    <section class="container group popouts">
+    <section class="container group demo-popouts">
       
       <h2 id="help">Help Popouts <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1584,7 +1610,7 @@
       
     </section>
     
-    <section class="container group sprite">
+    <section class="container group demo-sprite">
       
       <h2 id="sprite">Sprite <a href="#top" class="back-to-top">^ Back to Top</a></h2>
       
@@ -1596,6 +1622,19 @@
       
       <div class="info">
         <img src="images/sprite.png">
+      </div>
+      
+    </section>
+    
+    <section class="container group demo-accordion">
+      
+      <h2 id="accordion">Accordion <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+      
+      <div class="about">
+        <p></p>
+      </div>
+      
+      <div class="info">
       </div>
       
     </section>

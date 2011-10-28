@@ -52,22 +52,21 @@
 	padding-left: 0; /* To keep Home and Logo lined up */
 }
 .main-nav > li.has-submenu {
-	padding-right: 15px;
+	padding-right: 10px;
 }
-.main-nav > li.has-submenu > a:after {
-	content: "";
-	position: absolute;
-	left: 100%;
-	top: 10px;
-	margin-left: -13px;
-	width: 15px;
-	height: 13px;
-  background: url(../images/dropdownarrow.png);
+.dropdown-arrow {
+  display: inline-block;
+  width: 12px;
+  height: 7px;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+	background: url("../images/sm_sprite_arrows.png") no-repeat 0 -559px;
 }
 .main-nav > li.has-submenu.open > a:after {
 	background-position: 0 -13px;
 }
-.main-nav > li.open > ul {
+.main-nav > li:hover > ul {
   position: absolute;
 	top: 100%;
 	left: 0;
@@ -90,7 +89,7 @@
   list-style: none;
 }
 /* Multiple background support - IE 9 and up? */
-.main-nav > li.open {
+.main-nav > li.has-submenu:hover {
 	background-image: 
 		-webkit-linear-gradient(top, #f2f2f1, #999),
 		-webkit-linear-gradient(top, #f2f2f1, #999);
@@ -113,12 +112,12 @@
 		1px 100%,
 		1px 100%;
 }
-.main-nav > li.open > a,
+.main-nav > li:hover > a,
 .main-nav > li > a:hover {
 	color: #86A32D;
 }
 /* Hides connection between menu bar and drop down */
-.main-nav > li:after {
+.main-nav > li.has-submenu:after {
 	content: "";
 	position: absolute;
 	top: 100%;
@@ -129,7 +128,7 @@
 	opacity: 0;
 	z-index: 101;
 }
-.main-nav > li.open:after {
+.main-nav > li.has-submenu:hover:after {
 	opacity: 1;
 }
 .main-nav > li > ul > li {
@@ -186,10 +185,10 @@
 .logged-in .main-nav > li.open > a {
   color: white;
 }
-.logged-in .main-nav > li:after {
+.logged-in .main-nav > li.has-submenu:after {
   background: #4B4A3C; 
 }
-.logged-in .main-nav > li.open {
+.logged-in .main-nav > li.has-submenu:hover {
 	background-image: 
 		-webkit-linear-gradient(top, #4B4A3C, #343329),
 		-webkit-linear-gradient(top, #4B4A3C, #343329);

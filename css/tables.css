@@ -57,3 +57,34 @@ table.center-cells td,
 table.center-cells th {
   text-align: center;
 }
+
+
+
+.selling-points-box {
+	width: 424px;
+	margin: 40px 20px 40px 0;
+	float: left;
+	clear: left;
+}
+.selling-point {
+	width: 165px;
+	float: left;
+	padding: 15px 0 5px 45px;
+	background: url(../images/checkmark-large-green.png) no-repeat 12px 12px;
+}
+.selling-point1, .selling-point2 {
+	border-bottom: dotted #999999 1px;
+}
+.selling-point1, .selling-point3 {
+  border-right: dotted #999999 1px;
+}
+.selling-points-box .number {
+	font-size: 30px;
+	line-height: 22px;
+	font-weight: bold;
+	color: #333;
+}
+.selling-points-box .desc {
+	font-size: 14px;
+	color: #666;
+}

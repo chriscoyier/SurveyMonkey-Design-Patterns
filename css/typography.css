@@ -1,12 +1,13 @@
+/* Base */
 html {
   font: 13px/1.4 San-Serif;
 }
 
+/* Headers */
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin: 0 0 20px 0;
 }
-
 h1, .h1 {
   font-size: 42px;
 }
@@ -30,6 +31,7 @@ h6, .h6 {
   padding: 10px;
 }
 
+/* Lists */
 ul, ol {
   margin: 0 0 20px 20px;
   padding: 0;
@@ -40,6 +42,15 @@ ul ol, ul ul, ol ul, ol ol {
 li {
   margin: 4px 0;
 }
+.checked-list {
+  list-style: none;
+  margin-left: 0;
+}
+.checked-list li {
+  background: url(../images/checkmark.png) left center no-repeat;
+  padding-left: 25px;
+}
+
 
 p {
   margin: 0 0 20px 0;
