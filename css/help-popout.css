@@ -7,14 +7,15 @@
 	text-align: center;
 	font-size: 11px;
 	line-height: 16px;
-	color: white;
-	background: #949494;
+	color: #999;
+	background: #eaeae8;
 	display: inline-block;
 	position: relative;
 	font-weight: bold;
 }
 .q:hover {
-	background: #00898B;
+	background: #ccc;
+	color: white;
 }
 .q > span {
   position: relative;
@@ -33,6 +34,8 @@
 	/* Hide by default */
 	top: -9999px;
 	left: -9999px;
+	
+	z-index: 1000;
 }
 .q.open .popout {
   left: 172%;
@@ -105,4 +108,17 @@
 }
 .popout li {
 	margin: 0;
+}
+
+
+
+/* Variations */
+
+.q.q-on-dark {
+  background: #b4b4ac;
+  color: white;
+}
+.q.q-on-dark:hover {
+  background: #CCC; 
+}
 }

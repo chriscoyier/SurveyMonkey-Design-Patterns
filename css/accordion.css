@@ -30,14 +30,20 @@
 }
 
 .key{
+  
+    /* [CHRIS]: removed overflow hidden. Bad? */
+  
     background:#8A867A;
     height:3.3em;
-    overflow:hidden;
-    border-bottom:1px solid #FFF;
+    border-bottom:1px solid #C2C1BB;
     -webkit-transition:height 0.2s ease-out;
     -moz-transition:height 0.2s ease-out;
     -ms-transition:height 0.2s ease-out;
     transition:height 0.2s ease-out;
+}
+
+.key a {
+  outline: 0;
 }
 
 .key:first-child,.key:first-child .press{
@@ -89,7 +95,6 @@
     display:block;
     padding:.8em .8em .8em 2em;
     color:#fff;
-    text-shadow:rgba(0, 0, 0, 0.2) 0px 1px 3px;
     text-transform:uppercase;
     -webkit-transition:background-color 0.2s ease-out;
     -moz-transition:background-color 0.2s ease-out;
@@ -122,40 +127,12 @@
     /*background:#4EABA1;*/
 }
 
-.key h3 .tooltip{
+.key h3 .q {
     position:absolute;
     display:block;
     right:1em;
     top:1em;
-    height:13px;
-    width:13px;
-    line-height:13px;
-    -webkit-border-radius:8px;
-    -moz-border-radius:8px;
-    border-radius:8px;
-    -moz-background-clip:padding;
-    -webkit-background-clip:padding-box;
-    background-clip:padding-box;
-    -webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
-    box-shadow:0 1px 2px rgba(0, 0, 0, 0.1);
-    text-align:center;
-    font-weight:bolder;
-    padding:3px;
-    background:#6B6B61;
-    color:#FFF;
-    font-size:.8em;
-    text-shadow:rgba(0, 0, 0, 0.2) 0px 1px 3px;
-}
-
-.key h3 .tooltip:hover{
-    background:#FFF;
-    color:#6B6B61;
-}
-
-.key h3 .tooltip:active{
-    /*background:#4EABA1;*/
-    color:#FFF;
+  
 }
 
 .key .setting{

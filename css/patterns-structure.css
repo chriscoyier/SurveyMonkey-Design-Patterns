@@ -133,6 +133,11 @@ section.container > h2 {
 }
 
 
+/* Popouts */
+.cell-on-dark {
+  background: #848377;
+}
+
 
 footer {
   background: #5B5A4B;
