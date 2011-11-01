@@ -39,5 +39,16 @@
   };
 
   allQs.hoverIntent(config);
+  
+  
+  
+  /* Accordion */
+	initAccordion();
+
+	function initAccordion() {
+		var ca = new Accordion();
+		ca.init();
+	}
+  
 
 })(jQuery);
