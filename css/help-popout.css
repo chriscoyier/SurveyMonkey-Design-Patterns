@@ -38,12 +38,12 @@
 	z-index: 1000;
 }
 .q.open .popout {
-  left: 172%;
-	top: -15px;
+  left: 190%;
+	top: -12px;
 }
 .q.q-top-right.open .popout {
   left: auto;
-  right: 172%;
+  right: 190%;
 }
 .q.q-bottom-left.open .popout {
   top: auto;
@@ -52,7 +52,7 @@
 .q.q-bottom-right.open .popout {
   top: auto;
   left: auto;
-  right: 172%;
+  right: 190%;
   bottom: -23px;
 }
 
@@ -66,9 +66,13 @@
 	text-transform: none;
 	font-weight: normal;
 }
-.popout a {
-	color: #2E898A;
+
+
+.learn-more-link {
+  font-size: 12px;
+  font-weight: normal;
 }
+
 
 /* This could easily be an extra element (IE 7) */
 .popout:before {

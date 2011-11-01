@@ -1,14 +1,7 @@
+// IIFE to ensure safe usage of $
 (function($) {
 
   /* Faking Menu Functionality */
-
-  // $(".main-nav li:has(ul)")
-  //  .addClass("has-submenu")
-  //  .hover(function() {
-  //    $(this).addClass("open");
-  //  }, function() {
-  //    $(this).removeClass("open");
-  //  });
 
   $(".main-nav > li > a ").click(function(e) {
      e.preventDefault();
@@ -19,9 +12,9 @@
 
 
   /* Faking Help Popout Functionality */
-  
-  /* This is working like shit sandwich */
-  
+  /* Requires hoverIntent plugin */
+  /* Not working super well */
+    
   var config = {    
        over: openPopup,   
        timeout: 750,    
@@ -40,15 +33,4 @@
 
   allQs.hoverIntent(config);
   
-  
-  
-  /* Accordion */
-	initAccordion();
-
-	function initAccordion() {
-		var ca = new Accordion();
-		ca.init();
-	}
-  
-
 })(jQuery);

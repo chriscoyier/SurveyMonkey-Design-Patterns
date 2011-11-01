@@ -13,14 +13,6 @@
     cursor:default;
 }
 
-.key.open h3 a:active,aside.ac1 .ac1 .press:active,aside.ac2 .ac2 .press:active,aside.ac3 .ac3 .press:active,aside.ac4 .ac4 .press:active,aside.ac5 .ac5 .press:active,aside.ac6 .ac6 .press:active{
-    background:none;
-}
-
-.key.open h3 a:active+.tooltip,aside.ac1 .ac1 .press:active+.tooltip,aside.ac2 .ac2 .press:active+.tooltip,aside.ac3 .ac3 .press:active+.tooltip,aside.ac4 .ac4 .press:active+.tooltip,aside.ac5 .ac5 .press:active+.tooltip,aside.ac6 .ac6 .press:active+.tooltip{
-    /*background:#B4B4AA;*/
-}
-
 .key.open h3 a:before,aside.ac1 .ac1 .press:before,aside.ac2 .ac2 .press:before,aside.ac3 .ac3 .press:before,aside.ac4 .ac4 .press:before,aside.ac5 .ac5 .press:before,aside.ac6 .ac6 .press:before{
     -webkit-transform:rotate(90deg);
     -moz-transform:rotate(90deg);
@@ -30,9 +22,6 @@
 }
 
 .key{
-  
-    /* [CHRIS]: removed overflow hidden. Bad? */
-  
     background:#8A867A;
     height:3.3em;
     border-bottom:1px solid #C2C1BB;
@@ -102,15 +91,15 @@
     transition:background-color 0.2s ease-out;
 }
 
-.key h3 .press:hover{
+.key:hover{
     background:#9D9B8F;
+}
+  
+.key h3 .press:hover {
     text-decoration: none;
 }
 
-.key h3 .press:active{
-    /*background:#44968E;*/
-}
-
+/* Arrow */
 .key h3 .press:before{
     content:"";
     width:0;
@@ -123,16 +112,11 @@
     left:11px;
 }
 
-.key h3 .press:active+.tooltip{
-    /*background:#4EABA1;*/
-}
-
 .key h3 .q {
     position:absolute;
     display:block;
     right:1em;
     top:1em;
-  
 }
 
 .key .setting{
@@ -141,14 +125,6 @@
 
 .key .tab.setting{
     height:25em;
-}
-
-.key p{
-    margin:-3px 0 0 0;
-    padding:0 12px 10px 12px;
-    font-size:1.1em;
-    color:#000;
-    text-shadow:1px 1px 1px rgba(255, 255, 255, 0.4);
 }
 
 .key .tab{
@@ -265,21 +241,3 @@
     background:#464646;
     border-radius:6px;
 }
-
-
-
-
-
-
-.multiple .key .press,.multiple .key .tooltip{
-    cursor:pointer;
-}
-
-.multiple .key .press:active{
-    /*background:#44968E;*/
-}
-
-.multiple .key .press:active+.tooltip{
-    /*background:#4EABA1;*/
-}
-
