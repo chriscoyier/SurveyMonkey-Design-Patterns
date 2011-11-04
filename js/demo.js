@@ -1,5 +1,7 @@
 // IIFE to ensure safe usage of $
 (function($) {
+  
+  var doc = $(document);
 
   /* Faking Menu Functionality */
 
@@ -10,27 +12,16 @@
   });
 
 
-
-  /* Faking Help Popout Functionality */
-  /* Requires hoverIntent plugin */
-  /* Not working super well */
-    
-  var config = {    
-       over: openPopup,   
-       timeout: 750,    
-       out: closePopup  
-  },
-  allQs = $('.q');
-
-  function openPopup(el) {
-    allQs.removeClass("open");
-    $(el.currentTarget).addClass("open");
-  };
-
-  function closePopup(el) {
-    $(el.currentTarget).removeClass("open");
-  };
-
-  allQs.hoverIntent(config);
+  /* Accordions */
   
+  $(".accordion").accordion();
+  
+  doc.on("ac2-open", function(event, el) {
+    alert("ac2 was opened");
+  });
+  
+  doc.on("ac2-close", function(event, el) {
+    alert("closed" + el);
+  });
+
 })(jQuery);

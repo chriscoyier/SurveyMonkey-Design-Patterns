@@ -2,6 +2,7 @@
 <html>
 
   <head>
+    
     <meta charset="UTF-8">
     <title>SurveyMonkey Design Patterns</title>
     
@@ -1684,8 +1685,8 @@
         <h3>accordion multiple</h3>
         
   			<aside class="accordion multiple">
-  				<div class="ac1 key">
-  					<h3>
+  				<div class="key">
+  					<h3 data-panel="ac1">
   						<a class="press" href="#panel-1">First Key</a>
   						<div class="q q-on-dark">
       					<span>?</span>
@@ -1704,8 +1705,8 @@
   					</section><!-- #ac1 -->
   				</div><!-- ac3 key -->
 
-  				<div class="ac2 key">
-  					<h3>
+  				<div class="key">
+  					<h3 data-panel="ac2">
   						<a class="press" href="#panel-2">Second Key</a>
   						<div class="q q-on-dark">
       					<span>?</span>
@@ -1724,8 +1725,8 @@
   					</section><!-- #ac2 -->
   				</div><!-- ac2 key -->
 
-  				<div class="ac3 key">
-  					<h3>
+  				<div class="key">
+  					<h3 data-panel="ac1">
   						<a class="press" href="#panel-3">Third Key</a>
   						<div class="q q-on-dark">
       					<span>?</span>
@@ -1748,8 +1749,8 @@
   			<h3>accordion single</h3>
         
   			<aside class="accordion single">
-  				<div class="ac1 key">
-  					<h3>
+  				<div class="key">
+  					<h3 data-panel="ac4">
   						<a class="press" href="#panel-4">First Key</a>
   						<div class="q q-on-dark">
       					<span>?</span>
@@ -1768,8 +1769,8 @@
   					</section><!-- #ac1 -->
   				</div><!-- ac3 key -->
 
-  				<div class="ac2 key">
-  					<h3>
+  				<div class="key">
+  					<h3 data-panel="ac5">
   						<a class="press" href="#panel-5">Second Key</a>
   						<div class="q q-on-dark">
       					<span>?</span>
@@ -1788,8 +1789,8 @@
   					</section><!-- #ac2 -->
   				</div><!-- ac2 key -->
 
-  				<div class="ac3 key">
-  					<h3>
+  				<div class="key">
+  					<h3 data-panel="ac6">
   						<a class="press" href="#panel-6">Third Key</a>
   						<div class="q q-on-dark">
       					<span>?</span>
@@ -1842,13 +1843,14 @@
     </footer>
     
     <!-- required for everything. jQuery! Yay! -->
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-1.7.min.js"></script>
     
     <!-- for forms, probably will not use this, but our own stuff -->
     <script src="js/jquery.formalize.js"></script>
     
     <!-- for popouts -->
     <script src="js/jquery.hoverIntent.js"></script>
+    <script src="js/popouts.js"></script>
     
     <!-- for accordions -->
     <script src="js/accordion.js"></script>
