@@ -16,12 +16,16 @@
   
   $(".accordion").accordion();
   
+  // API for opening particular panel (no logic)
+  // $(".accordion").accordion("ac5");
+    
   doc.on("ac2-open", function(event, el) {
-    alert("ac2 was opened");
-  });
-  
-  doc.on("ac2-close", function(event, el) {
-    alert("closed" + el);
+    
+    // Example of custom open event.
+    // class-open or class-close
+    
+    console.log("This panel opened: " + el);
+    
   });
 
 })(jQuery);
