@@ -1,3 +1,4 @@
+/* Default */
 .tabs {
   padding: 0 10px;
   border-bottom: 1px solid #999;
@@ -22,4 +23,75 @@
     border-width: 1px 1px medium;
     bottom: -1px;
     position: relative;
+}
+
+
+/* Pillbox */
+
+.pillbox { 
+  margin: 0 0 20px 0;
+  border-radius: 7px;
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:        padding-box;
+}
+.pillbox a {
+  display: block;
+  float: left;
+  position: relative;
+  width: 50%;
+  padding: 8px 0;
+  background: #6e6c64;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+.pillbox a:first-child { 
+  border-top-right-radius:    0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius:  5px;
+  border-top-left-radius:     5px;
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+}
+.pillbox a:last-child {
+  border-top-right-radius:    5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:  0;
+  border-top-left-radius:     0;
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
+  border-right: none;
+}
+.pillbox a:hover{
+  color: #FFF;
+  text-decoration: none;
+  background: #848377;
+}
+.pillbox a.active {
+  background: white;
+  color: #333;
+}
+.pillbox .active:after { 
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin: 0 0 0 -10px;
+}
+
+
+.thirds a {
+  width: 33.3333%;
+  text-decoration: none;
 }

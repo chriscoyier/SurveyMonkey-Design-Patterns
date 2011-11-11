@@ -20,14 +20,19 @@
   
   // API for opening particular panel (no logic)
   // $(".accordion").accordion("ac5");
-    
+  
+  // Example custom event 
+  // pattern = class-open or class-close
   doc.on("ac2-open", function(event, el) {
     
-    // Example of custom open event.
-    // class-open or class-close
-    
-    console.log("This panel opened: " + el);
+    // console.log("This panel opened: " + el);
     
   });
+  
+  
+  /* Tabs */
+  
+  $(".tabs, .pillbox").tabs();
+  
 
 })(jQuery);

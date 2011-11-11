@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="css/tabs.css">
     <link rel="stylesheet" href="css/help-popout.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/spinners.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
   </head>
 
   <body id="top">
@@ -38,6 +41,7 @@
         <h1><a href="#" class="logo">SurveyMonkey</a> Design Patterns</h1>
         
         <ul class="group">
+          <li><a href="#header">Header</a></li>
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#dropdowns">Dropdown Menus</a></li>
           <li><a href="#forms">Form Elements</a></li>
@@ -51,8 +55,10 @@
           <li><a href="#notifications">Notifications</a></li>
           <li><a href="#help">Help Popouts</a></li>
           <li><a href="#sprite">Sprite</a></li>
-          <li><a href="#sprite">Animations / Transitions</a></li>
+          <li><a href="#sprite">Animations</a></li>
           <li><a href="#accordion">Accordion</a></li>
+          <li><a href="#spinners">Spinners</a></li>
+          <li><a href="#footer">Footer</a></li>
         </ul>
       </div>
     </header>
@@ -1215,6 +1221,8 @@
       </div>
       
       <div class="info">
+        
+        <nav>
         <ul class="tabs">
           <li class="current">
               <a href="#">Design Survey</a>
@@ -1226,6 +1234,23 @@
               <a href="#">Analyze Results</a>
           </li>
         </ul>
+        </nav>
+        
+        <div style="background: #9E9B90; padding: 20px;">
+        
+          <nav class="pillbox thirds group">
+  					<a class="pillbox-1 active" href="#">Tab One</a>
+  					<a class="pillbox-2" href="#">Tab Two</a>
+  					<a class="pillbox-3" href="#">Tab Three</a>
+  				</nav>
+  				
+  				<nav class="pillbox group">
+  					<a class="pillbox-4 active" href="#">Tab One</a>
+  					<a class="pillbox-5" href="#">Tab Two</a>
+  				</nav>
+				
+				</div>
+        
       </div>
       
     </section>
@@ -1829,6 +1854,39 @@
       
     </section>
     
+    <section class="container group spinners">
+      
+      <h2 id="spinners">Spinners <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+      
+      <div class="about">
+        <p>For when stuff is loading.</p>
+      </div>
+      
+      <div class="info">
+        
+        <ul>
+          <li><a href="#">Test saving spinner</a></li>
+        </ul>
+        
+        <table>
+          <tr>
+            <td><img src="images/spinner_gray_16.gif"></td>
+            <td><img src="images/spinner_gray_30.gif"></td>
+            <td><img src="images/spinner_gray_66.gif"></td>
+            <td><img src="images/spinner_gray_160.gif"></td>
+          </tr>
+          <tr class="bg-brand">
+            <td><img src="images/spinner_16_onGreen.gif"></td>
+            <td><img src="images/spinner_30_onGreen.gif"></td>
+            <td><img src="images/spinner_66_onGreen.gif"></td>
+            <td><img src="images/spinner_160_onGreen.gif"></td>
+          </tr>
+        </table>
+        
+      </div>
+      
+    </section>
+    
     <footer>
       <div class="container">
         &copy;2011 SurveyMonkey
@@ -1847,6 +1905,9 @@
     
     <!-- for accordions -->
     <script src="js/accordion.js"></script>
+    
+    <!-- for tabs -->
+    <script src="js/tabs.js"></script>
     
     <!-- just for this demo page -->
     <script src="js/demo.js"></script>
