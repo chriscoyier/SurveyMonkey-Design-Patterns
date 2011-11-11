@@ -1,0 +1,107 @@
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+	text-shadow: @string;
+}
+
+.box-shadow (@x: 0, @y: 1px, @blur: 2px, @alpha: 0.25) {
+	-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	   -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+	        box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+.border-radius (@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  border-radius:         @radius;
+
+  -moz-background-clip:    padding; 
+  -webkit-background-clip: padding-box; 
+  background-clip:         padding-box; 
+}
+.border-radiuses (@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+  -webkit-border-top-right-radius:    @topright;
+  -webkit-border-bottom-right-radius: @bottomright;
+  -webkit-border-bottom-left-radius:  @bottomleft;
+  -webkit-border-top-left-radius:     @topleft;
+  -moz-border-radius-topright:        @topright;
+  -moz-border-radius-bottomright:     @bottomright;
+  -moz-border-radius-bottomleft:      @bottomleft;
+  -moz-border-radius-topleft:         @topleft;
+  border-top-right-radius:            @topright;
+  border-bottom-right-radius:         @bottomright;
+  border-bottom-left-radius:          @bottomleft;
+  border-top-left-radius:             @topleft;
+  
+  -moz-background-clip:    padding; 
+  -webkit-background-clip: padding-box; 
+  background-clip:         padding-box; 
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+	background: -webkit-linear-gradient(top, @startColor, @endColor);
+	background:    -moz-linear-gradient(top, @startColor, @endColor);
+	background:     -ms-linear-gradient(top, @startColor, @endColor);
+	background:      -o-linear-gradient(top, @startColor, @endColor);
+}
+.horizontal-gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+	background-image: -webkit-gradient(linear, left top, right top, from(@startColor), to(@endColor));
+	background-image: -webkit-linear-gradient(left, @startColor, @endColor);
+	background-image:    -moz-linear-gradient(left, @startColor, @endColor);
+	background-image:     -ms-linear-gradient(left, @startColor, @endColor);
+	background-image:      -o-linear-gradient(left, @startColor, @endColor);
+}
+
+.animate (@duration: 0.2s, @ease: ease) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition:    all @duration @ease;
+  -ms-transition:     all @duration @ease;
+  -o-transition:      all @duration @ease;
+}
+.transition (@transition) {
+	-webkit-transition: @transition;  
+	-moz-transition:    @transition;
+  -ms-transition:     @transition; 
+  -o-transition:      @transition;  
+}
+
+.rotate (@deg) {
+	-webkit-transform: rotate(@deg);
+  -moz-transform:    rotate(@deg);
+  -ms-transform:     rotate(@deg);
+  -o-transform:      rotate(@deg);
+}
+.translate (@x: 0, @y: 0) {
+	-webkit-transform: translate(@x, @y);
+  -moz-transform:    translate(@x, @y);
+  -ms-transform:     translate(@x, @y);
+  -o-transform:      translate(@x, @y);
+}
+.transform-origin (@x: center, @y: center) {
+	-webkit-transform-origin: @x @y;
+  -moz-transform-origin:    @x @y;
+  -ms-transform-origin:     @x @y;
+  -o-transform-origin:      @x @y;
+}
+
+.columns (@colwidth: 250px, @colcount: 0, @colgap: 50px, @columnRuleColor: #EEE, @columnRuleStyle: solid, @columnRuleWidth: 1px) {
+	-moz-column-width:         @colwidth;
+	-moz-column-count:         @colcount;
+	-moz-column-gap:           @colgap;
+	-moz-column-rule-color:    @columnRuleColor;
+	-moz-column-rule-style:    @columnRuleStyle;
+	-moz-column-rule-width:    @columnRuleWidth;
+	-webkit-column-width:      @colwidth;
+	-webkit-column-count:      @colcount;
+	-webkit-column-gap:        @colgap;
+	-webkit-column-rule-color: @columnRuleColor;
+	-webkit-column-rule-style: @columnRuleStyle;
+	-webkit-column-rule-width: @columnRuleWidth;
+	column-width:              @colwidth;           // Opera uses non-prefixed version
+	column-count:              @colcount;
+	column-gap:                @colgap;
+	column-rule-color:         @columnRuleColor;
+	column-rule-style:         @columnRuleStyle;
+	column-rule-width:         @columnRuleWidth;
+}

@@ -14,6 +14,8 @@
 
   /* Accordions */
   
+  // Assumes standard accordian HTML structure
+  // All panels closed by default
   $(".accordion").accordion();
   
   // API for opening particular panel (no logic)

@@ -5,10 +5,6 @@
     cursor:default;
 }
 
-.key.open .tooltip,aside.ac1 .ac1 .tooltip,aside.ac2 .ac2 .tooltip,aside.ac3 .ac3 .tooltip,aside.ac4 .ac4 .tooltip,aside.ac5 .ac5 .tooltip,aside.ac6 .ac6 .tooltip{
-    background:#B4B4AA;
-}
-
 .key.open h3 a,aside.ac1 .ac1 .press,aside.ac2 .ac2 .press,aside.ac3 .ac3 .press,aside.ac4 .ac4 .press,aside.ac5 .ac5 .press,aside.ac6 .ac6 .press{
     cursor:default;
 }
@@ -21,7 +17,7 @@
     transform:rotate(90deg);
 }
 
-.key{
+.key {
     background:#8A867A;
     height:3.3em;
     border-bottom:1px solid #C2C1BB;
