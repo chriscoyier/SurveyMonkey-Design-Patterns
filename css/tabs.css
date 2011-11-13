@@ -48,6 +48,9 @@
   font-weight: bold;
   text-align: center;
   border-right: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
 }
 .pillbox a:first-child { 
   border-top-right-radius:    0;
