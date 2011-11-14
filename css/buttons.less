@@ -1,0 +1,366 @@
+@import "functions.less";
+
+.btn {
+  padding: 6px 12px;
+  .border-radius(4px);
+  text-shadow: 0 1px 0 #FFFFFF;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  border: solid 1px #BBB;
+  .gradient(#f0f0ea, #d5d7ce);
+}
+.btn:hover {
+	border: solid 1px #999; 
+	text-decoration: none;
+	.gradient(#F5F5EE, #DCDED5);
+}
+.btn:active {
+	border: solid 1px #999; 
+	.gradient(#DCDED5, #F5F5EE);
+}
+.ie7 .btn {
+  display: inline;
+  zoom: 1;
+}
+input.btn {
+  font-family: Sans-Serif;
+  padding: 4px 7px;
+  border: none;
+}
+
+
+
+
+/* Button Menu (?) */
+.btn-menu {
+  letter-spacing: -0.31em; /* webkit: collapse white-space between units */
+  *letter-spacing: normal; /* reset IE < 8 */
+  word-spacing: -0.43em;   /* IE < 8 && gecko: collapse white-space between units */
+}
+.btn-menu .btn {
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+}
+.btn-menu .btn-menu-right {
+  border-left: none;
+  -webkit-top-left-border-radius:    0;
+  -webkit-bottom-left-border-radius: 0;
+  -moz-top-left-border-radius:       0;
+  -moz-bottom-left-border-radius:    0;
+  border-top-left-radius:            0;
+  border-bottom-left-radius:         0;
+}
+.btn-menu .btn-menu-left {
+  -webkit-top-right-border-radius:    0;
+  -webkit-bottom-right-border-radius: 0;
+  -moz-top-right-border-radius:       0;
+  -moz-bottom-right-border-radius:    0;
+  border-top-right-radius:            0;
+  border-bottom-right-radius:         0;
+}
+.btn-menu .btn-menu-middle {
+  -webkit-border-radius: 0;
+  -moz-border-radius:    0;
+  border-radius:         0;
+  margin-left: -1px;
+}
+
+
+/* NEED TO TEST THIS STUFF */
+.ie7 .btn-menu-arrow-left > span {
+  height: 10px;
+}
+.ie7 .btn-menu-right {
+  margin-left: 3px;
+}
+.ie7 .btn-menu-right:hover {
+  margin-left: 2px;
+}
+
+
+
+
+/* Arrows */
+.btn-arrow > span {
+  background: url("../images/sm_sprite_arrows.png") no-repeat scroll 0 -497px transparent;
+  display: inline-block;
+  height: 12px;
+  width: 6px;
+  zoom: 1;
+  *display: inline;
+}
+.btn-arrow-right {
+  padding-right: 6px;
+}
+.btn-arrow-right > span {
+  margin-left: 6px;
+}
+.btn-arrow-left {
+  padding-left: 10px;
+}
+.btn-arrow-left > span {
+  margin-right: 6px;
+}
+.btn-small.btn-arrow-left {
+  padding-left: 8px;
+}
+.btn-large.btn-arrow-right {
+  padding-right: 9px;
+  padding-left: 11px;
+}
+.btn-large.btn-arrow-left {
+  padding-right: 11px;
+  padding-left: 9px;
+}
+
+
+/* Small Arrows */
+.btn-arrow-small-horiz > span {
+  height: 7px;
+  width: 5px;
+}
+.btn-arrow-small-vert > span {
+  height: 5px;
+  width: 7px;
+}
+.ie7 .btn-arrow-small-horiz > span {
+  height: 10px;
+}
+.ie7 .btn-arrow-small-vert > span {
+  height: 10px;
+}
+.btn-arrow-small-right-light > span {
+  background-position: 0 -180px;
+}
+.btn-arrow-small-left-light > span {
+  background-position: 0 -200px;
+}
+.btn-arrow-small-up-light > span {
+  background-position: 0 -220px;
+}
+.btn-arrow-small-down-light > span {
+  background-position: 0 -160px;
+}
+.btn-arrow-small-right-medium > span {
+  background-position: 0 -100px;
+}
+.btn-arrow-small-left-medium > span {
+  background-position: 0 -120px;
+}
+.btn-arrow-small-up-medium > span {
+  background-position: 0 -140px;
+}
+.btn-arrow-small-down-medium > span {
+  background-position: 0 -80px;
+}
+.btn-arrow-small-right-dark > span {
+  background-position: 0 -20px;
+}
+.btn-arrow-small-left-dark > span {
+  background-position: 0 -40px;
+}
+.btn-arrow-small-up-dark > span {
+  background-position: 0 -60px;
+}
+.btn-arrow-small-down-dark > span {
+  background-position: 0 0;
+}
+
+
+/* Standard Size Arrows */
+.btn-arrow-standard-horiz > span {
+  height: 8px;
+  width: 6px;
+}
+.ie7 .btn-arrow-standard-horiz > span {
+  height: 11px;
+}
+.btn-arrow-standard-vert > span {
+  height: 6px;
+  width: 12px;
+}
+.ie7 .btn-arrow-standard-vert > span {
+  height: 10px;
+  width: 10px;
+}
+.btn-arrow-standard-right-light > span {
+  background-position: 0 -420px;
+}
+.btn-arrow-standard-left-light > span {
+  background-position: 0 -440px;
+}
+.btn-arrow-standard-up-light > span {
+  background-position: 0 -460px;
+}
+.btn-arrow-standard-down-light > span {
+  background-position: 0 -400px;
+}
+.btn-arrow-standard-right-medium > span {
+  background-position: 0 -340px;
+}
+.btn-arrow-standard-left-medium > span {
+  background-position: 0 -360px;
+}
+.btn-arrow-standard-up-medium > span {
+  background-position: 0 -380px;
+}
+.btn-arrow-standard-down-medium > span {
+  background-position: 0 -320px;
+}
+.btn-arrow-standard-right-dark > span {
+  background-position: 0 -260px;
+}
+.btn-arrow-standard-left-dark > span {
+  background-position: 0 -280px;
+}
+.btn-arrow-standard-up-dark > span {
+  background-position: 0 -300px;
+}
+.btn-arrow-standard-down-dark > span {
+  background-position: 0 -240px;
+}
+
+
+/* Large Arrows */
+.btn-arrow-large-horiz > span {
+  height: 9px;
+  width: 6px;
+}
+.btn-arrow-large-vert > span {
+  height: 7px;
+  width: 12px;
+}
+.ie7 .btn-arrow-large-horiz > span {
+  height: 12px;
+}
+
+.ie7 .btn-arrow-large-vert > span {
+  height: 10px;
+}
+.btn-arrow-large-right-light > span {
+  background-position: 0 -420px;
+}
+.btn-arrow-large-left-light > span {
+  background-position: 0 -440px;
+}
+.btn-arrow-large-up-light > span {
+  background-position: 0 -460px;
+}
+.btn-arrow-large-down-light > span {
+  background-position: 0 -400px;
+}
+.btn-arrow-large-right-medium > span {
+  background-position: 0 -580px;
+}
+.btn-arrow-large-left-medium > span {
+  background-position: 0 -600px;
+}
+.btn-arrow-large-up-medium > span {
+  background-position: 0 -620px;
+}
+.btn-arrow-large-down-medium > span {
+  background-position: 0 -560px;
+}
+.btn-arrow-large-right-dark > span {
+  background-position: 0 -500px;
+}
+.btn-arrow-large-left-dark > span {
+  background-position: 0 -520px;
+}
+.btn-arrow-large-up-dark > span {
+  background-position: 0 -540px;
+}
+.btn-arrow-large-down-dark > span {
+  background-position: 0 -480px;
+}
+
+.btn-only-arrow {
+  padding-left: 8px;
+  padding-right: 6px;
+}
+
+
+
+/* Colors */
+.teal {
+  color: white;
+	border: 0;
+	text-shadow: 0 -1px 0 #444444;
+	.gradient(#35C0C0, #049795);
+}
+.teal:hover {
+	border: 0;
+	.gradient(#42CBCC, #14A4A3);
+}
+.teal:active {
+	.gradient(#14A4A3, #42CBCC);
+}
+
+.dark-grey {
+  color: white;
+  border: 0;
+  text-shadow: 0 -1px 0 #444444;
+	.gradient(#989898, #666);
+}
+.dark-grey:hover {
+	border: 0;
+	.gradient(#A4A4A4, #787878);
+}
+.dark-grey:active {
+  .gradient(#787878, #A4A4A4);
+}
+
+.yellow {
+	border: solid 1px #DFC235; 
+	text-shadow: 0 1px 0 #FCFC85;
+	.gradient(#F8F777, #DFC235);
+}
+.yellow:hover {
+	border: solid 1px #999; 
+	.gradient(#FCFC85, #EDCE38);
+}
+.yellow:active {
+	.gradient(#F7E258, #FAF476);
+}
+
+.green {
+  color: white;
+	border: 0;
+	text-shadow: 0 -1px 0 #677E2C;
+	.gradient(#ADC93F, #799334);
+}
+.green:hover {
+	border: 0;
+	.gradient(#B4D141, #819D37);
+}
+.green:active {
+	.gradient(#819D37, #B4D141);
+}
+
+
+/* Variations */
+.btn-small {
+  font-size: 11px;
+  padding: 3px 9px;
+}
+.btn-large {
+  font-size: 14px;
+  padding: 9px 18px;
+}
+.no-emphasize {
+  font-weight: normal;
+}
+.no-border, .no-border:hover {
+  border: 0;
+}
+.shadow {
+  .box-shadow(0, 2px, 2px, 0.25);
+}

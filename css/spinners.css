@@ -1,0 +1,28 @@
+#spinner {
+  background: #89a542;
+  color: white;
+  padding: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  position: fixed;
+  border: 3px solid white;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  min-width: 300px;
+}
+#spinner img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+#spinner span {
+  position: relative;
+  top: 1px;
+}

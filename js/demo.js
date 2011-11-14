@@ -34,5 +34,26 @@
   
   $(".tabs, .pillbox").tabs();
   
+  
+  /* Spinners */
+  
+  $("#spinner-test").submit(function(e) {
+    
+    e.preventDefault();
+    
+    $.spinner({
+      text: $("#test-spinner-text").val(),
+      action: "show"
+    });
+
+    // Probably actually after some Ajax saving or something
+    setTimeout(function() {
+      $.spinner({
+        action: "hide"
+      });
+    }, 2000);
+    
+  });
+
 
 })(jQuery);
