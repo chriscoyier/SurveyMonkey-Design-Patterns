@@ -1,21 +1,21 @@
 /* Background Colors */
 .bg-dark {
-  background-color: #5B5A4B;
+  background-color: #5b5a4b;
 }
 .bg-white {
   background-color: white;
 }
 .bg-light {
-  background-color: #EAEADE;
+  background-color: #eaeade;
 }
 .bg-brand {
-  background-color: #A9BD38;
+  background-color: #a9bd38;
 }
 .bg-brand-dark {
   background-color: #8aa027;
 }
 .bg-teal {
-  background-color: #00898B;
+  background-color: #00898b;
 }
 /* Background Gradients */
 .grad-dark {

@@ -10,9 +10,9 @@
   background-clip: padding-box;
   position: fixed;
   border: 3px solid white;
-  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
   font-weight: bold;
   font-size: 16px;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);

@@ -71,6 +71,9 @@ input.btn {
 }
 .btn-menu .btn-menu-right {
   border-left: none;
+  /* Not a great function for this yet, since we we're
+     resetting some but leaving other corners alone */
+
   -webkit-top-left-border-radius: 0;
   -webkit-bottom-left-border-radius: 0;
   -moz-top-left-border-radius: 0;
@@ -79,6 +82,9 @@ input.btn {
   border-bottom-left-radius: 0;
 }
 .btn-menu .btn-menu-left {
+  /* Not a great function for this yet, since we we're
+     resetting some but leaving other corners alone */
+
   -webkit-top-right-border-radius: 0;
   -webkit-bottom-right-border-radius: 0;
   -moz-top-right-border-radius: 0;
@@ -90,6 +96,9 @@ input.btn {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   margin-left: -1px;
 }
 /* NEED TO TEST THIS STUFF */
@@ -420,7 +429,7 @@ input.btn {
   border: 0;
 }
 .shadow {
-  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 2px 0.25 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 2px 0.25 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 2px 0.25 rgba(0, 0, 0, 0.25);
 }

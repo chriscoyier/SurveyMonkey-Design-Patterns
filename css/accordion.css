@@ -1,95 +1,103 @@
+/* Not as smooth as I might like.
+   Max heigh transition for fluid content is kinda blahhhhh */
 .key {
-    background: #8A867A;
-    max-height: 42px;
-    border-bottom: 1px solid #C2C1BB;
-    -webkit-transition: max-height 0.4s ease-out;
-    -moz-transition:    max-height 0.4s ease-out;
-    -ms-transition:     max-height 0.4s ease-out;
-    -o-transition:      max-height 0.4s ease-out;
+  background: #8A867A;
+  max-height: 42px;
+  border-bottom: 1px solid #C2C1BB;
+  -webkit-transition: max-height 0.4s ease-out;
+  -moz-transition: max-height 0.4s ease-out;
+  -ms-transition: max-height 0.4s ease-out;
+  -o-transition: max-height 0.4s ease-out;
 }
-
 .key.open {
-    background: #9E9B90;
-    max-height: 600px;
-    cursor: default;
+  background: #9E9B90;
+  max-height: 600px;
+  cursor: default;
 }
-
 .key a {
   outline: 0;
 }
-
 /* Probably will need to use classes here */
 .key:first-child {
-    border-top-right-radius:            5px;
-    border-bottom-right-radius:         0;
-    border-bottom-left-radius:          0;
-    border-top-left-radius:             5px;
-    -moz-background-clip:    padding;
-    -webkit-background-clip: padding-box;
-    background-clip:         padding-box;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-topleft: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .key:last-child {
-    border-top-right-radius:            0;
-    border-bottom-right-radius:         5px;
-    border-bottom-left-radius:          5px;
-    border-top-left-radius:             0;
-    -moz-background-clip:    padding;
-    -webkit-background-clip: padding-box;
-    background-clip:         padding-box;
-    border-bottom: 0;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border-bottom: 0;
 }
-
 .key h3 {
-    position: relative;
-    visibility: visible;
-    font-size: 14px;
-    line-height: 155%;
-    cursor: pointer;
-    margin: 0;
+  position: relative;
+  visibility: visible;
+  font-size: 1.1em;
+  line-height: 1.5;
+  cursor: pointer;
+  margin: 0;
 }
-
 .key h3 .press {
-    display: block;
-    padding: 0.8em 0.8em 0.8em 2em;
-    color: #fff;
-    text-transform: uppercase;
+  display: block;
+  padding: 0.8em 0.8em 0.8em 2em;
+  color: #fff;
+  text-transform: uppercase;
 }
-
 .key:hover {
-    background: #9D9B8F;
+  background: #9D9B8F;
 }
-  
 .key h3 .press:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
-
 /* Arrow */
 .key h3 .press:before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-top: 4px solid transparent;
-    border-left: 8px solid #FFF;
-    border-bottom: 4px solid transparent;
-    position: absolute;
-    top: 1.2em;
-    left: 11px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 8px solid #FFF;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  top: 1.2em;
+  left: 11px;
 }
 .key.open h3 .press:before {
-    -webkit-transform: rotate(90deg);
-    -moz-transform:    rotate(90deg);
-    -ms-transform:     rotate(90deg);
-    -o-transform:      rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
 }
-
 /* Help popouts */
 .key h3 .q {
-    position: absolute;
-    display: block;
-    right: 1em;
-    top: 1em;
+  position: absolute;
+  display: block;
+  right: 1em;
+  top: 1em;
 }
-
 /* Content */
 .key section {
   color: white;

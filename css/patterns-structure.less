@@ -1,12 +1,16 @@
+@import "functions.less";
+
 .patterns-header {
   background: #5B5A4B;
   padding: 40px 0;
   font-size: 18px;
 }
+
 .container {
   width: 75%;
   margin: 0 auto;
 }
+
 .logo {
   width: 235px;
   height: 29px;
@@ -14,14 +18,18 @@
   text-indent: -9999px;
   background: url(../images/logo.png) no-repeat;
 }
+
 .back-to-top {
   font-size: 12px;
 }
+
 .patterns-header h1 {
   color: white;
   font-size: 80px;
 }
-.patterns-header ul, .patterns-header li {
+
+.patterns-header ul,
+.patterns-header li {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -40,17 +48,19 @@
   color: white;
   text-decoration: none;
 }
+
 hr {
   border: 0;
   height: 1px;
   margin: 100px 0;
   background: #ccc;
 }
+
 section.container {
-  background: -webkit-linear-gradient(left, #eaeade, #eaeade 20%, white 20%, white);
-  background: -moz-linear-gradient(left, #eaeade, #eaeade 20%, white 20%, white);
-  background: -ms-linear-gradient(left, #eaeade, #eaeade 20%, white 20%, white);
-  background: -o-linear-gradient(left, #eaeade, #eaeade 20%, white 20%, white);
+  background: -webkit-linear-gradient(left, #EAEADE, #EAEADE 20%, white 20%, white);
+  background:    -moz-linear-gradient(left, #EAEADE, #EAEADE 20%, white 20%, white);
+  background:     -ms-linear-gradient(left, #EAEADE, #EAEADE 20%, white 20%, white);
+  background:      -o-linear-gradient(left, #EAEADE, #EAEADE 20%, white 20%, white);
   position: relative;
   margin-top: 200px;
   margin-bottom: 150px;
@@ -77,7 +87,7 @@ section.container > h2 {
   padding: 20px 15px 0 0;
 }
 .info {
-  width: 78%;
+  width: 78%; 
   float: right;
 }
 .info h3 ~ h3 {
@@ -86,6 +96,9 @@ section.container > h2 {
 .about li {
   font-size: 12px;
 }
+
+
+
 /* Colors */
 .color-swatch {
   width: 100px;
@@ -95,17 +108,22 @@ section.container > h2 {
 .color-swatch ~ code {
   font-size: 12px;
 }
+
+
 /* Dropdowns */
 .demo-header {
-  background: #f2f2f1;
+	background: #f2f2f1;
   padding: 10px 0 0 20px;
-  box-shadow: 0 1px 0 #DEDEDE,
+  box-shadow: 
+        0 1px 0 #DEDEDE,
         0 2px 0 #E6E6E6,
         0 3px 0 #F3F3F3;
 }
 .logged-in {
   background: #4B4A3C;
 }
+
+
 /* Grids */
 .example-grid {
   border: 1px solid #ccc;
@@ -114,10 +132,14 @@ section.container > h2 {
   background: #ccc;
   min-height: 50px;
 }
+
+
 /* Popouts */
 .cell-on-dark {
   background: #848377;
 }
+
+
 footer {
   background: #5B5A4B;
   padding: 10px 0;

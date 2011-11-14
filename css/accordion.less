@@ -1,0 +1,89 @@
+@import "functions.less";
+@import "colors-values.less";
+
+/* Not as smooth as I might like.
+   Max heigh transition for fluid content is kinda blahhhhh */
+
+.key {
+  background: #8A867A;
+  max-height: 42px;
+  border-bottom: 1px solid #C2C1BB;
+  .transition(max-height 0.4s ease-out);
+}
+
+.key.open {
+  background: #9E9B90;
+  max-height: 600px;
+  cursor: default;
+}
+
+.key a {
+  outline: 0;
+}
+
+/* Probably will need to use classes here */
+.key:first-child {
+  .border-radiuses(5px, 0, 0, 5px);
+}
+.key:last-child {
+  .border-radiuses(0, 5px, 5px, 0); 
+  border-bottom: 0;
+}
+
+.key h3 {
+  position: relative;
+  visibility: visible;
+  font-size: 1.1em;
+  line-height: 1.5;
+  cursor: pointer;
+  margin: 0;
+}
+
+.key h3 .press {
+  display: block;
+  padding: 0.8em 0.8em 0.8em 2em;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.key:hover {
+  background: #9D9B8F;
+}
+  
+.key h3 .press:hover {
+  text-decoration: none;
+}
+
+/* Arrow */
+.key h3 .press:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-left: 8px solid #FFF;
+  border-bottom: 4px solid transparent;
+  position: absolute;
+  top: 1.2em;
+  left: 11px;
+}
+.key.open h3 .press:before {
+  .rotate(90deg);
+}
+
+/* Help popouts */
+.key h3 .q {
+  position: absolute;
+  display: block;
+  right: 1em;
+  top: 1em;
+}
+
+/* Content */
+.key section {
+  color: white;
+  visibility: hidden;
+  padding: 0 10px;
+}
+.key.open section {
+  visibility: visible;
+}

@@ -1,11 +1,20 @@
-.group:before,
-.group:after {
-    content:"";
-    display:table;
+.group:before, .group:after {
+  content: "";
+  display: table;
 }
 .group:after {
-    clear:both;
+  clear: both;
 }
 .group {
-    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+
+}
+.screen-reader-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.hide {
+  display: none;
 }

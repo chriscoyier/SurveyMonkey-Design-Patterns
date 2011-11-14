@@ -51,6 +51,8 @@ input.btn {
 }
 .btn-menu .btn-menu-right {
   border-left: none;
+  /* Not a great function for this yet, since we we're
+     resetting some but leaving other corners alone */
   -webkit-top-left-border-radius:    0;
   -webkit-bottom-left-border-radius: 0;
   -moz-top-left-border-radius:       0;
@@ -59,6 +61,8 @@ input.btn {
   border-bottom-left-radius:         0;
 }
 .btn-menu .btn-menu-left {
+  /* Not a great function for this yet, since we we're
+     resetting some but leaving other corners alone */
   -webkit-top-right-border-radius:    0;
   -webkit-bottom-right-border-radius: 0;
   -moz-top-right-border-radius:       0;
@@ -67,9 +71,7 @@ input.btn {
   border-bottom-right-radius:         0;
 }
 .btn-menu .btn-menu-middle {
-  -webkit-border-radius: 0;
-  -moz-border-radius:    0;
-  border-radius:         0;
+  .border-radius(0);
   margin-left: -1px;
 }
 

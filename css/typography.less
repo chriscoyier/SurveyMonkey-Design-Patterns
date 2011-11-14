@@ -1,23 +1,17 @@
+@import "functions.less";
+
 /* Base */
 html {
-  font-size: 62.5%;
-  /* 10px */
-
+  font-size: 62.5%;  /* 10px */
   line-height: 1.4;
-  font-family: San-Serif;
-  /* Helvetica on Mac, Arial on PC */
-
+  font-family: San-Serif; /* Helvetica on Mac, Arial on PC */
 }
 body {
   font-size: small;
 }
+
 /* Headers */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin: 0 0 0.5em 0;
 }
@@ -43,19 +37,18 @@ h6, .h6 {
   background: #EAEADE;
   padding: 0.5em;
 }
+
 p, li {
   font-size: 1.0em;
   margin: 0 0 1.0em 0;
 }
+
 /* Lists */
 ul, ol {
   margin: 0 0 1.5em 1.5em;
   padding: 0;
 }
-ul ol,
-ul ul,
-ol ul,
-ol ol {
+ul ol, ul ul, ol ul, ol ol {
   margin-bottom: 0;
 }
 li {
@@ -67,10 +60,9 @@ li {
 }
 .checked-list li {
   background: url(../images/checkmark.png) left center no-repeat;
-  padding-left: 25px;
-  /* Based on image size */
-
+  padding-left: 25px; /* Based on image size */
 }
+
 a {
   color: #00898B;
   text-decoration: none;
@@ -78,6 +70,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 blockquote {
   font-family: Georgia, Serif;
   font-style: italic;
@@ -90,14 +83,10 @@ blockquote p {
 blockquote p:last-child {
   margin: 0 0 1.0em 0;
 }
+
 pre {
   background: #333;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
+  .border-radius(5px);
   color: white;
   padding: 10px;
   font: 1.0em Monaco, MonoSpace;

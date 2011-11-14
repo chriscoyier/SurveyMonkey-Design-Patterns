@@ -1,0 +1,44 @@
+@import "functions.less";
+
+form {
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  li {
+    padding: 10px;
+  }
+  h2 {
+    margin: 0;
+  }
+  header {
+    border-bottom: 1px dotted #ccc;
+    margin: 0 0 10px 0;
+  }
+  header div {
+    margin: 0 0 10px 0;
+  }
+}
+
+fieldset {
+  span {
+    display: block;
+    padding: 2px;
+  }
+}
+
+legend {
+  padding: 5px;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=url],
+textarea {
+  border: 1px solid #ccc;
+  width: 300px;
+  .inset-box-shadow(0, 1px, 2px, 0, 0.3);
+  padding: 3px;
+  /* Font depends on normalize.css */
+}
