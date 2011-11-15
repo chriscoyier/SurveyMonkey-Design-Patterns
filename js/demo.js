@@ -4,15 +4,12 @@
   var doc = $(document);
 
   /* Faking Menu Functionality -- This allows for clicks to set the "active" state of other menu items */
-
+  /* Probably going to need some "click to open" functionality on these (as per live site) */
   $(".main-nav > li > a ").click(function(e) {
      e.preventDefault();
      $(".main-nav > li").removeClass("active");
      $(this).parent().addClass("active");
   });
-  
-  /* Probably going to need some "click to open" functionality on these (as per live site) */
-  
 
 
   /* Accordions */
@@ -27,14 +24,13 @@
   // Example custom event 
   // pattern = class-open or class-close
   doc.on("ac2-open", function(event, el) {
-    
     // console.log("This panel opened: " + el);
-    
   });
   
   
   /* Tabs */
-  
+  /* Needs work, like, actually opening and closing content areas 
+  /* and adding custom events just like accordions */
   $(".tabs, .pillbox").tabs();
   
   
@@ -57,6 +53,12 @@
     }, 2000);
     
   });
-
+  
+  
+  /* Forms */
+  
+  new ElasticText({
+    node: document.getElementById('Field2')
+  });
 
 })(jQuery);
