@@ -3,13 +3,16 @@
   
   var doc = $(document);
 
-  /* Faking Menu Functionality */
+  /* Faking Menu Functionality -- This allows for clicks to set the "active" state of other menu items */
 
   $(".main-nav > li > a ").click(function(e) {
      e.preventDefault();
      $(".main-nav > li").removeClass("active");
      $(this).parent().addClass("active");
   });
+  
+  /* Probably going to need some "click to open" functionality on these (as per live site) */
+  
 
 
   /* Accordions */

@@ -14,6 +14,7 @@
     
     <link rel="stylesheet" href="css/accordion.css">
     <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/button-menus.css">
     <link rel="stylesheet" href="css/tables.css">
     <link rel="stylesheet" href="css/grids.css">
     <link rel="stylesheet" href="css/forms.css">
@@ -444,7 +445,7 @@
       
       <div class="info">
         
-        <h3>Logged Out</h3>
+        <h3>Logged Out Header</h3>
         
         <div class="demo-header logged-out">
     			<ul class="main-nav group">
@@ -480,7 +481,7 @@
     			</ul>
     		</div>
     		
-    		<h3>Logged In</h3>
+    		<h3>Logged In Header</h3>
     		
     		<div class="demo-header logged-in">
     			<ul class="main-nav group">
@@ -515,6 +516,42 @@
     				</li>
     			</ul>
     		</div>
+    		
+    		<h3>Menu Buttons</h3>
+    		
+    		<span class="btn-menu">
+            <a class="btn btn-menu-left btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark grey" href="#">Button<span></span></a>
+            <a class="btn btn-menu-right grey" href="#">Button</a>
+        </span>
+        
+        <br><br>
+
+        <span class="btn-menu">
+            <a href="#" class="btn btn-menu-left grey">Button</a>
+            <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow grey"><span></span></a>
+        </span>
+        
+        <br><br>
+        
+        
+        <!-- Kind of challenging, linking the menu button 
+             and menu semantically and positionally -->
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-dark" data-menu="menu-1">Button<span></span></a>
+        
+        <ul class="button-menu" id="menu-1">
+          <li><a href="#">State A</a>
+            
+          </li>
+          <li><a href="#">State B</a>
+            
+          </li>
+          <li><a href="#">State C</a>
+            
+          </li>
+        </ul>
+        <!-- end super challenge -->
+        
+    		
       </div>
       
     </section>
@@ -1845,6 +1882,9 @@
     
     <!-- for spinners -->
     <script src="js/spinners.js"></script>
+    
+    <!-- for button menus -->
+    <script src="js/button-menus.js"></script>
     
     <!-- just for this demo page -->
     <script src="js/demo.js"></script>
