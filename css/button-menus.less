@@ -1,10 +1,52 @@
 @import "functions.less";
 @import "toolbox.less";
 
-.button-menu {
-  .screen-reader-text;
+a[data-menu].open {
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius:  0px;
+  -moz-border-radius-bottomright:     0px;
+  -moz-border-radius-bottomleft:      0px;
+  border-bottom-right-radius:         0px;
+  border-bottom-left-radius:          0px;
 }
 
-.button-menu.open {
+.button-menu {
+  .screen-reader-text;
+  z-index: 1000;
+  border: 1px solid #999;
+  margin: -1px 0 0 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  .box-shadow(0, 2px, 3px, 0, 0.3);
+  > li {
+    margin: 0;
+    position: relative;
+    &:last-child {
+      a {
+        border: 0;
+      }
+    }
+  }
+  > li > a {
+    display: block;
+    background: white;
+    color: #00898B;
+    padding: 5px 50px 5px 10px;
+    border-bottom: 1px solid #ccc;
+    
+    &:hover {
+      text-decoration: none;
+      background: #e8f4f4;
+    }
+  }
+  
+  // In case menu popouts are involved
+  
+  .q {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+  }
   
 }

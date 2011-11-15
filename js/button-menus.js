@@ -6,7 +6,7 @@
     
     e.preventDefault();
     
-    el = $(this);
+    el = $(this).toggleClass("open");
     
     relatedMenu = $("#" + el.data("menu"));
     buttonPosition = el.position();
