@@ -1,3 +1,165 @@
+
+/**
+ * ComputedStyle
+ *  Borrowed with modifcation from YUI: 
+ *  https://github.com/yui/yui3/blob/master/src/dom/js/dom-style-ie.js#L34
+ *  Special thanks to Matt Sweeney at Yahoo! for memorizing everything
+ *  wrong with IE.
+ **/
+COMPUTED_STYLE = {};
+if(navigator.appName == 'Microsoft Internet Explorer'){
+    var rv = -1,
+        re = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+    if (re.exec(navigator.userAgent) !== null){
+      rv = parseFloat( RegExp.$1 );
+    }
+
+    if(rv !== -1 && rv < 9){
+        var HAS_LAYOUT = 'hasLayout',
+            PX = 'px',
+            FILTER = 'filter',
+            FILTERS = 'filters',
+            OPACITY = 'opacity',
+            AUTO = 'auto',
+            isIE8 = (rv <= 8),
+            BORDER_WIDTH = 'borderWidth',
+            BORDER_TOP_WIDTH = 'borderTopWidth',
+            BORDER_RIGHT_WIDTH = 'borderRightWidth',
+            BORDER_BOTTOM_WIDTH = 'borderBottomWidth',
+            BORDER_LEFT_WIDTH = 'borderLeftWidth',
+            WIDTH = 'width',
+            HEIGHT = 'height',
+            TRANSPARENT = 'transparent',
+            VISIBLE = 'visible',
+            GET_COMPUTED_STYLE = 'getComputedStyle',
+            UNDEFINED = undefined,
+            re_unit = /^(\d[.\d]*)+(em|ex|px|gd|rem|vw|vh|vm|ch|mm|cm|in|pt|pc|deg|rad|ms|s|hz|khz|%){1}?/i,
+            /* get Style object from node */
+            _getStyleObj = function(node) {
+                return node.currentStyle || node.style;
+            };
+
+        //setup computed style for IE
+        COMPUTED_STYLE = {
+            isIE8: isIE8,
+            CUSTOM_STYLES: {},
+            getComputedStyle: function(el, prop){
+                var value = '',
+                    current;
+                if(el){
+                    current = _getStyleObj(el)[prop];
+                    if (prop === OPACITY && COMPUTED_STYLE.CUSTOM_STYLES[OPACITY]) {
+                        value = COMPUTED_STYLE.CUSTOM_STYLES[OPACITY].get(el);        
+                    } else if (!current || (current.indexOf && current.indexOf(PX) > -1)) { // no need to convert
+                        value = current;
+                    } else if(COMPUTED_STYLE.CUSTOM_STYLES[prop]){
+                        value = COMPUTED_STYLE.CUSTOM_STYLES[prop](el, prop);
+                    } else if (re_unit.test(current)) { // convert to pixel
+                        value = COMPUTED_STYLE.getPixel(el, prop) + PX;
+                    } else {
+                        value = current;
+                    }
+                }
+                return value;
+            },
+            sizeOffsets: {
+                width: ['Left', 'Right'],
+                height: ['Top', 'Bottom'],
+                top: ['Top'],
+                bottom: ['Bottom']
+            },
+            getOffset: function(el, prop) {
+                var current = _getStyleObj(el)[prop],                     // value of "width", "top", etc.
+                capped = prop.charAt(0).toUpperCase() + prop.substr(1), // "Width", "Top", etc.
+                offset = 'offset' + capped,                             // "offsetWidth", "offsetTop", etc.
+                pixel = 'pixel' + capped,                               // "pixelWidth", "pixelTop", etc.
+                sizeOffsets = COMPUTED_STYLE.sizeOffsets[prop], 
+                mode = el.ownerDocument.compatMode,
+                value = '';
+
+                // IE pixelWidth incorrect for percent
+                // manually compute by subtracting padding and border from offset size
+                // NOTE: clientWidth/Height (size minus border) is 0 when current === AUTO so offsetHeight is used
+                // reverting to auto from auto causes position stacking issues (old impl)
+                if (current === AUTO || current.indexOf('%') > -1) {
+                    value = el['offset' + capped];
+
+                    if (mode !== 'BackCompat') {
+                        if (sizeOffsets[0]) {
+                            value -= COMPUTED_STYLE.getPixel(el, 'padding' + sizeOffsets[0]);
+                            value -= COMPUTED_STYLE.getBorderWidth(el, 'border' + sizeOffsets[0] + 'Width', 1);
+                        }
+
+                        if (sizeOffsets[1]) {
+                            value -= COMPUTED_STYLE.getPixel(el, 'padding' + sizeOffsets[1]);
+                            value -= COMPUTED_STYLE.getBorderWidth(el, 'border' + sizeOffsets[1] + 'Width', 1);
+                        }
+                    }
+
+                } else { // use style.pixelWidth, etc. to convert to pixels
+                    // need to map style.width to currentStyle (no currentStyle.pixelWidth)
+                    if (!el.style[pixel] && !el.style[prop]) {
+                        el.style[prop] = current;
+                    }
+                    value = el.style[pixel];
+
+                }
+                return value + PX;
+            },
+
+            borderMap: {
+                thin: (isIE8) ? '1px' : '2px',
+                medium: (isIE8) ? '3px': '4px', 
+                thick: (isIE8) ? '5px' : '6px'
+            },
+
+            getBorderWidth: function(el, property, omitUnit) {
+                var unit = omitUnit ? '' : PX,
+                current = el.currentStyle[property];
+
+                if (current.indexOf(PX) < 0) { // look up keywords if a border exists
+                    if (COMPUTED_STYLE.borderMap[current] &&
+                        el.currentStyle.borderStyle !== 'none') {
+                        current = COMPUTED_STYLE.borderMap[current];
+                    } else { // otherwise no border (default is "medium")
+                        current = 0;
+                    }
+                }
+                return (omitUnit) ? parseFloat(current) : current;
+            },
+
+            getPixel: function(node, att) {
+                // use pixelRight to convert to px
+                var val = null,
+                style = _getStyleObj(node),
+                styleRight = style.right,
+                current = style[att];
+
+                node.style.right = current;
+                val = node.style.pixelRight;
+                node.style.right = styleRight; // revert
+
+                return val;
+            },
+
+            getMargin: function(node, att) {
+                var val,
+                style = _getStyleObj(node);
+
+                if (style[att] == AUTO) {
+                    val = 0;
+                } else {
+                    val = COMPUTED_STYLE.getPixel(node, att);
+                }
+                return val + PX;
+            }
+        };
+        COMPUTED_STYLE.CUSTOM_STYLES = {
+             height: COMPUTED_STYLE.getOffset,
+             width: COMPUTED_STYLE.getOffset
+        };
+    }
+}
 /**
 * Unless otherwise indicated, Source Code is licensed under MIT license.
 * See further explanation attached in License Statement (distributed in the file
@@ -123,6 +285,7 @@ ElasticText.prototype._init = function(config){
     }
     //we're gonna need this
     this.getComputedStyle = this._setGetComputedStyle();
+    this.isIE8 = (COMPUTED_STYLE.hasOwnProperty('isIE8') && COMPUTED_STYLE.isIE8) ? true : false;
     //setup config
     this._node = config.node;
     //setup styles
@@ -167,15 +330,22 @@ ElasticText.prototype._init = function(config){
  *
  **/
 ElasticText.prototype._setGetComputedStyle = function(){
-    return function(node, att) {
-        var val = '',
-            doc = node[this.OWNER_DOCUMENT];
+    var fn;
+    if('getComputedStyle' in COMPUTED_STYLE){
+        fn = COMPUTED_STYLE.getComputedStyle;
+    }else{
+        fn = function(node, att) {
+            var val = '',
+                doc = node[this.OWNER_DOCUMENT];
 
-        if (node[this.STYLE] && doc[this.DEFAULT_VIEW] && doc[this.DEFAULT_VIEW][this.GET_COMPUTED_STYLE]) {
-            val = doc[this.DEFAULT_VIEW][this.GET_COMPUTED_STYLE](node, null)[att];
-        }
-        return val;
-    };
+            if (node[this.STYLE] && doc[this.DEFAULT_VIEW] && doc[this.DEFAULT_VIEW][this.GET_COMPUTED_STYLE]) {
+                val = doc[this.DEFAULT_VIEW][this.GET_COMPUTED_STYLE](node, null)[att];
+            }
+            return val;
+        };
+
+    }
+    return fn;
 };
 
 /**
@@ -275,12 +445,16 @@ ElasticText.prototype._destroyListeners = function(){
 ElasticText.prototype._createCopyNode = function(){
     var i = 0, len = this.STYLE_MIMICS.length,
         cn = document.createElement(this.PRE);
-    cn.setAttribute('style', this.PRE_STYLE);
-    document.body.appendChild(cn);
+    if(this.isIE8){
+        cn.style.cssText = this.PRE_STYLE;
+    }else{
+        cn.setAttribute(this.STYLE, this.PRE_STYLE);
+    }
     for(;i < len; i++){
         var mim = this.STYLE_MIMICS[i];
         cn.style[mim] = this.getComputedStyle(this._node, mim);
     }
+    document.body.appendChild(cn);
     this._copyNode = cn;
 };
 
