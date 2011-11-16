@@ -1,6 +1,6 @@
 // IIFE to ensure safe usage of $
 (function($) {
-  
+
   var doc = $(document);
 
   /* Faking Menu Functionality -- This allows for clicks to set the "active" state of other menu items */
@@ -11,6 +11,7 @@
      $(this).parent().addClass("active");
   });
 
+  
 
   /* Accordions */
   
@@ -27,6 +28,7 @@
     // console.log("This panel opened: " + el);
   });
   
+ 
   
   /* Tabs */
   /* Needs work, like, actually opening and closing content areas 

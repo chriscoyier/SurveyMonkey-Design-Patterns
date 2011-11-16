@@ -5,7 +5,7 @@
       parentAccordion, anyPanelsOpen;
   
   $.accordion = function(el, options) {
-    
+        
     var base = this;
     
     base.el = el;

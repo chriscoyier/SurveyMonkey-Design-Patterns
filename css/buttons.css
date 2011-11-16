@@ -34,7 +34,7 @@
   background: -ms-linear-gradient(top, #f5f5ee, #dcded5);
   background: -o-linear-gradient(top, #f5f5ee, #dcded5);
 }
-.btn:active {
+.btn:active, .btn.open {
   border: solid 1px #999;
   background-color: #dcded5;
   background: -webkit-gradient(linear, left top, left bottom, from(#dcded5), to(#f5f5ee));

@@ -27,6 +27,7 @@
 * @param  g  onMouseOut function  || Nothing (use configuration options object)
 * @author    Brian Cherne brian(at)cherne(dot)net
 */
+
 (function($) {
 	$.fn.hoverIntent = function(f,g) {
 		// default configuration options

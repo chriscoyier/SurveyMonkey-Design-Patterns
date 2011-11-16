@@ -26,7 +26,7 @@
     
  
     base.openTab = function(tabClass) {
-      
+
       $("." + tabClass).addClass("active");
       
       // Custom event

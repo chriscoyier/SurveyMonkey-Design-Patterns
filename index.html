@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/patterns-structure.css">
     <link rel="stylesheet" href="css/patterns-structure-mq.css">
     
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
     <link rel="stylesheet" href="css/accordion.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/button-menus.css">
@@ -26,8 +29,8 @@
     <link rel="stylesheet" href="css/help-popout.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/spinners.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sliders.css">
+    
   </head>
 
   <body id="top">
@@ -59,6 +62,7 @@
           <li><a href="#sprite">Animations</a></li>
           <li><a href="#accordion">Accordion</a></li>
           <li><a href="#spinners">Spinners</a></li>
+          <li><a href="#slides">Sliders</a></li>
           <li><a href="#footer">Footer</a></li>
         </ul>
       </div>
@@ -566,53 +570,21 @@
         
         <ul class="button-menu" id="menu-2">
           <li><a href="#">State A</a>
-            <div class="q">
-    					<span>?</span>
-    					<div class="popout">
-    						<h5>View Clips</h5>
-    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-    						<a href="#" class="learn-more-link">Learn more »</a>
-    					</div>
-    				</div>
           </li>
           <li><a href="#">State B</a>
-            <div class="q">
-    					<span>?</span>
-    					<div class="popout">
-    						<h5>View Clips</h5>
-    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-    						<a href="#" class="learn-more-link">Learn more »</a>
-    					</div>
-    				</div>
           </li>
           <li><a href="#">State C</a>
-            <div class="q">
-    					<span>?</span>
-    					<div class="popout">
-    						<h5>View Clips</h5>
-    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-    						<a href="#" class="learn-more-link">Learn more »</a>
-    					</div>
-    				</div>
           </li>
         </ul>
         
         <br><br>
 
-        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-dark" data-menu="menu-3">Button<span></span></a>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark btn-small" data-menu="menu-3">Button<span></span></a>
         
         <!-- Semantically, this is weird. It's just a list in the middle of nowhere
              no specifically connected to the above button -->
         <ul class="button-menu" id="menu-3">
           <li><a href="#">State A</a>
-            <div class="q">
-    					<span>?</span>
-    					<div class="popout">
-    						<h5>View Clips</h5>
-    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-    						<a href="#" class="learn-more-link">Learn more »</a>
-    					</div>
-    				</div>
           </li>
           <li><a href="#">State B</a>
             <div class="q">
@@ -1945,6 +1917,24 @@
       
     </section>
     
+    <section class="container group slides">
+      
+      <h2 id="slides">Sliders <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+      
+      <div class="about">
+        <p>There are utilizing jQuery UI.</p>
+      </div>
+      
+      <div class="info">
+        
+        <div id="slider-1"></div>
+        
+        <div id="slider-2"></div>
+        
+      </div>
+      
+    </section>
+    
     <footer>
       <div class="container">
         &copy;2011 SurveyMonkey
@@ -1952,6 +1942,7 @@
     </footer>
     
     <!-- Does not require jQuery -->
+        
     <script src="js/elastictxt.js"></script>
     
     
@@ -1973,6 +1964,10 @@
     
     <!-- for button menus -->
     <script src="js/button-menus.js"></script>
+    
+    <!-- for sliders -->
+    <script src="js/jquery-ui-1.8.16.core-widget-mouse-slider.min.js"></script>
+    <script src="js/sliders.js"></script>
     
     <!-- just for this demo page -->
     <script src="js/demo.js"></script>
