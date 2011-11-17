@@ -107,3 +107,46 @@
 .key.open section {
   visibility: visible;
 }
+/* Static height accordions */
+.static .key {
+  height: 3.2em;
+  -webkit-transition: height 0.35s ease-out;
+  -moz-transition: height 0.35s ease-out;
+  -ms-transition: height 0.35s ease-out;
+  -o-transition: height 0.35s ease-out;
+  max-height: none;
+}
+.static .key.open {
+  height: 33em;
+}
+.static .key section {
+  overflow-y: auto;
+  height: 29em;
+}
+/* Let's get this party started */
+.static .key section::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+.static .key section::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* Handle */
+.static .key section::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #a9bd38;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

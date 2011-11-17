@@ -18,7 +18,6 @@ th {
 }
 th {
   text-align: left;
-  vertical-align: bottom;
 }
 tbody tr:last-child td,
 tbody tr:last-child th {
@@ -26,6 +25,7 @@ tbody tr:last-child th {
 }
 thead th {
   border-bottom: 1px solid #ddd;
+  vertical-align: bottom;
 }
 
 caption {
@@ -53,6 +53,15 @@ table.row-highlighting tbody tr:hover {
 table.center-cells td,
 table.center-cells th {
   text-align: center;
+}
+
+/* Hmmm... Theory on forcing table cells to be of equal with when there is spare room */
+.equal td {
+  width: 9999px;
+}
+
+.vtop td {
+  vertical-align: top;
 }
 
 
@@ -87,7 +96,3 @@ table.center-cells th {
 }
 
 
-/* Hmmm... Theory on forcing table cells to be of equal with when there is spare room */
-.equal td {
-  width: 9999px;
-}

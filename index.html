@@ -68,12 +68,12 @@
       </div>
     </header>
     
-    <section class="container group demo-buttons">
-    
+    <section id="load-buttons" class="container group demo-buttons">
+
       <h2 id="buttons">Buttons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-    
+
       <div class="about">
-                
+
         <h5>Standard Class</h5>
         <ul>
           <li><code>btn</code></li>
@@ -98,9 +98,9 @@
           <li><code>green</code></li>
         </ul>
       </div>
-      
+
       <div class="info">
-        
+
         <table class="row-highlighting">
           <caption><span>Standard Buttons</span></caption>
           <thead>
@@ -232,7 +232,7 @@
           </tr>
           </tbody>
         </table>
-        
+
         <table class="row-highlighting">
           <caption><span>Arrow Buttons</span></caption>
           <tr>
@@ -393,7 +393,7 @@
             </td>
           </tr>
         </table>
-        
+
         <table>
           <caption><span>Combo Buttons</span>
           <tr>
@@ -434,9 +434,9 @@
             </td>
           </tr>
         </table>
-        
+
       </div>
-      
+
     </section>
     
     <section class="container group demo-dropdowns">
@@ -1249,34 +1249,104 @@
       
       <div class="info">
         
-        <nav>
-        <ul class="tabs">
-          <li class="current">
-              <a href="#">Design Survey</a>
-          </li>
-          <li class="nTab">
-              <a href="#">Collect Responses</a>
-          </li>
-          <li class="nTab">
-              <a href="#">Analyze Results</a>
-          </li>
-        </ul>
-        </nav>
+        <div class="tabs">
         
+          <nav>
+            <a href="#panel-1">Design Survey</a>
+            <a href="#panel-2" class="active">Collect Responses</a>
+            <a href="#panel-3">Analyze Results</a>
+          </nav>
+          
+          <div class="panels">
+            
+            <div class="panel" id="panel-1">
+              Panel 1
+            </div>
+            
+            <div class="panel open" id="panel-2">
+              Panel 2
+            </div>
+            
+            <div class="panel" id="panel-3">
+              Panel 3
+            </div>
+            
+          </div>
+          
+        </div><!-- END default tabs -->
+        
+        <!-- simulate some container, like an accordion -->
         <div style="background: #9E9B90; padding: 20px;">
         
-          <nav class="pillbox thirds group">
-  					<a class="pillbox-1 active" href="#">Tab One</a>
-  					<a class="pillbox-2" href="#">Tab Two</a>
-  					<a class="pillbox-3" href="#">Tab Three</a>
-  				</nav>
+          <div class="tabs pillbox">
+            
+            <nav class="thirds group">
+    					<a class="active" href="#panel-4">Tab One</a>
+    					<a href="#panel-5">Tab Two</a>
+    					<a href="#panel-6">Tab Three</a>
+    				</nav>
+    				
+    				<div class="panels">
+    				
+    				  <div class="panel open" id="panel-4">
+                Eat 
+              </div>
+
+              <div class="panel" id="panel-5">
+                At 
+              </div>
+
+              <div class="panel" id="panel-6">
+                Joes
+              </div>
+              
+    				</div>
+    				
+  				</div>
   				
-  				<nav class="pillbox group">
-  					<a class="pillbox-4 active" href="#">Tab One</a>
-  					<a class="pillbox-5" href="#">Tab Two</a>
-  				</nav>
+  				<div class="tabs pillbox">
+            
+            <nav class="group">
+    					<a class="active" href="#panel-7">Tab One</a>
+    					<a href="#panel-8">Tab Two</a>
+    				</nav>
+    				
+    				<div class="panels">
+    				
+    				  <div class="panel open" id="panel-7">
+                Eat 
+              </div>
+
+              <div class="panel" id="panel-8">
+                At 
+              </div>
+              
+    				</div>
+    				
+  				</div> <!-- END tabs pillbox 2 -->
+  				
+  				<div class="tabs pillbox onoff">
+            
+            <nav class="group">
+    					<a class="active" href="#panel-30">Tab One</a>
+    					<a href="#panel-31">Tab Two</a>
+    				</nav>
+    				
+    				<div class="panels">
+    				
+    				  <div class="panel open" id="panel-30">
+                Eat 
+              </div>
+
+              <div class="panel" id="panel-31">
+                At 
+              </div>
+              
+    				</div>
+    				
+  				</div> <!-- END tabs pillbox switch -->
 				
-				</div>
+				</div> <!-- END fake container -->
         
       </div>
       
@@ -1733,129 +1803,289 @@
       
       <div class="info">
         
-        <div id="fake-container" style="width: 300px;">
+        <table class="equal vtop">
+          
+        <tr>
+          <th></th>
+          <th>Multiple</th>
+          <th>Single</th>
+        </tr>
         
-        <h4>accordion multiple</h4>
+        <tr>
+          <th>Flexible Growth</th>
+          <td>
+            <aside class="accordion multiple">
+    				<div class="key">
+    					<h3 data-panel="ac1">
+    						<a class="press" href="#panel-1">First Key</a>
+    						<div class="q q-on-dark">
+        					<span>?</span>
+        					<div class="popout">
+        						<h5>View Clips</h5>
+        						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+        						<a href="#" class="learn-more-link">Learn more »</a>
+        					</div>
+        				</div>
+    					</h3>
+
+    					<section id="panel-1">
+    						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+    					</section><!-- #ac1 -->
+    				</div><!-- ac3 key -->
+
+    				<div class="key">
+    					<h3 data-panel="ac2">
+    						<a class="press" href="#panel-2">Second Key</a>
+    						<div class="q q-on-dark">
+        					<span>?</span>
+        					<div class="popout">
+        						<h5>View Clips</h5>
+        						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+        						<a href="#" class="learn-more-link">Learn more »</a>
+        					</div>
+        				</div>
+    					</h3>
+
+    					<section id="panel-2">
+    						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
+    					</section><!-- #ac2 -->
+    				</div><!-- ac2 key -->
+
+    				<div class="key">
+    					<h3 data-panel="ac3">
+    						<a class="press" href="#panel-3">Third Key</a>
+    						<div class="q q-on-dark">
+        					<span>?</span>
+        					<div class="popout">
+        						<h5>View Clips</h5>
+        						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+        						<a href="#" class="learn-more-link">Learn more »</a>
+        					</div>
+        				</div>
+    					</h3>
+
+    					<section id="panel-3">
+    					  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
+    					  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
+    					</section><!-- #ac3 -->
+    				</div><!-- ac3 key -->
+    			</aside><!-- accordion multiple --></td>
+          <td>
+            <aside class="accordion single">
+      				<div class="key">
+      					<h3 data-panel="ac4">
+      						<a class="press" href="#panel-4">First Key</a>
+      						<div class="q q-on-dark">
+          					<span>?</span>
+          					<div class="popout">
+          						<h5>View Clips</h5>
+          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+          						<a href="#" class="learn-more-link">Learn more »</a>
+          					</div>
+          				</div>
+      					</h3>
+
+      					<section id="panel-4">
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      					</section><!-- #ac1 -->
+      				</div><!-- ac3 key -->
+
+      				<div class="key">
+      					<h3 data-panel="ac5">
+      						<a class="press" href="#panel-5">Second Key</a>
+      						<div class="q q-on-dark">
+          					<span>?</span>
+          					<div class="popout">
+          						<h5>View Clips</h5>
+          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+          						<a href="#" class="learn-more-link">Learn more »</a>
+          					</div>
+          				</div>
+      					</h3>
+
+      					<section id="panel-5">
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      					</section><!-- #ac2 -->
+      				</div><!-- ac2 key -->
+
+      				<div class="key">
+      					<h3 data-panel="ac6">
+      						<a class="press" href="#panel-6">Third Key</a>
+      						<div class="q q-on-dark">
+          					<span>?</span>
+          					<div class="popout">
+          						<h5>View Clips</h5>
+          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+          						<a href="#" class="learn-more-link">Learn more »</a>
+          					</div>
+          				</div>
+      					</h3>
+
+      					<section id="panel-6">
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      					</section><!-- #ac3 -->
+      				</div><!-- ac3 key -->
+      			</aside><!-- accordion multiple -->
+          </td>
+        </tr> 
         
-  			<aside class="accordion multiple">
-  				<div class="key">
-  					<h3 data-panel="ac1">
-  						<a class="press" href="#panel-1">First Key</a>
-  						<div class="q q-on-dark">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-  					</h3>
+        <tr>
+          <th>Static Growth</th>
+          <td>
+            <aside class="accordion static multiple">
+      				<div class="key">
+      					<h3 data-panel="ac7">
+      						<a class="press" href="#panel-7">Example of Tabs</a>
+      						<div class="q q-on-dark">
+          					<span>?</span>
+          					<div class="popout">
+          						<h5>View Clips</h5>
+          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+          						<a href="#" class="learn-more-link">Learn more »</a>
+          					</div>
+          				</div>
+      					</h3>
 
-  					<section id="panel-1">
-  						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-  					</section><!-- #ac1 -->
-  				</div><!-- ac3 key -->
+      					<section id="panel-7">
+      					  
+      					  <div class="tabs pillbox">
 
-  				<div class="key">
-  					<h3 data-panel="ac2">
-  						<a class="press" href="#panel-2">Second Key</a>
-  						<div class="q q-on-dark">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-  					</h3>
+                    <nav class="thirds group">
+            					<a class="active" href="#panel-20">Tab One</a>
+            					<a href="#panel-21">Tab Two</a>
+            					<a href="#panel-22">Tab Three</a>
+            				</nav>
 
-  					<section id="panel-2">
-  						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-  					</section><!-- #ac2 -->
-  				</div><!-- ac2 key -->
+            				<div class="panels">
 
-  				<div class="key">
-  					<h3 data-panel="ac3">
-  						<a class="press" href="#panel-3">Third Key</a>
-  						<div class="q q-on-dark">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-  					</h3>
+            				  <div class="panel open" id="panel-20">
+                        <p>Biltong swine venison boudin tri-tip. Turkey ham hock tenderloin boudin, capicola fatback ham brisket rump tongue frankfurter drumstick pork belly.</p>
+                      </div>
 
-  					<section id="panel-3">
-  					  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-  					  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-  					</section><!-- #ac3 -->
-  				</div><!-- ac3 key -->
-  			</aside><!-- accordion multiple -->
+                      <div class="panel" id="panel-21">
+                        <p>strip steak salami, short loin turducken swine ham cow ball tip beef. Turkey drumstick pastrami capicola chicken, boudin short loin. Fatback pork belly kielbasa short ribs. Ground round fatback rump, shoulder brisket turducken turkey corned beef venison.</p>
+                      </div>
+
+                      <div class="panel" id="panel-22">
+                        <p>Short ribs bacon pastrami tri-tip shoulder. Hamburger prosciutto short ribs kielbasa, sausage t-bone shank ham pork chop sirloin bresaola fatback turkey.</p>
+                      </div>
+
+            				</div>
+
+          				</div>
+      						
+      					</section><!-- #ac1 -->
+      				</div><!-- ac3 key -->
+
+      				<div class="key">
+      					<h3 data-panel="ac8">
+      						<a class="press" href="#panel-8">Second Key</a>
+      						<div class="q q-on-dark">
+          					<span>?</span>
+          					<div class="popout">
+          						<h5>View Clips</h5>
+          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+          						<a href="#" class="learn-more-link">Learn more »</a>
+          					</div>
+          				</div>
+      					</h3>
+
+      					<section id="panel-8">
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      					</section><!-- #ac2 -->
+      				</div><!-- ac2 key -->
+
+      				<div class="key">
+      					<h3 data-panel="ac9">
+      						<a class="press" href="#panel-9">Third Key</a>
+      						<div class="q q-on-dark">
+          					<span>?</span>
+          					<div class="popout">
+          						<h5>View Clips</h5>
+          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+          						<a href="#" class="learn-more-link">Learn more »</a>
+          					</div>
+          				</div>
+      					</h3>
+
+      					<section id="panel-9">
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      					</section><!-- #ac3 -->
+      				</div><!-- ac3 key -->
+      			</aside><!-- accordion multiple static -->
+          </td>
+          <td>
+            <aside class="accordion static single">
+      				<div class="key">
+      					<h3 data-panel="ac10">
+      						<a class="press" href="#panel-10">First Key</a>
+      						<div class="q q-on-dark">
+          					<span>?</span>
+          					<div class="popout">
+          						<h5>View Clips</h5>
+          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+          						<a href="#" class="learn-more-link">Learn more »</a>
+          					</div>
+          				</div>
+      					</h3>
+
+      					<section id="panel-10">
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      					</section><!-- #ac1 -->
+      				</div><!-- ac3 key -->
+
+      				<div class="key">
+      					<h3 data-panel="ac11">
+      						<a class="press" href="#panel-11">Second Key</a>
+      						<div class="q q-on-dark">
+          					<span>?</span>
+          					<div class="popout">
+          						<h5>View Clips</h5>
+          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+          						<a href="#" class="learn-more-link">Learn more »</a>
+          					</div>
+          				</div>
+      					</h3>
+
+      					<section id="panel-11">
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      					</section><!-- #ac2 -->
+      				</div><!-- ac2 key -->
+
+      				<div class="key">
+      					<h3 data-panel="ac12">
+      						<a class="press" href="#panel-12">Scrolling Content</a>
+      						<div class="q q-on-dark">
+          					<span>?</span>
+          					<div class="popout">
+          						<h5>View Clips</h5>
+          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+          						<a href="#" class="learn-more-link">Learn more »</a>
+          					</div>
+          				</div>
+      					</h3>
+
+      					<section id="panel-12">
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+      					</section><!-- #ac3 -->
+      				</div><!-- ac3 key -->
+      			</aside><!-- accordion single static -->
+          </td>
+        </tr>
   			
-  			<h4>accordion single</h4>
-        
-  			<aside class="accordion single">
-  				<div class="key">
-  					<h3 data-panel="ac4">
-  						<a class="press" href="#panel-4">First Key</a>
-  						<div class="q q-on-dark">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-  					</h3>
-
-  					<section id="panel-4">
-  						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-  					</section><!-- #ac1 -->
-  				</div><!-- ac3 key -->
-
-  				<div class="key">
-  					<h3 data-panel="ac5">
-  						<a class="press" href="#panel-5">Second Key</a>
-  						<div class="q q-on-dark">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-  					</h3>
-
-  					<section id="panel-5">
-  						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-  						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-  					</section><!-- #ac2 -->
-  				</div><!-- ac2 key -->
-
-  				<div class="key">
-  					<h3 data-panel="ac6">
-  						<a class="press" href="#panel-6">Third Key</a>
-  						<div class="q q-on-dark">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-  					</h3>
-
-  					<section id="panel-6">
-  						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-  						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-  						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-  					</section><!-- #ac3 -->
-  				</div><!-- ac3 key -->
-  			</aside><!-- accordion multiple -->
-  			
-			  </div><!-- END fake container -->
+		  </table>
   			
       </div>
       

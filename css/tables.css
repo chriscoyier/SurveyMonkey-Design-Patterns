@@ -21,13 +21,13 @@ td, th {
 }
 th {
   text-align: left;
-  vertical-align: bottom;
 }
 tbody tr:last-child td, tbody tr:last-child th {
   border: 0;
 }
 thead th {
   border-bottom: 1px solid #ddd;
+  vertical-align: bottom;
 }
 caption {
   text-align: left;
@@ -65,6 +65,13 @@ table.row-highlighting tbody tr:hover {
 table.center-cells td, table.center-cells th {
   text-align: center;
 }
+/* Hmmm... Theory on forcing table cells to be of equal with when there is spare room */
+.equal td {
+  width: 9999px;
+}
+.vtop td {
+  vertical-align: top;
+}
 .selling-points-box {
   width: 424px;
   margin: 40px 20px 40px 0;
@@ -92,8 +99,4 @@ table.center-cells td, table.center-cells th {
 .selling-points-box .desc {
   font-size: 14px;
   color: #666;
-}
-/* Hmmm... Theory on forcing table cells to be of equal with when there is spare room */
-.equal td {
-  width: 9999px;
 }

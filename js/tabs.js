@@ -13,36 +13,53 @@
     
     base.init = function() {
      
-      base.$el.on("click", "a", function(e) {
+      base.$el.on("click", "nav a", function(e) {
                 
         e.preventDefault();
         
-        base.closeSisterTabs(this);
-        base.openTab($(this).attr("class"));
+        el = $(this);
+ 
+        if ( (el.closest(".tabs").hasClass("onoff")) && (el.hasClass("active") ) ) {
+          base.closeSisterTabs(this);
+        } else {
+          base.closeSisterTabs(this);
+          base.openTab(el);
+        }        
         
       });
       
     }; // END init
     
  
-    base.openTab = function(tabClass) {
+    base.openTab = function(el) {
 
-      $("." + tabClass).addClass("active");
+      el.addClass("active");
       
+      var relatedPanel = $(el.attr("href"));
+      relatedPanel.addClass("open");
+            
       // Custom event
-      doc.trigger(tabClass + "-open");
+      doc.trigger(el.attr("href") + "-open");
+      
+    };
+    
+    base.closeAll = function() {
       
     };
     
     base.closeSisterTabs = function(theTab) {
       
-      $(theTab).closest("nav").find("a").each(function() {
+      $(theTab).closest("nav").find(".active").each(function() {
         
-        el = $(this);
+        // scope el to just here, as next function uses it
+        var el = $(this);
         el.removeClass("active");
         
+        var relatedPanel = $(el.attr("href"));
+        relatedPanel.removeClass("open");
+                
         // Custom event
-        doc.trigger(el.attr("close") + "-close");
+        doc.trigger(el.attr("href") + "-close");
         
       })
       
