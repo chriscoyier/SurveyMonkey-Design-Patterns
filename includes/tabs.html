@@ -1,0 +1,108 @@
+<h2 id="tabs">Tabs <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>For some of these, each tab will likely be a unique URL. For others, they will be same-page tabs where the content changes via JavaScript. We may want to consider giving even same-page tabs linkabke, unique URLs as well (<a href="http://css-tricks.com/14415-better-linkable-tabs/">link</a>).
+</div>
+
+<div class="info">
+  
+  <div class="tabs">
+  
+    <nav>
+      <a href="#panel-1">Design Survey</a>
+      <a href="#panel-2" class="active">Collect Responses</a>
+      <a href="#panel-3">Analyze Results</a>
+    </nav>
+    
+    <div class="panels">
+      
+      <div class="panel" id="panel-1">
+        Panel 1
+      </div>
+      
+      <div class="panel open" id="panel-2">
+        Panel 2
+      </div>
+      
+      <div class="panel" id="panel-3">
+        Panel 3
+      </div>
+      
+    </div>
+    
+  </div><!-- END default tabs -->
+  
+  <!-- simulate some container, like an accordion -->
+  <div style="background: #9E9B90; padding: 20px;">
+  
+    <div class="tabs pillbox">
+      
+      <nav class="thirds group">
+				<a class="active" href="#panel-4">Tab One</a>
+				<a href="#panel-5">Tab Two</a>
+				<a href="#panel-6">Tab Three</a>
+			</nav>
+			
+			<div class="panels">
+			
+			  <div class="panel open" id="panel-4">
+          Eat 
+        </div>
+
+        <div class="panel" id="panel-5">
+          At 
+        </div>
+
+        <div class="panel" id="panel-6">
+          Joes
+        </div>
+        
+			</div>
+			
+		</div>
+		
+		<div class="tabs pillbox">
+      
+      <nav class="group">
+				<a class="active" href="#panel-7">Tab One</a>
+				<a href="#panel-8">Tab Two</a>
+			</nav>
+			
+			<div class="panels">
+			
+			  <div class="panel open" id="panel-7">
+          Eat 
+        </div>
+
+        <div class="panel" id="panel-8">
+          At 
+        </div>
+        
+			</div>
+			
+		</div> <!-- END tabs pillbox 2 -->
+		
+		<div class="tabs pillbox onoff">
+      
+      <nav class="group">
+				<a class="active" href="#panel-30">Tab One</a>
+				<a href="#panel-31">Tab Two</a>
+			</nav>
+			
+			<div class="panels">
+			
+			  <div class="panel open" id="panel-30">
+          Eat 
+        </div>
+
+        <div class="panel" id="panel-31">
+          At 
+        </div>
+        
+			</div>
+			
+		</div> <!-- END tabs pillbox switch -->
+	
+	</div> <!-- END fake container -->
+  
+</div>

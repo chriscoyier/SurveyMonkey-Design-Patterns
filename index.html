@@ -1,2294 +1,2077 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>SurveyMonkey Design Patterns</title><link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/typography.css"><link rel="stylesheet" href="css/toolbox.css"><link rel="stylesheet" href="css/patterns-structure.css"><link rel="stylesheet" href="css/patterns-structure-mq.css"><link rel="stylesheet" href="css/header.css"><link rel="stylesheet" href="css/footer.css"><link rel="stylesheet" href="css/accordion.css"><link rel="stylesheet" href="css/buttons.css"><link rel="stylesheet" href="css/button-menus.css"><link rel="stylesheet" href="css/tables.css"><link rel="stylesheet" href="css/grids.css"><link rel="stylesheet" href="css/Forms.css"><link rel="stylesheet" href="css/notifications.css"><link rel="stylesheet" href="css/dropdowns.css"><link rel="stylesheet" href="css/colors.css"><link rel="stylesheet" href="css/icons.css"><link rel="stylesheet" href="css/tabs.css"><link rel="stylesheet" href="css/help-popout.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/spinners.css"><link rel="stylesheet" href="css/sliders.css"></head><body id="top"><div class="notification"><strong>Please note:</strong> VERY MUCH a work in progress. Do not use.
+<a href="https://surveymonkey.wufoo.com/Forms/feedback-on-design-patterns/">Feedback</a></div><header class="patterns-header"><div class="container"><h1><a href="#" class="logo">SurveyMonkey</a> Design Patterns
+</h1><ul class="group"><li><a href="#header">Header</a></li><li><a href="#buttons">Buttons</a></li><li><a href="#dropdowns">Dropdown Menus</a></li><li><a href="#Forms">Form Elements</a></li><li><a href="#lightboxes">Lightboxes</a></li><li><a href="#tables">Tables</a></li><li><a href="#typography">Typography</a></li><li><a href="#grids">Grids</a></li><li><a href="#colors">Color Palette</a></li><li><a href="#tabs">Tabs</a></li><li><a href="#icons">Icons</a></li><li><a href="#notifications">Notifications</a></li><li><a href="#help">Help Popouts</a></li><li><a href="#sprite">Sprite</a></li><li><a href="#sprite">Animations</a></li><li><a href="#accordion">Accordion</a></li><li><a href="#spinners">Spinners</a></li><li><a href="#slides">Sliders</a></li><li><a href="#scroll-follow">Scroll-Follow Content</a></li><li><a href="#footer">Footer</a></li></ul></div></header><section id="load-buttons" class="container group demo-buttons"><h2 id="buttons">Buttons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
 
-  <head>
-    
-    <meta charset="UTF-8">
-    <title>SurveyMonkey Design Patterns</title>
-    
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="css/toolbox.css">
-    <link rel="stylesheet" href="css/patterns-structure.css">
-    <link rel="stylesheet" href="css/patterns-structure-mq.css">
-    
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    
-    <link rel="stylesheet" href="css/accordion.css">
-    <link rel="stylesheet" href="css/buttons.css">
-    <link rel="stylesheet" href="css/button-menus.css">
-    <link rel="stylesheet" href="css/tables.css">
-    <link rel="stylesheet" href="css/grids.css">
-    <link rel="stylesheet" href="css/forms.css">
-    <link rel="stylesheet" href="css/notifications.css">
-    <link rel="stylesheet" href="css/dropdowns.css">
-    <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/icons.css">
-    <link rel="stylesheet" href="css/tabs.css">
-    <link rel="stylesheet" href="css/help-popout.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/spinners.css">
-    <link rel="stylesheet" href="css/sliders.css">
-    
-  </head>
+<div class="about">
 
-  <body id="top">
-      
-    <div class="notification">
-      <strong>Please note:</strong>
-      VERY MUCH a work in progress. Do not use. <a href="https://surveymonkey.wufoo.com/forms/feedback-on-design-patterns/">Feedback</a>
-    </div>
-    
-    <header class="patterns-header">
-      <div class="container">
-        <h1><a href="#" class="logo">SurveyMonkey</a> Design Patterns</h1>
-        
-        <ul class="group">
-          <li><a href="#header">Header</a></li>
-          <li><a href="#buttons">Buttons</a></li>
-          <li><a href="#dropdowns">Dropdown Menus</a></li>
-          <li><a href="#forms">Form Elements</a></li>
-          <li><a href="#lightboxes">Lightboxes</a></li>
-          <li><a href="#tables">Tables</a></li>
-          <li><a href="#typography">Typography</a></li>
-          <li><a href="#grids">Grids</a></li>
-          <li><a href="#colors">Color Palette</a></li>
-          <li><a href="#tabs">Tabs</a></li>
-          <li><a href="#icons">Icons</a></li>
-          <li><a href="#notifications">Notifications</a></li>
-          <li><a href="#help">Help Popouts</a></li>
-          <li><a href="#sprite">Sprite</a></li>
-          <li><a href="#sprite">Animations</a></li>
-          <li><a href="#accordion">Accordion</a></li>
-          <li><a href="#spinners">Spinners</a></li>
-          <li><a href="#slides">Sliders</a></li>
-					<li><a href="#scroll-follow">Scroll-Follow Content</a></li>
-          <li><a href="#footer">Footer</a></li>
-        </ul>
-      </div>
-    </header>
-    
-    <section id="load-buttons" class="container group demo-buttons">
+  <h5>Standard Class</h5>
+  <ul>
+    <li><code>btn</code></li>
+  </ul>
+  <h5>Size Variations</h5>
+  <ul>
+    <li><code>btn-small</code></li>
+    <li><code>btn-large</code></li>
+  </ul>
+  <h5>Style Variations</h5>
+  <ul>
+    <li><code>no-border</code></li>
+    <li><code>no-shadow</code></li>
+    <li><code>emphasize</code> (bold)</li>
+  </ul>
+  <h5>Colors</h5>
+  <ul>
+    <li><code>teal</code></li>
+    <li><code>grey</code></li>
+    <li><code>dark-grey</code></li>
+    <li><code>yellow</code></li>
+    <li><code>green</code></li>
+  </ul>
+</div>
 
-      <h2 id="buttons">Buttons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+<div class="info">
 
-      <div class="about">
+  <table class="row-highlighting">
+    <caption><span>Standard Buttons</span></caption>
+    <thead>
+    <tr>
+      <th> </th>
+      <th>btn</th>
+      <th>btn-small</th>
+      <th>btn-large</th>
+      <th>no-emphasize</th>
+      <th>no-border</th>
+      <th>shadow</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th>
+        btn
+      </th>
+      <td>
+        <a href="#" class="btn">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-small">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-large">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn no-emphasize">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn no-border">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn shadow">Button</a>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        dark-grey
+      </th>
+      <td>
+        <a href="#" class="btn dark-grey">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn dark-grey btn-small">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn dark-grey btn-large">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn dark-grey no-emphasize">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn dark-grey no-border">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn dark-grey shadow">Button</a>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        teal
+      </th>
+      <td>
+        <a href="#" class="btn teal">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn teal btn-small">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn teal btn-large">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn teal no-emphasize">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn teal no-border">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn teal shadow">Button</a>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        yellow
+      </th>
+      <td>
+        <a href="#" class="btn yellow">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn yellow btn-small">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn yellow btn-large">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn yellow no-emphasize">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn yellow no-border">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn yellow shadow">Button</a>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        green
+      </th>
+      <td>
+        <a href="#" class="btn green">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn green btn-small">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn green btn-large">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn green no-emphasize">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn green no-border">Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn green shadow">Button</a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
 
-        <h5>Standard Class</h5>
-        <ul>
-          <li><code>btn</code></li>
-        </ul>
-        <h5>Size Variations</h5>
-        <ul>
-          <li><code>btn-small</code></li>
-          <li><code>btn-large</code></li>
-        </ul>
-        <h5>Style Variations</h5>
-        <ul>
-          <li><code>no-border</code></li>
-          <li><code>no-shadow</code></li>
-          <li><code>emphasize</code> (bold)</li>
-        </ul>
-        <h5>Colors</h5>
-        <ul>
-          <li><code>teal</code></li>
-          <li><code>grey</code></li>
-          <li><code>dark-grey</code></li>
-          <li><code>yellow</code></li>
-          <li><code>green</code></li>
-        </ul>
-      </div>
+  <table class="row-highlighting">
+    <caption><span>Arrow Buttons</span></caption>
+    <tr>
+      <th> </th>
+      <th>Right</th>
+      <th>Left</th>
+      <th>Up</th>
+      <th>Down</th>
+    </tr>
+    <tr>
+      <th>
+        small light
+      </th>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-horiz btn-arrow-small-right-light teal btn-small">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-small-horiz btn-arrow-small-left-light teal btn-small"><span></span>Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-up-light teal btn-small">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-light teal btn-small">Button<span></span></a>
+    </tr>
+    <tr>
+      <th>
+        small medium
+      </th>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-horiz btn-arrow-small-right-medium dark-grey btn-small">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-small-horiz btn-arrow-small-left-medium dark-grey btn-small"><span></span>Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-up-medium dark-grey btn-small">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-medium dark-grey btn-small">Button<span></span></a>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        small dark
+      </th>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-horiz btn-arrow-small-right-dark btn-small">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-small-horiz btn-arrow-small-left-dark btn-small"><span></span>Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-up-dark btn-small">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark btn-small">Button<span></span></a>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        standard light
+      </th>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-horiz btn-arrow-standard-right-light teal">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-standard-horiz btn-arrow-standard-left-light teal"><span></span>Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-up-light teal">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-light teal">Button<span></span></a>
+    </tr>
+    <tr>
+      <th>
+        standard medium
+      </th>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-horiz btn-arrow-standard-right-medium dark-grey">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-standard-horiz btn-arrow-standard-left-medium dark-grey"><span></span>Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-up-medium dark-grey">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-medium dark-grey">Button<span></span></a>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        standard dark
+      </th>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-horiz btn-arrow-standard-right-dark">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-standard-horiz btn-arrow-standard-left-dark"><span></span>Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-up-dark">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-dark">Button<span></span></a>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        large light
+      </th>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-horiz btn-arrow-large-right-light teal btn-large">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-large-horiz btn-arrow-large-left-light teal btn-large"><span></span>Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-up-light teal btn-large">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-down-light teal btn-large">Button<span></span></a>
+    </tr>
+    <tr>
+      <th>
+        large medium
+      </th>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-horiz btn-arrow-large-right-medium dark-grey btn-large">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-large-horiz btn-arrow-large-left-medium dark-grey btn-large"><span></span>Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-up-medium dark-grey btn-large">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-down-medium dark-grey btn-large">Button<span></span></a>
+      </td>
+    </tr>
+    <tr>
+      <th>
+        large dark
+      </th>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-horiz btn-arrow-large-right-dark btn-large">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-large-horiz btn-arrow-large-left-dark btn-large"><span></span>Button</a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-up-dark btn-large">Button<span></span></a>
+      </td>
+      <td>
+        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-down-dark btn-large">Button<span></span></a>
+      </td>
+    </tr>
+  </table>
 
-      <div class="info">
-
-        <table class="row-highlighting">
-          <caption><span>Standard Buttons</span></caption>
-          <thead>
-          <tr>
-            <th> </th>
-            <th>btn</th>
-            <th>btn-small</th>
-            <th>btn-large</th>
-            <th>no-emphasize</th>
-            <th>no-border</th>
-            <th>shadow</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th>
-              btn
-            </th>
-            <td>
-              <a href="#" class="btn">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-small">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-large">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn no-emphasize">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn no-border">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn shadow">Button</a>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              dark-grey
-            </th>
-            <td>
-              <a href="#" class="btn dark-grey">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn dark-grey btn-small">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn dark-grey btn-large">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn dark-grey no-emphasize">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn dark-grey no-border">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn dark-grey shadow">Button</a>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              teal
-            </th>
-            <td>
-              <a href="#" class="btn teal">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn teal btn-small">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn teal btn-large">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn teal no-emphasize">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn teal no-border">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn teal shadow">Button</a>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              yellow
-            </th>
-            <td>
-              <a href="#" class="btn yellow">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn yellow btn-small">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn yellow btn-large">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn yellow no-emphasize">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn yellow no-border">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn yellow shadow">Button</a>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              green
-            </th>
-            <td>
-              <a href="#" class="btn green">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn green btn-small">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn green btn-large">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn green no-emphasize">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn green no-border">Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn green shadow">Button</a>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-
-        <table class="row-highlighting">
-          <caption><span>Arrow Buttons</span></caption>
-          <tr>
-            <th> </th>
-            <th>Right</th>
-            <th>Left</th>
-            <th>Up</th>
-            <th>Down</th>
-          </tr>
-          <tr>
-            <th>
-              small light
-            </th>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-horiz btn-arrow-small-right-light teal btn-small">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-small-horiz btn-arrow-small-left-light teal btn-small"><span></span>Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-up-light teal btn-small">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-light teal btn-small">Button<span></span></a>
-          </tr>
-          <tr>
-            <th>
-              small medium
-            </th>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-horiz btn-arrow-small-right-medium dark-grey btn-small">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-small-horiz btn-arrow-small-left-medium dark-grey btn-small"><span></span>Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-up-medium dark-grey btn-small">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-medium dark-grey btn-small">Button<span></span></a>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              small dark
-            </th>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-horiz btn-arrow-small-right-dark btn-small">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-small-horiz btn-arrow-small-left-dark btn-small"><span></span>Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-up-dark btn-small">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark btn-small">Button<span></span></a>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              standard light
-            </th>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-horiz btn-arrow-standard-right-light teal">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-standard-horiz btn-arrow-standard-left-light teal"><span></span>Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-up-light teal">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-light teal">Button<span></span></a>
-          </tr>
-          <tr>
-            <th>
-              standard medium
-            </th>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-horiz btn-arrow-standard-right-medium dark-grey">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-standard-horiz btn-arrow-standard-left-medium dark-grey"><span></span>Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-up-medium dark-grey">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-medium dark-grey">Button<span></span></a>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              standard dark
-            </th>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-horiz btn-arrow-standard-right-dark">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-standard-horiz btn-arrow-standard-left-dark"><span></span>Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-up-dark">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-standard-vert btn-arrow-standard-down-dark">Button<span></span></a>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              large light
-            </th>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-horiz btn-arrow-large-right-light teal btn-large">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-large-horiz btn-arrow-large-left-light teal btn-large"><span></span>Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-up-light teal btn-large">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-down-light teal btn-large">Button<span></span></a>
-          </tr>
-          <tr>
-            <th>
-              large medium
-            </th>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-horiz btn-arrow-large-right-medium dark-grey btn-large">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-large-horiz btn-arrow-large-left-medium dark-grey btn-large"><span></span>Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-up-medium dark-grey btn-large">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-down-medium dark-grey btn-large">Button<span></span></a>
-            </td>
-          </tr>
-          <tr>
-            <th>
-              large dark
-            </th>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-horiz btn-arrow-large-right-dark btn-large">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-left btn-arrow-large-horiz btn-arrow-large-left-dark btn-large"><span></span>Button</a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-up-dark btn-large">Button<span></span></a>
-            </td>
-            <td>
-              <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-large-vert btn-arrow-large-down-dark btn-large">Button<span></span></a>
-            </td>
-          </tr>
-        </table>
-
-        <table>
-          <caption><span>Combo Buttons</span>
-          <tr>
-            <th>with actions</th>
-            <td>
-              <span class="btn-menu">
-                  <a class="btn btn-menu-left btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark grey" href="#">Button<span></span></a>
-                  <a class="btn btn-menu-right grey" href="#">Button</a>
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th>double</th>
-            <td>
-              <span class="btn-menu">
-                  <a class="btn btn-menu-left grey" href="#">Button</a>
-                  <a class="btn btn-menu-right grey" href="#">Button</a>
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th>triple</th>
-            <td>
-              <span class="btn-menu">
-                  <a class="btn btn-menu-left btn-txt-secondary grey" href="#">Button</a>
-                  <a class="btn btn-menu-middle btn-txt-secondary grey" href="#">Button</a>
-                  <a class="btn btn-menu-right btn-txt-secondary grey" href="#">Button</a>
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <th>combo function</th>
-            <td>
-              <span class="btn-menu">
-                  <a href="#" class="btn btn-menu-left grey">Button</a>
-                  <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow grey"><span></span></a>
-              </span>
-            </td>
-          </tr>
-        </table>
-
-      </div>
-
-    </section>
-    
-    <section class="container group demo-dropdowns">
-      
-      <h2 id="dropdowns">Dropdown Menus <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>There are "logged in" and "logged out" headers.</p>
-      </div>
-      
-      <div class="info">
-        
-        <h3>Logged Out Header</h3>
-        
-        <div class="demo-header logged-out">
-    			<ul class="main-nav group">
-    				<li class="active">
-    					<a href="#">Home</a>
-    				</li>
-    				<li class="has-submenu">
-    					<a href="#">Take a Tour</a> <span class="dropdown-arrow"></span>
-    					<ul>
-    								<li><a href="">Create Surveys</a></li>
-    								<li><a href="">Collect Responses</a></li>
-    								<li><a href="">Analyze Results</a></li>
-    					</ul>
-    				</li>
-    				<li class="has-submenu">
-    					<a href="#">Resources</a> <span class="dropdown-arrow"></span>
-    					<ul>
-    								<li><a href="">Customer Feedback</a></li>
-    								<li><a href="">Product Feedback</a></li>
-    								<li><a href="">Market Research</a></li>
-    								<li><a href="">Employee Satisfaction</a></li>
-    								<li><a href="">Performance Review</a></li>
-                    <li><a href="">Healthcare</a></li>
-                    <li><a href="">Event</a></li>
-                    <li><a href="">Education</a></li>
-                    <li><a href="">Non-Profit</a></li>
-                    <li><a href="">Automated Phone</a></li>
-    					</ul>
-    				</li>
-    				<li>
-    					<a href="#">Plans &amp; Pricing</a>
-    				</li>
-    			</ul>
-    		</div>
-    		
-    		<h3>Logged In Header</h3>
-    		
-    		<div class="demo-header logged-in">
-    			<ul class="main-nav group">
-    				<li class="active">
-    					<a href="#">Home</a>
-    				</li>
-    				<li class="has-submenu">
-    					<a href="#">Take a Tour</a> <span class="dropdown-arrow"></span>
-    					<ul>
-    								<li><a href="">Create Surveys</a></li>
-    								<li><a href="">Collect Responses</a></li>
-    								<li><a href="">Analyze Results</a></li>
-    					</ul>
-    				</li>
-    				<li class="has-submenu">
-    					<a href="#">Resources</a> <span class="dropdown-arrow"></span>
-    					<ul>
-    								<li><a href="">Customer Feedback</a></li>
-    								<li><a href="">Product Feedback</a></li>
-    								<li><a href="">Market Research</a></li>
-    								<li><a href="">Employee Satisfaction</a></li>
-    								<li><a href="">Performance Review</a></li>
-                    <li><a href="">Healthcare</a></li>
-                    <li><a href="">Event</a></li>
-                    <li><a href="">Education</a></li>
-                    <li><a href="">Non-Profit</a></li>
-                    <li><a href="">Automated Phone</a></li>
-    					</ul>
-    				</li>
-    				<li>
-    					<a href="#">Plans &amp; Pricing</a>
-    				</li>
-    			</ul>
-    		</div>
-    		
-    		<h3>Menu Buttons</h3>
-
-				<!-- Semantically, this is weird. It's just a list in the middle of nowhere
-             no specifically connected to the above button -->
-    		
-    		<span class="btn-menu">
-            <a class="btn btn-menu-left btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark grey" href="#" data-menu="menu-1">Button<span></span></a>
+  <table>
+    <caption><span>Combo Buttons</span>
+    <tr>
+      <th>with actions</th>
+      <td>
+        <span class="btn-menu">
+            <a class="btn btn-menu-left btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark grey" href="#">Button<span></span></a>
             <a class="btn btn-menu-right grey" href="#">Button</a>
         </span>
-        
-        <ul class="button-menu" id="menu-1">
-          <li><a href="#">State A</a>
-            <div class="q">
-    					<span>?</span>
-    					<div class="popout">
-    						<h5>View Clips</h5>
-    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-    						<a href="#" class="learn-more-link">Learn more »</a>
-    					</div>
-    				</div>
-          </li>
-          <li><a href="#">State B</a>
-            <div class="q">
-    					<span>?</span>
-    					<div class="popout">
-    						<h5>View Clips</h5>
-    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-    						<a href="#" class="learn-more-link">Learn more »</a>
-    					</div>
-    				</div>
-          </li>
-          <li><a href="#">State C</a>
-            <div class="q">
-    					<span>?</span>
-    					<div class="popout">
-    						<h5>View Clips</h5>
-    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-    						<a href="#" class="learn-more-link">Learn more »</a>
-    					</div>
-    				</div>
-          </li>
-        </ul>
-        
-        <br><br>
-
+      </td>
+    </tr>
+    <tr>
+      <th>double</th>
+      <td>
         <span class="btn-menu">
-            <a href="#" class="btn btn-menu-left yellow">Button</a>
-            <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow yellow" data-menu="menu-2"><span></span></a>
+            <a class="btn btn-menu-left grey" href="#">Button</a>
+            <a class="btn btn-menu-right grey" href="#">Button</a>
         </span>
-        
-        <ul class="button-menu" id="menu-2">
-          <li><a href="#">State A</a>
-          </li>
-          <li><a href="#">State B</a>
-          </li>
-          <li><a href="#">State C</a>
-          </li>
-        </ul>
-        
-        <br><br>
-
-        <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark btn-small" data-menu="menu-3">Button<span></span></a>
-        
-        <ul class="button-menu" id="menu-3">
-          <li><a href="#">State A</a>
-          </li>
-          <li><a href="#">State B</a>
-            <div class="q">
-    					<span>?</span>
-    					<div class="popout">
-    						<h5>View Clips</h5>
-    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-    						<a href="#" class="learn-more-link">Learn more »</a>
-    					</div>
-    				</div>
-          </li>
-          <li><a href="#">State C</a>
-            <div class="q">
-    					<span>?</span>
-    					<div class="popout">
-    						<h5>View Clips</h5>
-    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-    						<a href="#" class="learn-more-link">Learn more »</a>
-    					</div>
-    				</div>
-          </li>
-        </ul>
-
-				<br><br>
-
+      </td>
+    </tr>
+    <tr>
+      <th>triple</th>
+      <td>
         <span class="btn-menu">
-            <a href="#" class="btn btn-menu-left">Really Long List</a>
-            <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow" data-menu="menu-5"><span></span></a>
+            <a class="btn btn-menu-left btn-txt-secondary grey" href="#">Button</a>
+            <a class="btn btn-menu-middle btn-txt-secondary grey" href="#">Button</a>
+            <a class="btn btn-menu-right btn-txt-secondary grey" href="#">Button</a>
         </span>
+      </td>
+    </tr>
+    <tr>
+      <th>combo function</th>
+      <td>
+        <span class="btn-menu">
+            <a href="#" class="btn btn-menu-left grey">Button</a>
+            <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow grey"><span></span></a>
+        </span>
+      </td>
+    </tr>
+  </table>
+
+</div></section><section class="container group demo-dropdowns"><h2 id="dropdowns">Dropdown Menus <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>There are "logged in" and "logged out" headers.</p>
+</div>
+
+<div class="info">
+  
+  <h3>Logged Out Header</h3>
+  
+  <div class="demo-header logged-out">
+		<ul class="main-nav group">
+			<li class="active">
+				<a href="#">Home</a>
+			</li>
+			<li class="has-submenu">
+				<a href="#">Take a Tour</a> <span class="dropdown-arrow"></span>
+				<ul>
+							<li><a href="">Create Surveys</a></li>
+							<li><a href="">Collect Responses</a></li>
+							<li><a href="">Analyze Results</a></li>
+				</ul>
+			</li>
+			<li class="has-submenu">
+				<a href="#">Resources</a> <span class="dropdown-arrow"></span>
+				<ul>
+							<li><a href="">Customer Feedback</a></li>
+							<li><a href="">Product Feedback</a></li>
+							<li><a href="">Market Research</a></li>
+							<li><a href="">Employee Satisfaction</a></li>
+							<li><a href="">Performance Review</a></li>
+              <li><a href="">Healthcare</a></li>
+              <li><a href="">Event</a></li>
+              <li><a href="">Education</a></li>
+              <li><a href="">Non-Profit</a></li>
+              <li><a href="">Automated Phone</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Plans &amp; Pricing</a>
+			</li>
+		</ul>
+	</div>
+	
+	<h3>Logged In Header</h3>
+	
+	<div class="demo-header logged-in">
+		<ul class="main-nav group">
+			<li class="active">
+				<a href="#">Home</a>
+			</li>
+			<li class="has-submenu">
+				<a href="#">Take a Tour</a> <span class="dropdown-arrow"></span>
+				<ul>
+							<li><a href="">Create Surveys</a></li>
+							<li><a href="">Collect Responses</a></li>
+							<li><a href="">Analyze Results</a></li>
+				</ul>
+			</li>
+			<li class="has-submenu">
+				<a href="#">Resources</a> <span class="dropdown-arrow"></span>
+				<ul>
+							<li><a href="">Customer Feedback</a></li>
+							<li><a href="">Product Feedback</a></li>
+							<li><a href="">Market Research</a></li>
+							<li><a href="">Employee Satisfaction</a></li>
+							<li><a href="">Performance Review</a></li>
+              <li><a href="">Healthcare</a></li>
+              <li><a href="">Event</a></li>
+              <li><a href="">Education</a></li>
+              <li><a href="">Non-Profit</a></li>
+              <li><a href="">Automated Phone</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Plans &amp; Pricing</a>
+			</li>
+		</ul>
+	</div>
+	
+	<h3>Menu Buttons</h3>
+
+	<!-- Semantically, this is weird. It's just a list in the middle of nowhere
+       no specifically connected to the above button -->
+	
+	<span class="btn-menu">
+      <a class="btn btn-menu-left btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark grey" href="#" data-menu="menu-1">Button<span></span></a>
+      <a class="btn btn-menu-right grey" href="#">Button</a>
+  </span>
+  
+  <ul class="button-menu" id="menu-1">
+    <li><a href="#">State A</a>
+      <div class="q">
+				<span>?</span>
+				<div class="popout">
+					<h5>View Clips</h5>
+					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+					<a href="#" class="learn-more-link">Learn more »</a>
+				</div>
+			</div>
+    </li>
+    <li><a href="#">State B</a>
+      <div class="q">
+				<span>?</span>
+				<div class="popout">
+					<h5>View Clips</h5>
+					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+					<a href="#" class="learn-more-link">Learn more »</a>
+				</div>
+			</div>
+    </li>
+    <li><a href="#">State C</a>
+      <div class="q">
+				<span>?</span>
+				<div class="popout">
+					<h5>View Clips</h5>
+					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+					<a href="#" class="learn-more-link">Learn more »</a>
+				</div>
+			</div>
+    </li>
+  </ul>
+  
+  <br><br>
+
+  <span class="btn-menu">
+      <a href="#" class="btn btn-menu-left yellow">Button</a>
+      <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow yellow" data-menu="menu-2"><span></span></a>
+  </span>
+  
+  <ul class="button-menu" id="menu-2">
+    <li><a href="#">State A</a>
+    </li>
+    <li><a href="#">State B</a>
+    </li>
+    <li><a href="#">State C</a>
+    </li>
+  </ul>
+  
+  <br><br>
+
+  <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark btn-small" data-menu="menu-3">Button<span></span></a>
+  
+  <ul class="button-menu" id="menu-3">
+    <li><a href="#">State A</a>
+    </li>
+    <li><a href="#">State B</a>
+      <div class="q">
+				<span>?</span>
+				<div class="popout">
+					<h5>View Clips</h5>
+					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+					<a href="#" class="learn-more-link">Learn more »</a>
+				</div>
+			</div>
+    </li>
+    <li><a href="#">State C</a>
+      <div class="q">
+				<span>?</span>
+				<div class="popout">
+					<h5>View Clips</h5>
+					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+					<a href="#" class="learn-more-link">Learn more »</a>
+				</div>
+			</div>
+    </li>
+  </ul>
+
+	<br><br>
+
+  <span class="btn-menu">
+      <a href="#" class="btn btn-menu-left">Really Long List</a>
+      <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow" data-menu="menu-5"><span></span></a>
+  </span>
+  
+  <ul class="button-menu" id="menu-5">
+    <li><a href="#">Menu Item</a></li>
+    <li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+		<li><a href="#">Menu Item</a></li>
+  </ul>        
+	
+</div></section><section class="container group demo-Forms"><h2 id="forms">Form Elements <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>This is based on <a href="http://formalize.me/">Formalize</a>.</p>
+  <p>The autofocus attribute works but it's annoying on this page.</p>
+</div>
+
+<div class="info">
+  
+  <form>
+
+    <header>
+      <h2>Title of the Form</h2>
+      <div>Descriptive text for the form</div>
+    </header>
+
+    <ul>
+
+      <li>
+        <label for="Field1">
+          Input[type=text]
+        </label>
+        <div>
+          <input id="Field1" name="Field1" type="text" placeholder="placeholder text">
+        </div>
+      </li>
+  
+      <li>
+        <label for="Field2">
+          Textarea
+        </label>
+        <div>
+          <textarea id="Field2" name="Field2"></textarea>
+        </div>
+      </li>
+      
+      <li>
+        <label class="desc" id="title105" for="Field105">
+          Select
+        </label>
+        <div>
+          <select id="Field105" name="Field105"> 
+            <option value="First Choice" selected="selected">
+              First Choice
+            </option>
+            <option value="Second Choice" >
+              Second Choice
+            </option>
+            <option value="Third Choice" >
+              Third Choice
+            </option>
+          </select>
+        </div>
+        </li>
         
-        <ul class="button-menu" id="menu-5">
-          <li><a href="#">Menu Item</a></li>
-          <li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-        </ul>        
-    		
-      </div>
-      
-    </section>
-    
-    <section class="container group demo-forms">
-      
-      <h2 id="forms">Form Elements <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>This is based on <a href="http://formalize.me/">Formalize</a>.</p>
-        <p>The autofocus attribute works but it's annoying on this page.</p>
-      </div>
-      
-      <div class="info">
-        
-        <form>
-
-          <header>
-            <h2>Title of the Form</h2>
-            <div>Descriptive text for the form</div>
-          </header>
-
-          <ul>
-
-            <li>
-              <label for="Field1">
-                Input[type=text]
+      <li>
+        <fieldset>
+          
+          <![if !IE | (gte IE 8)]>
+            <legend id="title3" class="desc">
+              Radio
+            </legend>
+          <![endif]>
+          <!--[if lt IE 8]>
+            <label id="title3" class="desc">
+              Radio
+            </label>
+          <![endif]-->
+          
+          <div>
+            <input id="radioDefault_3" name="Field3" type="hidden" value="">
+            <span>
+              <input id="Field3_0" name="Field3" type="radio" checked="checked">
+              <label class="choice" for="Field3_0" >
+                First Choice
               </label>
-              <div>
-                <input id="Field1" name="Field1" type="text" placeholder="placeholder text">
-              </div>
-            </li>
-        
-            <li>
-              <label for="Field2">
-                Textarea
+            </span>
+            <span>
+              <input id="Field3_1" name="Field3" type="radio">
+              <label class="choice" for="Field3_1" >
+                Second Choice
               </label>
-              <div>
-                <textarea id="Field2" name="Field2"></textarea>
-              </div>
-            </li>
-            
-            <li>
-              <label class="desc" id="title105" for="Field105">
-                Select
+            </span>
+            <span>
+              <input id="Field3_2" name="Field3" type="radio">
+              <label class="choice" for="Field3_2" >
+                Third Choice
               </label>
-              <div>
-                <select id="Field105" name="Field105"> 
-                  <option value="First Choice" selected="selected">
-                    First Choice
-                  </option>
-                  <option value="Second Choice" >
-                    Second Choice
-                  </option>
-                  <option value="Third Choice" >
-                    Third Choice
-                  </option>
-                </select>
-              </div>
-              </li>
-              
-            <li>
-              <fieldset>
-                
-                <![if !IE | (gte IE 8)]>
-                  <legend id="title3" class="desc">
-                    Radio
-                  </legend>
-                <![endif]>
-                <!--[if lt IE 8]>
-                  <label id="title3" class="desc">
-                    Radio
-                  </label>
-                <![endif]-->
-                
-                <div>
-                  <input id="radioDefault_3" name="Field3" type="hidden" value="">
-                  <span>
-                    <input id="Field3_0" name="Field3" type="radio" checked="checked">
-                    <label class="choice" for="Field3_0" >
-                      First Choice
-                    </label>
-                  </span>
-                  <span>
-                    <input id="Field3_1" name="Field3" type="radio">
-                    <label class="choice" for="Field3_1" >
-                      Second Choice
-                    </label>
-                  </span>
-                  <span>
-                    <input id="Field3_2" name="Field3" type="radio">
-                    <label class="choice" for="Field3_2" >
-                      Third Choice
-                    </label>
-                  </span>
-                </div>
-                
-              </fieldset>
-            </li>
-            
-            <li>
-              <fieldset>
-                <![if !IE | (gte IE 8)]>
-                  <legend id="title5" class="desc">
-                    Checkbox
-                  </legend>
-                <![endif]>
-                <!--[if lt IE 8]>
-                  <label id="title5" class="desc">
-                    Checkbox
-                  </label>
-                <![endif]-->
-            
-                <div>
-                  <span>
-                    <input id="Field5" name="Field5" type="checkbox">
-                    <label class="choice" for="Field5">First Choice</label>
-                  </span>
-                  <span>
-                    <input id="Field6" name="Field6" type="checkbox">
-                    <label class="choice" for="Field6">Second Choice</label>
-                  </span>
-                  <span>
-                    <input id="Field7" name="Field7" type="checkbox">
-                    <label class="choice" for="Field7">Third Choice</label>
-                  </span>
-                </div>
-                
-              </fieldset>
-            </li>
-
-          </ul>
-        
-          <input type="submit" value="input[type=submit]">
-          &nbsp;
-          <input type="button" value="input[type=button]">
-          &nbsp;
-          <input type="reset" value="input[type=reset]">
-          &nbsp;
-          <button>Button</button>
-        
-        </form>
-        
-      </div>
-      
-    </section>
-    
-    <section class="container group demo-lightboxes">
-      
-      <h2 id="lightboxes">Lightboxes <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>Popups. Should some be modal and others not?</p>
-      </div>
-      
-      <div class="info">
-        <ul>
-          <li><a href="#" onclick="alert('Eep Eep!');">Open Default Alert</a></li>
-          <li><a href="#">Open Lightbox Style #1</a></li>
-          <li><a href="#">Open Lightbox Style #2</a></li>
-          <li><a href="#">Open Lightbox Style #3</a></li>
-        </ul>
-      </div>
-      
-    </section>
-    
-    <section class="container group demo-tables">
-      
-      <h2 id="tables">Tables <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>Tables are for tabular data only.</p>
-        <p>Do we need sorting?</p>
-        <p>Should we incorporate a <a href="http://css-tricks.com/9096-responsive-data-tables/">responsive design pattern</a> for tables?</p>
-      </div>
-      
-      <div class="info">
-        
-        <table>
-          <caption><span>Regular Table</span></caption>
-        	<thead>
-        		<tr>
-        			<th>First</th>
-        			<th>Last</th>
-        			<th>Job Title</th>
-        			<th>Color</th>
-        			<th>City</th>
-        			<th>GPA</th>
-        			<th>Data</th>
-        		</tr>
-        	</thead>
-        	<tbody>
-        		<tr>
-        			<td>James</td>
-        			<td>Matman</td>
-        			<td>Chief Sandwich Eater</td>
-        			<td>Lettuce Green</td>
-        			<td>Gotham City</td>
-        			<td>3.1</td>
-        			<td>RBX-12</td>
-        		</tr>
-        		<tr>
-        		  <td>The</td>
-        		  <td>Tick</td>
-        		  <td>Crimefighter Sorta</td>
-        		  <td>Blue</td>
-        		  <td>Athens</td>
-        		  <td>N/A</td>
-        		  <td>Edlund, Ben (July 1996).</td>
-        		</tr>
-        		<tr>
-        		  <td>Jokey</td>
-        		  <td>Smurf</td>
-        		  <td>Giving Exploding Presents</td>
-        		  <td>Smurflow</td>
-        		  <td>New Smurf City</td>
-        		  <td>4.Smurf</td>
-        		  <td>One</td>
-        		</tr>
-        		<tr>
-        		  <td>Cindy</td>
-        		  <td>Beyler</td>
-        		  <td>Sales Representative</td>
-        		  <td>Red</td>
-        		  <td>Paris</td>
-        		  <td>3.4</td>
-        		  <td>3451</td>
-        		</tr>
-        		<tr>
-        		  <td>Captain</td>
-        		  <td>Cool</td>
-        		  <td>Tree Crusher</td>
-        		  <td>Blue</td>
-        		  <td>Las Vegas</td>
-        		  <td>1.9</td>
-        		  <td>Under the couch</td>
-        		</tr>
-        	</tbody>
-      	</table>
-      	
-      	<table class="zebra">
-      	  <caption><span>Zebra Striped</span></caption>
-        	<thead>
-        		<tr>
-        			<th>First Name</th>
-        			<th>Last Name</th>
-        			<th>Job Title</th>
-        			<th>Favorite Color</th>
-        			<th>Wars or Trek?</th>
-        			<th>Date of Birth</th>
-        			<th>GPA</th>
-        			<th>Arbitrary Data</th>
-        		</tr>
-        	</thead>
-        	<tbody>
-        		<tr>
-        			<td>James</td>
-        			<td>Matman</td>
-        			<td>Chief Sandwich Eater</td>
-        			<td>Lettuce Green</td>
-        			<td>January 13, 1979</td>
-        			<td>Gotham City</td>
-        			<td>3.1</td>
-        			<td>RBX-12</td>
-        		</tr>
-        		<tr>
-        		  <td>The</td>
-        		  <td>Tick</td>
-        		  <td>Crimefighter Sorta</td>
-        		  <td>Blue</td>
-        		  <td>July 19, 1968</td>
-        		  <td>Athens</td>
-        		  <td>N/A</td>
-        		  <td>Edlund, Ben (July 1996).</td>
-        		</tr>
-        		<tr>
-        		  <td>Jokey</td>
-        		  <td>Smurf</td>
-        		  <td>Giving Exploding Presents</td>
-        		  <td>Smurflow</td>
-        		  <td>Smurfuary Smurfteenth, 1945</td>
-        		  <td>New Smurf City</td>
-        		  <td>4.Smurf</td>
-        		  <td>One</td>
-        		</tr>
-        		<tr>
-        		  <td>Cindy</td>
-        		  <td>Beyler</td>
-        		  <td>Sales Representative</td>
-        		  <td>Red</td>
-        		  <td>July 5, 1956</td>
-        		  <td>Paris</td>
-        		  <td>3.4</td>
-        		  <td>3451</td>
-        		</tr>
-        		<tr>
-        		  <td>Captain</td>
-        		  <td>Cool</td>
-        		  <td>Tree Crusher</td>
-        		  <td>Blue</td>
-        		  <td>December 13, 1982</td>
-        		  <td>Las Vegas</td>
-        		  <td>1.9</td>
-        		  <td>Under the couch</td>
-        		</tr>
-        	</tbody>
-      	</table>
-        	          
-        <table class="row-highlighting">
-          <caption><span>Row Highlighting</span></caption>
-        	<thead>
-        		<tr>
-        			<th>First Name</th>
-        			<th>Last Name</th>
-        			<th>Job Title</th>
-        			<th>Favorite Color</th>
-        			<th>Wars or Trek?</th>
-        			<th>Date of Birth</th>
-        			<th>GPA</th>
-        			<th>Arbitrary Data</th>
-        		</tr>
-        	</thead>
-        	<tbody>
-        		<tr>
-        			<td>James</td>
-        			<td>Matman</td>
-        			<td>Chief Sandwich Eater</td>
-        			<td>Lettuce Green</td>
-        			<td>January 13, 1979</td>
-        			<td>Gotham City</td>
-        			<td>3.1</td>
-        			<td>RBX-12</td>
-        		</tr>
-        		<tr>
-        		  <td>The</td>
-        		  <td>Tick</td>
-        		  <td>Crimefighter Sorta</td>
-        		  <td>Blue</td>
-        		  <td>July 19, 1968</td>
-        		  <td>Athens</td>
-        		  <td>N/A</td>
-        		  <td>Edlund, Ben (July 1996).</td>
-        		</tr>
-        		<tr>
-        		  <td>Jokey</td>
-        		  <td>Smurf</td>
-        		  <td>Giving Exploding Presents</td>
-        		  <td>Smurflow</td>
-        		  <td>Smurfuary Smurfteenth, 1945</td>
-        		  <td>New Smurf City</td>
-        		  <td>4.Smurf</td>
-        		  <td>One</td>
-        		</tr>
-        		<tr>
-        		  <td>Cindy</td>
-        		  <td>Beyler</td>
-        		  <td>Sales Representative</td>
-        		  <td>Red</td>
-        		  <td>July 5, 1956</td>
-        		  <td>Paris</td>
-        		  <td>3.4</td>
-        		  <td>3451</td>
-        		</tr>
-        		<tr>
-        		  <td>Captain</td>
-        		  <td>Cool</td>
-        		  <td>Tree Crusher</td>
-        		  <td>Blue</td>
-        		  <td>December 13, 1982</td>
-        		  <td>Las Vegas</td>
-        		  <td>1.9</td>
-        		  <td>Under the couch</td>
-        		</tr>
-        		</tbody>
-        	</table>
-        	
-        	<div class="selling-points-box">
-      	    <div class="selling-point selling-point1">
-      	        <span class="number">100%</span><br>
-      	        <span class="desc">of the Fortune 100</span>
-      	    </div>
-              <div class="selling-point selling-point2">
-                  <span class="number">99%</span><br>
-                  <span class="desc">customer satisfaction</span>
-              </div>
-              <div class="selling-point selling-point3">
-                  <span class="number">8+ million </span><br>
-                  <span class="desc">customers</span>
-              </div>
-              <div class="selling-point selling-point4">
-                  <span class="number">190+</span><br>
-                  <span class="desc">countries worldwide</span>
-              </div>
+            </span>
           </div>
-        
-      </div>
+          
+        </fieldset>
+      </li>
       
-    </section>
-
-    <section class="container group demo-typography">
+      <li>
+        <fieldset>
+          <![if !IE | (gte IE 8)]>
+            <legend id="title5" class="desc">
+              Checkbox
+            </legend>
+          <![endif]>
+          <!--[if lt IE 8]>
+            <label id="title5" class="desc">
+              Checkbox
+            </label>
+          <![endif]-->
       
-      <h2 id="typography">Typography <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>Web design <em>is</em> typography.</p>
-        <p>If you need the style of an h3 but semantically you need to use an h2, use <code>&lt;h2 class="h3"></code>. This goes for any combination.</p>
-      </div>
-      
-      <div class="info">
-        <h1>h1. Header</h1>
-        <h2>h2. Header</h2>
-        <h3>h3. Header</h3>
-        <h4>h4. Header</h4>
-        <h5>h5. Header</h5>
-        <h6>h6. Header</h6>
-        
-        <h6 class="bar">h6. Bar (any header can be  bar)</h6>
-        
-        <p>This is a paragraph to show off some basic inline styles, for example <strong>here's some strong text</strong> and here's some <b>bold text.</b> Likewise, here's <em>some emphasized (em) text</em> and here's <i>some italic</i> text. Occationally we may need to style<code>inline code</code>. For sure, we'll need to show <a href="#">links</a> in text which sometimes <a href="#">are pretty darn long, you know what I mean?</a></p>
+          <div>
+            <span>
+              <input id="Field5" name="Field5" type="checkbox">
+              <label class="choice" for="Field5">First Choice</label>
+            </span>
+            <span>
+              <input id="Field6" name="Field6" type="checkbox">
+              <label class="choice" for="Field6">Second Choice</label>
+            </span>
+            <span>
+              <input id="Field7" name="Field7" type="checkbox">
+              <label class="choice" for="Field7">Third Choice</label>
+            </span>
+          </div>
+          
+        </fieldset>
+      </li>
 
-        <blockquote>I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.</blockquote>   
-        
-        <blockquote>
-          <p>First sentence of a block quote.</p>
-          <p>Second sentence of a block quote.</p>
-        </blockquote>
-                
-        <ol>
-           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-           <li>Aliquam tincidunt mauris eu risus.
-             <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                  <ul>
-                     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                     <li>Aliquam tincidunt mauris eu risus.</li>
-                  </ul>
-                </li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-             </ol>
-           </li>
-           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-        </ol>
+    </ul>
+  
+    <input type="submit" value="input[type=submit]">
+    &nbsp;
+    <input type="button" value="input[type=button]">
+    &nbsp;
+    <input type="reset" value="input[type=reset]">
+    &nbsp;
+    <button>Button</button>
+  
+  </form>
+  
+</div></section><section class="container group demo-lightboxes"><h2 id="lightboxes">Lightboxes <a href="#top" class="back-to-top">^ Back to Top</a></h2>
 
-        <ul>
-           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-           <li>Aliquam tincidunt mauris eu risus.
-             <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    <ol>
-                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                        <li>Aliquam tincidunt mauris eu risus.</li>
-                     </ol>
-                </li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-             </ul>
-           </li>
-           <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-        </ul>
-        
-        <ul class="checked-list">
-          <li>No software to install. No complicated instruction manuals. Just open a browser and go.</li>
-          <li>The basics are always free.</li>
-          <li>Advanced features and customization available for a very low monthly fee.</li>
-        </ul>
+<div class="about">
+  <p>Popups. Some modal, some not. Different positions, colors, styles, etc.</p>
+</div>
 
-        <pre><code>#header h1 a { 
-	display: block; 
-	width: 300px; 
-	height: 80px; 
+<div class="info">
+  <ul>
+    <li><a href="#" onclick="alert('Eep Eep!');">Open Default Alert</a></li>
+  </ul>
+</div></section><section class="container group demo-tables"><h2 id="tables">Tables <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>Tables are for tabular data only.</p>
+  <p>Do we need sorting?</p>
+  <p>Should we incorporate a <a href="http://css-tricks.com/9096-responsive-data-tables/">responsive design pattern</a> for tables?</p>
+</div>
+
+<div class="info">
+  
+  <table>
+    <caption><span>Regular Table</span></caption>
+  	<thead>
+  		<tr>
+  			<th>First</th>
+  			<th>Last</th>
+  			<th>Job Title</th>
+  			<th>Color</th>
+  			<th>City</th>
+  			<th>GPA</th>
+  			<th>Data</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		<tr>
+  			<td>James</td>
+  			<td>Matman</td>
+  			<td>Chief Sandwich Eater</td>
+  			<td>Lettuce Green</td>
+  			<td>Gotham City</td>
+  			<td>3.1</td>
+  			<td>RBX-12</td>
+  		</tr>
+  		<tr>
+  		  <td>The</td>
+  		  <td>Tick</td>
+  		  <td>Crimefighter Sorta</td>
+  		  <td>Blue</td>
+  		  <td>Athens</td>
+  		  <td>N/A</td>
+  		  <td>Edlund, Ben (July 1996).</td>
+  		</tr>
+  		<tr>
+  		  <td>Jokey</td>
+  		  <td>Smurf</td>
+  		  <td>Giving Exploding Presents</td>
+  		  <td>Smurflow</td>
+  		  <td>New Smurf City</td>
+  		  <td>4.Smurf</td>
+  		  <td>One</td>
+  		</tr>
+  		<tr>
+  		  <td>Cindy</td>
+  		  <td>Beyler</td>
+  		  <td>Sales Representative</td>
+  		  <td>Red</td>
+  		  <td>Paris</td>
+  		  <td>3.4</td>
+  		  <td>3451</td>
+  		</tr>
+  		<tr>
+  		  <td>Captain</td>
+  		  <td>Cool</td>
+  		  <td>Tree Crusher</td>
+  		  <td>Blue</td>
+  		  <td>Las Vegas</td>
+  		  <td>1.9</td>
+  		  <td>Under the couch</td>
+  		</tr>
+  	</tbody>
+	</table>
+	
+	<table class="zebra">
+	  <caption><span>Zebra Striped</span></caption>
+  	<thead>
+  		<tr>
+  			<th>First Name</th>
+  			<th>Last Name</th>
+  			<th>Job Title</th>
+  			<th>Favorite Color</th>
+  			<th>Wars or Trek?</th>
+  			<th>Date of Birth</th>
+  			<th>GPA</th>
+  			<th>Arbitrary Data</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		<tr>
+  			<td>James</td>
+  			<td>Matman</td>
+  			<td>Chief Sandwich Eater</td>
+  			<td>Lettuce Green</td>
+  			<td>January 13, 1979</td>
+  			<td>Gotham City</td>
+  			<td>3.1</td>
+  			<td>RBX-12</td>
+  		</tr>
+  		<tr>
+  		  <td>The</td>
+  		  <td>Tick</td>
+  		  <td>Crimefighter Sorta</td>
+  		  <td>Blue</td>
+  		  <td>July 19, 1968</td>
+  		  <td>Athens</td>
+  		  <td>N/A</td>
+  		  <td>Edlund, Ben (July 1996).</td>
+  		</tr>
+  		<tr>
+  		  <td>Jokey</td>
+  		  <td>Smurf</td>
+  		  <td>Giving Exploding Presents</td>
+  		  <td>Smurflow</td>
+  		  <td>Smurfuary Smurfteenth, 1945</td>
+  		  <td>New Smurf City</td>
+  		  <td>4.Smurf</td>
+  		  <td>One</td>
+  		</tr>
+  		<tr>
+  		  <td>Cindy</td>
+  		  <td>Beyler</td>
+  		  <td>Sales Representative</td>
+  		  <td>Red</td>
+  		  <td>July 5, 1956</td>
+  		  <td>Paris</td>
+  		  <td>3.4</td>
+  		  <td>3451</td>
+  		</tr>
+  		<tr>
+  		  <td>Captain</td>
+  		  <td>Cool</td>
+  		  <td>Tree Crusher</td>
+  		  <td>Blue</td>
+  		  <td>December 13, 1982</td>
+  		  <td>Las Vegas</td>
+  		  <td>1.9</td>
+  		  <td>Under the couch</td>
+  		</tr>
+  	</tbody>
+	</table>
+  	          
+  <table class="row-highlighting">
+    <caption><span>Row Highlighting</span></caption>
+  	<thead>
+  		<tr>
+  			<th>First Name</th>
+  			<th>Last Name</th>
+  			<th>Job Title</th>
+  			<th>Favorite Color</th>
+  			<th>Wars or Trek?</th>
+  			<th>Date of Birth</th>
+  			<th>GPA</th>
+  			<th>Arbitrary Data</th>
+  		</tr>
+  	</thead>
+  	<tbody>
+  		<tr>
+  			<td>James</td>
+  			<td>Matman</td>
+  			<td>Chief Sandwich Eater</td>
+  			<td>Lettuce Green</td>
+  			<td>January 13, 1979</td>
+  			<td>Gotham City</td>
+  			<td>3.1</td>
+  			<td>RBX-12</td>
+  		</tr>
+  		<tr>
+  		  <td>The</td>
+  		  <td>Tick</td>
+  		  <td>Crimefighter Sorta</td>
+  		  <td>Blue</td>
+  		  <td>July 19, 1968</td>
+  		  <td>Athens</td>
+  		  <td>N/A</td>
+  		  <td>Edlund, Ben (July 1996).</td>
+  		</tr>
+  		<tr>
+  		  <td>Jokey</td>
+  		  <td>Smurf</td>
+  		  <td>Giving Exploding Presents</td>
+  		  <td>Smurflow</td>
+  		  <td>Smurfuary Smurfteenth, 1945</td>
+  		  <td>New Smurf City</td>
+  		  <td>4.Smurf</td>
+  		  <td>One</td>
+  		</tr>
+  		<tr>
+  		  <td>Cindy</td>
+  		  <td>Beyler</td>
+  		  <td>Sales Representative</td>
+  		  <td>Red</td>
+  		  <td>July 5, 1956</td>
+  		  <td>Paris</td>
+  		  <td>3.4</td>
+  		  <td>3451</td>
+  		</tr>
+  		<tr>
+  		  <td>Captain</td>
+  		  <td>Cool</td>
+  		  <td>Tree Crusher</td>
+  		  <td>Blue</td>
+  		  <td>December 13, 1982</td>
+  		  <td>Las Vegas</td>
+  		  <td>1.9</td>
+  		  <td>Under the couch</td>
+  		</tr>
+  		</tbody>
+  	</table>
+  	
+  	<div class="selling-points-box">
+	    <div class="selling-point selling-point1">
+	        <span class="number">100%</span><br>
+	        <span class="desc">of the Fortune 100</span>
+	    </div>
+        <div class="selling-point selling-point2">
+            <span class="number">99%</span><br>
+            <span class="desc">customer satisfaction</span>
+        </div>
+        <div class="selling-point selling-point3">
+            <span class="number">8+ million </span><br>
+            <span class="desc">customers</span>
+        </div>
+        <div class="selling-point selling-point4">
+            <span class="number">190+</span><br>
+            <span class="desc">countries worldwide</span>
+        </div>
+    </div>
+  
+</div></section><section class="container group demo-typography"><h2 id="typography">Typography <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>Web design <em>is</em> typography.</p>
+  <p>If you need the style of an h3 but semantically you need to use an h2, use <code>&lt;h2 class="h3"></code>. This goes for any combination.</p>
+</div>
+
+<div class="info">
+  <h1>h1. Header</h1>
+  <h2>h2. Header</h2>
+  <h3>h3. Header</h3>
+  <h4>h4. Header</h4>
+  <h5>h5. Header</h5>
+  <h6>h6. Header</h6>
+  
+  <h6 class="bar">h6. Bar (any header can be  bar)</h6>
+  
+  <p>This is a paragraph to show off some basic inline styles, for example <strong>here's some strong text</strong> and here's some <b>bold text.</b> Likewise, here's <em>some emphasized (em) text</em> and here's <i>some italic</i> text. Occationally we may need to style<code>inline code</code>. For sure, we'll need to show <a href="#">links</a> in text which sometimes <a href="#">are pretty darn long, you know what I mean?</a></p>
+
+  <blockquote>I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.</blockquote>   
+  
+  <blockquote>
+    <p>First sentence of a block quote.</p>
+    <p>Second sentence of a block quote.</p>
+  </blockquote>
+          
+  <ol>
+     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+     <li>Aliquam tincidunt mauris eu risus.
+       <ol>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+            <ul>
+               <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+               <li>Aliquam tincidunt mauris eu risus.</li>
+            </ul>
+          </li>
+          <li>Aliquam tincidunt mauris eu risus.</li>
+       </ol>
+     </li>
+     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+  </ol>
+
+  <ul>
+     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+     <li>Aliquam tincidunt mauris eu risus.
+       <ul>
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+              <ol>
+                  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                  <li>Aliquam tincidunt mauris eu risus.</li>
+               </ol>
+          </li>
+          <li>Aliquam tincidunt mauris eu risus.</li>
+       </ul>
+     </li>
+     <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+  </ul>
+  
+  <ul class="checked-list">
+    <li>No software to install. No complicated instruction manuals. Just open a browser and go.</li>
+    <li>The basics are always free.</li>
+    <li>Advanced features and customization available for a very low monthly fee.</li>
+  </ul>
+
+  <pre><code>#header h1 a { 
+display: block; 
+width: 300px; 
+height: 80px; 
 }</code></pre>
-        
-      </div>
-      
-    </section>
-    
-    <section class="container group demo-grids">
-      
-      <h2 id="grids">Grids <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>Discussion happening on whether to use inline-block or floats...</p>
-        
-        <p>Proposed:</p>
-        
-        <ul>
-          <li>no grid: 10/980/10</li>
-          <li><code>grid1</code>: 10/300/20/660/10</li>
-          <li><code>grid2</code>:10/200/20/760/10</li>
-          <li><code>grid3</code>:10/760/20/200/10</li>
-          <li><code>grid4</code>:10/735/20/225/10</li>
-          <li><code>grid5</code>:10/200/20/535/20/225/10</li>
-        </ul>
-                
-        <p>Do we allow grids within grids?</p>
-      </div>
-      
-      <div class="info">
-        
-        <h3>Grid 1</h3>
-        
-        <div class="grid grid1 group example-grid">
-          <div class="col col1">
-          </div>
-          <div class="col col2">
-          </div>
-        </div>
-        
-        <h3>Grid 2</h3>
-        
-        <div class="grid grid2 group example-grid">
-          <div class="col col1">
-          </div>
-          <div class="col col2">
-          </div>
-        </div>
-        
-        <h3>Grid 3</h3>
-        
-        <div class="grid grid3 group example-grid">
-          <div class="col col1">
-          </div>
-          <div class="col col2">
-          </div>
-        </div>
-        
-        <h3>Grid 4</h3>
-        
-        <div class="grid grid4 group example-grid">
-          <div class="col col1">
-          </div>
-          <div class="col col2">
-          </div>
-        </div>
-        
-        <h3>Grid 5</h3>
-        
-        <div class="grid grid5 group example-grid">
-          <div class="col col1">
-          </div>
-          <div class="col col2">
-          </div>
-          <div class="col col3">
-          </div>
-        </div>
-        
-      </div>
-      
-    </section>
-    
-    <section class="container group demo-colors">
-      
-      <h2 id="colors">Colors <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>Purty!</p>
-        <p>Not seen: #4B4A3C - BG of logged in header</p>
-      </div>
-      
-      <div class="info">
-        
-        <table>
-          <tr>
-            <td>
-              <div class="color-swatch bg-dark"></div>
-              <code>bg-dark</code>
-            </td>
-            <td>
-              <div class="color-swatch bg-light"></div>
-              <code>bg-light</code>
-            </td>
-            <td>
-              <div class="color-swatch bg-white" style="border: 1px solid #ccc"></div>
-              <code>bg-white</code>
-            </td>
-            <td>
-              <div class="color-swatch bg-brand"></div>
-              <code>bg-brand</code>
-            </td>
-            <td>
-              <div class="color-swatch bg-teal"></div>
-              <code>bg-teal</code>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="color-swatch grad-dark"></div>
-              <code>grad-dark</code>
-            </td>
-            <td>
-              <div class="color-swatch grad-brand"></div>
-              <code>grad-brand</code>
-            </td>
-            <td>
-              <div class="color-swatch grad-teal-dark"></div>
-              <code>grad-teal-dark</code>
-            </td>
-            <td>
-              <div class="color-swatch grad-teal"></div>
-              <code>grad-teal</code>
-            </td>
-            <td>
-              <div class="color-swatch grad-orange-dark"></div>
-              <code>grad-orange-dark</code>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="color-swatch grad-orange"></div>
-              <code>grad-orange</code>
-            </td>
-            <td>
-              <div class="color-swatch grad-yellow"></div>
-              <code>grad-yellow</code>
-            </td>
-            <td>
-              <div class="color-swatch bg-brand-dark"></div>
-              <code>bg-brand-dark</code>
-            </td>
-            <td>
+  
+</div></section><section class="container group demo-grids"><h2 id="grids">Grids <a href="#top" class="back-to-top">^ Back to Top</a></h2>
 
-            </td>
-            <td>
-
-            </td>
-          </tr>
-        </table>
-        
-      </div>
-      
-    </section>
-    
-    <section class="container group demo-tabs">
-      
-      <h2 id="tabs">Tabs <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>For some of these, each tab will likely be a unique URL. For others, they will be same-page tabs where the content changes via JavaScript. We may want to consider giving even same-page tabs linkabke, unique URLs as well (<a href="http://css-tricks.com/14415-better-linkable-tabs/">link</a>).
-      </div>
-      
-      <div class="info">
-        
-        <div class="tabs">
-        
-          <nav>
-            <a href="#panel-1">Design Survey</a>
-            <a href="#panel-2" class="active">Collect Responses</a>
-            <a href="#panel-3">Analyze Results</a>
-          </nav>
+<div class="about">
+  <p>Discussion happening on whether to use inline-block or floats...</p>
+  
+  <p>Proposed:</p>
+  
+  <ul>
+    <li>no grid: 10/980/10</li>
+    <li><code>grid1</code>: 10/300/20/660/10</li>
+    <li><code>grid2</code>:10/200/20/760/10</li>
+    <li><code>grid3</code>:10/760/20/200/10</li>
+    <li><code>grid4</code>:10/735/20/225/10</li>
+    <li><code>grid5</code>:10/200/20/535/20/225/10</li>
+  </ul>
           
-          <div class="panels">
-            
-            <div class="panel" id="panel-1">
-              Panel 1
-            </div>
-            
-            <div class="panel open" id="panel-2">
-              Panel 2
-            </div>
-            
-            <div class="panel" id="panel-3">
-              Panel 3
-            </div>
-            
-          </div>
-          
-        </div><!-- END default tabs -->
-        
-        <!-- simulate some container, like an accordion -->
-        <div style="background: #9E9B90; padding: 20px;">
-        
-          <div class="tabs pillbox">
-            
-            <nav class="thirds group">
-    					<a class="active" href="#panel-4">Tab One</a>
-    					<a href="#panel-5">Tab Two</a>
-    					<a href="#panel-6">Tab Three</a>
-    				</nav>
-    				
-    				<div class="panels">
-    				
-    				  <div class="panel open" id="panel-4">
-                Eat 
-              </div>
+  <p>Do we allow grids within grids?</p>
+</div>
 
-              <div class="panel" id="panel-5">
-                At 
-              </div>
+<div class="info">
+  
+  <h3>Grid 1</h3>
+  
+  <div class="grid grid1 group example-grid">
+    <div class="col col1">
+    </div>
+    <div class="col col2">
+    </div>
+  </div>
+  
+  <h3>Grid 2</h3>
+  
+  <div class="grid grid2 group example-grid">
+    <div class="col col1">
+    </div>
+    <div class="col col2">
+    </div>
+  </div>
+  
+  <h3>Grid 3</h3>
+  
+  <div class="grid grid3 group example-grid">
+    <div class="col col1">
+    </div>
+    <div class="col col2">
+    </div>
+  </div>
+  
+  <h3>Grid 4</h3>
+  
+  <div class="grid grid4 group example-grid">
+    <div class="col col1">
+    </div>
+    <div class="col col2">
+    </div>
+  </div>
+  
+  <h3>Grid 5</h3>
+  
+  <div class="grid grid5 group example-grid">
+    <div class="col col1">
+    </div>
+    <div class="col col2">
+    </div>
+    <div class="col col3">
+    </div>
+  </div>
+  
+</div></section><section class="container group demo-colors"><h2 id="colors">Colors <a href="#top" class="back-to-top">^ Back to Top</a></h2>
 
-              <div class="panel" id="panel-6">
-                Joes
-              </div>
-              
-    				</div>
-    				
-  				</div>
-  				
-  				<div class="tabs pillbox">
-            
-            <nav class="group">
-    					<a class="active" href="#panel-7">Tab One</a>
-    					<a href="#panel-8">Tab Two</a>
-    				</nav>
-    				
-    				<div class="panels">
-    				
-    				  <div class="panel open" id="panel-7">
-                Eat 
-              </div>
+<div class="about">
+  <p>Purty!</p>
+  <p>Not seen: #4B4A3C - BG of logged in header</p>
+</div>
 
-              <div class="panel" id="panel-8">
-                At 
-              </div>
-              
-    				</div>
-    				
-  				</div> <!-- END tabs pillbox 2 -->
-  				
-  				<div class="tabs pillbox onoff">
-            
-            <nav class="group">
-    					<a class="active" href="#panel-30">Tab One</a>
-    					<a href="#panel-31">Tab Two</a>
-    				</nav>
-    				
-    				<div class="panels">
-    				
-    				  <div class="panel open" id="panel-30">
-                Eat 
-              </div>
+<div class="info">
+  
+  <table>
+    <tr>
+      <td>
+        <div class="color-swatch bg-dark"></div>
+        <code>bg-dark</code>
+      </td>
+      <td>
+        <div class="color-swatch bg-light"></div>
+        <code>bg-light</code>
+      </td>
+      <td>
+        <div class="color-swatch bg-white" style="border: 1px solid #ccc"></div>
+        <code>bg-white</code>
+      </td>
+      <td>
+        <div class="color-swatch bg-brand"></div>
+        <code>bg-brand</code>
+      </td>
+      <td>
+        <div class="color-swatch bg-teal"></div>
+        <code>bg-teal</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="color-swatch grad-dark"></div>
+        <code>grad-dark</code>
+      </td>
+      <td>
+        <div class="color-swatch grad-brand"></div>
+        <code>grad-brand</code>
+      </td>
+      <td>
+        <div class="color-swatch grad-teal-dark"></div>
+        <code>grad-teal-dark</code>
+      </td>
+      <td>
+        <div class="color-swatch grad-teal"></div>
+        <code>grad-teal</code>
+      </td>
+      <td>
+        <div class="color-swatch grad-orange-dark"></div>
+        <code>grad-orange-dark</code>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="color-swatch grad-orange"></div>
+        <code>grad-orange</code>
+      </td>
+      <td>
+        <div class="color-swatch grad-yellow"></div>
+        <code>grad-yellow</code>
+      </td>
+      <td>
+        <div class="color-swatch bg-brand-dark"></div>
+        <code>bg-brand-dark</code>
+      </td>
+      <td>
 
-              <div class="panel" id="panel-31">
-                At 
-              </div>
-              
-    				</div>
-    				
-  				</div> <!-- END tabs pillbox switch -->
-				
-				</div> <!-- END fake container -->
-        
-      </div>
-      
-    </section>
+      </td>
+      <td>
+
+      </td>
+    </tr>
+  </table>
+  
+</div></section><section class="container group demo-tabs"><h2 id="tabs">Tabs <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>For some of these, each tab will likely be a unique URL. For others, they will be same-page tabs where the content changes via JavaScript. We may want to consider giving even same-page tabs linkabke, unique URLs as well (<a href="http://css-tricks.com/14415-better-linkable-tabs/">link</a>).
+</div>
+
+<div class="info">
+  
+  <div class="tabs">
+  
+    <nav>
+      <a href="#panel-1">Design Survey</a>
+      <a href="#panel-2" class="active">Collect Responses</a>
+      <a href="#panel-3">Analyze Results</a>
+    </nav>
     
-    <section class="container group demo-icons">
+    <div class="panels">
       
-      <h2 id="icons">Icons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>These are <a href="http://pictos.drewwilson.com/">Pictos</a> icons. Shown here using the font, where each character is a different icon. This makes them scalable and colorable, but they are also available as images if we want to go the sprite route.</p>
+      <div class="panel" id="panel-1">
+        Panel 1
       </div>
       
-      <div class="info">
-        <table class="center-cells">
-      		<tbody>
-      			<tr class="icon">
-      				<td>a</td>
-      				<td>b</td>
-      				<td>c</td>
-      				<td>d</td>
-      				<td>e</td>
-      				<td>f</td>		
-      				<td>g</td>
-      				<td>h</td>
-      				<td>i</td>
-      				<td>j</td>
-      				<td>k</td>
-      				<td>l</td>
-      				<td>m</td>
-      			</tr>
-      			<tr>
-      				<td>a</td>
-      				<td>b</td>
-      				<td>c</td>
-      				<td>d</td>
-      				<td>e</td>
-      				<td>f</td>		
-      				<td>g</td>
-      				<td>h</td>
-      				<td>i</td>
-      				<td>j</td>
-      				<td>k</td>
-      				<td>l</td>
-      				<td>m</td>
-      			</tr>
-      			
-      		  <tr class="icon">
-      				<td>n</td>
-      				<td>o</td>
-      				<td>p</td>
-      				<td>q</td>
-      				<td>r</td>
-      				<td>s</td>
-      				<td>t</td>
-      				<td>u</td>
-      				<td>v</td>
-      				<td>w</td>
-      				<td>x</td>
-      				<td>y</td>
-      				<td>z</td>
-      			</tr>
-      			<tr>
-      				<td>n</td>
-      				<td>o</td>
-      				<td>p</td>
-      				<td>q</td>
-      				<td>r</td>
-      				<td>s</td>
-      				<td>t</td>
-      				<td>u</td>
-      				<td>v</td>
-      				<td>w</td>
-      				<td>x</td>
-      				<td>y</td>
-      				<td>z</td>
-      			</tr>
-      		</tbody>
-      	</table>
-      	
-      	<table class="center-cells">
-      		<tbody>
-      			<tr class="icon">
-      				<td>A</td>
-      				<td>B</td>
-      				<td>C</td>
-      				<td>D</td>
-      				<td>E</td>
-      				<td>F</td>		
-      				<td>G</td>
-      				<td>H</td>
-      				<td>I</td>
-      				<td>J</td>
-      				<td>K</td>
-      				<td>L</td>
-      				<td>M</td>
-      			</tr>
-      			<tr>
-      				<td>A</td>
-      				<td>B</td>
-      				<td>C</td>
-      				<td>D</td>
-      				<td>E</td>
-      				<td>F</td>		
-      				<td>G</td>
-      				<td>H</td>
-      				<td>I</td>
-      				<td>J</td>
-      				<td>K</td>
-      				<td>L</td>
-      				<td>M</td>
-      			</tr>
-      			
-      			<tr class="icon">
-      				<td>N</td>
-      				<td>O</td>
-      				<td>P</td>
-      				<td>Q</td>
-      				<td>R</td>
-      				<td>S</td>
-      				<td>T</td>
-      				<td>U</td>
-      				<td>V</td>
-      				<td>W</td>
-      				<td>X</td>
-      				<td>Y</td>
-      				<td>Z</td>
-      			</tr>
-      			<tr>
-      				<td>N</td>
-      				<td>O</td>
-      				<td>P</td>
-      				<td>Q</td>
-      				<td>R</td>
-      				<td>S</td>
-      				<td>T</td>
-      				<td>U</td>
-      				<td>V</td>
-      				<td>W</td>
-      				<td>X</td>
-      				<td>Y</td>
-      				<td>Z</td>
-      			</tr>
-      		</tbody>
-      	</table>
-      	
-      	<table class="center-cells">
-      		<tbody>
-      			<tr class="icon">
-      				<td>`</td>
-      				<td>1</td>
-      				<td>2</td>
-      				<td>3</td>
-      				<td>4</td>
-      				<td>5</td>		
-      				<td>6</td>
-      				<td>7</td>
-      				<td>8</td>
-      				<td>9</td>
-      				<td>0</td>
-      			</tr>
-      			<tr>
-      				<td>`</td>
-      				<td>1</td>
-      				<td>2</td>
-      				<td>3</td>
-      				<td>4</td>
-      				<td>5</td>		
-      				<td>6</td>
-      				<td>7</td>
-      				<td>8</td>
-      				<td>9</td>
-      				<td>0</td>
-      			</tr>
-      			
-      			<tr class="icon">
-      				<td>-</td>
-      				<td>=</td>
-      				<td>[</td>
-      				<td>]</td>
-      				<td>\</td>
-      				<td>;</td>
-      				<td>'</td>
-      				<td>,</td>
-      				<td>.</td>
-      				<td>/</td>
-      				<td> </td>
-      			</tr>
-      			<tr>
-      				<td>-</td>
-      				<td>=</td>
-      				<td>[</td>
-      				<td>]</td>
-      				<td>\</td>
-      				<td>;</td>
-      				<td>'</td>
-      				<td>,</td>
-      				<td>.</td>
-      				<td>/</td>
-      				<td> </td>
-      			</tr>
-      		</tbody>
-      	</table>
-      	
-      	<table class="center-cells">
-      		<tbody>
-      			<tr class="icon">
-      				<td>~</td>
-      				<td>!</td>
-      				<td>@</td>
-      				<td>#</td>
-      				<td>$</td>
-      				<td>%</td>		
-      				<td>^</td>
-      				<td>&</td>
-      				<td>*</td>
-      				<td>(</td>
-      				<td>)</td>
-      			</tr>
-      			<tr>
-      				<td>~</td>
-      				<td>!</td>
-      				<td>@</td>
-      				<td>#</td>
-      				<td>$</td>
-      				<td>%</td>		
-      				<td>^</td>
-      				<td>&</td>
-      				<td>*</td>
-      				<td>(</td>
-      				<td>)</td>
-      			</tr>
-      			
-      		  <tr class="icon">
-      				<td>_</td>
-      				<td>+</td>
-      				<td>{</td>
-      				<td>}</td>
-      				<td>|</td>
-      				<td>:</td>
-      				<td>"</td>
-      				<td><</td>
-      				<td>></td>
-      				<td>?</td>
-      				<td> </td>
-      			</tr>
-      			<tr>
-      				<td>_</td>
-      				<td>+</td>
-      				<td>{</td>
-      				<td>}</td>
-      				<td>|</td>
-      				<td>:</td>
-      				<td>"</td>
-      				<td><</td>
-      				<td>></td>
-      				<td>?</td>
-      				<td> </td>
-      			</tr>
-      		</tbody>
-      	</table>
+      <div class="panel open" id="panel-2">
+        Panel 2
       </div>
       
-    </section>
+      <div class="panel" id="panel-3">
+        Panel 3
+      </div>
+      
+    </div>
     
-    <section class="container group demo-notifications">
+  </div><!-- END default tabs -->
+  
+  <!-- simulate some container, like an accordion -->
+  <div style="background: #9E9B90; padding: 20px;">
+  
+    <div class="tabs pillbox">
       
-      <h2 id="notifications">Notifications <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>Bars, e.g. "Upgrade" bar.</p>
-      </div>
-      
-      <div class="info">
-        
-        <div class="notification">
-          notification
+      <nav class="thirds group">
+				<a class="active" href="#panel-4">Tab One</a>
+				<a href="#panel-5">Tab Two</a>
+				<a href="#panel-6">Tab Three</a>
+			</nav>
+			
+			<div class="panels">
+			
+			  <div class="panel open" id="panel-4">
+          Eat 
         </div>
-        <div class="notification warning">
-          notification
+
+        <div class="panel" id="panel-5">
+          At 
+        </div>
+
+        <div class="panel" id="panel-6">
+          Joes
         </div>
         
-      </div>
+			</div>
+			
+		</div>
+		
+		<div class="tabs pillbox">
       
-    </section>
-    
-    <section class="container group demo-popouts">
-      
-      <h2 id="help">Help Popouts <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>Hover over them for more information.</p>
-        <p>Top left requires no additional class</p>
-      </div>
-      
-      <div class="info">
+      <nav class="group">
+				<a class="active" href="#panel-7">Tab One</a>
+				<a href="#panel-8">Tab Two</a>
+			</nav>
+			
+			<div class="panels">
+			
+			  <div class="panel open" id="panel-7">
+          Eat 
+        </div>
+
+        <div class="panel" id="panel-8">
+          At 
+        </div>
         
-        <table>
-          <thead>
-            <tr>
-              <th>Position</th>
-              <th>Normal</th>
-              <th>On Dark</th>
-              <th>With Tip</th>
-              <th>With Pro Feature</th>
-            </tr>
-          </thead>
-          <tr>
-            <th>Top Left / Default</th>
-            <td>
-              <div class="q">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-      			</td>
-      			<td class="cell-on-dark">
-      			  <div class="q q-on-dark">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-      			</td>
-      			</td>
-      			<td>
-      			  
-      			</td>
-      			<td>
-      			  
-      			</td>
-			    </tr>
-			    <tr>
-			      <th>Top Right</th>
-			      <td>
-			        <div class="q q-top-right">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-    				</td>
-    				<td class="cell-on-dark">
-      			  <div class="q q-on-dark">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-      			</td>
-			      <td>
-      			  
-      			</td>
-      			<td>
-      			  
-      			</td>
-			    </tr>
-			    <tr>
-			      <th>Bottom Left</th>
-			      <td>
-			        <div class="q q-bottom-left">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-			      </td>
-			      <td class="cell-on-dark">
-      			  <div class="q q-on-dark">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-      			</td>
-			      <td>
-      			  
-      			</td>
-      			<td>
-      			  
-      			</td>
-			    </tr>
-			    <tr>
-			      <th>Bottom Right</th>
-			      <td>
-			        <div class="q q-bottom-right">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-			      </td>
-			      <td class="cell-on-dark">
-      			  <div class="q q-on-dark">
-      					<span>?</span>
-      					<div class="popout">
-      						<h5>View Clips</h5>
-      						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-      						<a href="#" class="learn-more-link">Learn more »</a>
-      					</div>
-      				</div>
-      			</td>
-			      <td>
-      			  
-      			</td>
-      			<td>
-      			  
-      			</td>
-			    </tr>
-			  </table>
+			</div>
+			
+		</div> <!-- END tabs pillbox 2 -->
+		
+		<div class="tabs pillbox onoff">
+      
+      <nav class="group">
+				<a class="active" href="#panel-30">Tab One</a>
+				<a href="#panel-31">Tab Two</a>
+			</nav>
+			
+			<div class="panels">
+			
+			  <div class="panel open" id="panel-30">
+          Eat 
+        </div>
 
-      </div>
-      
-    </section>
-    
-    <section class="container group demo-sprite">
-      
-      <h2 id="sprite">Sprite <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>This is the global site sprite. Sprites are excellent for site performance (less HTTP Requests).</p>
+        <div class="panel" id="panel-31">
+          At 
+        </div>
         
-        <p>Good resource for getting position/dimensions: <a href="http://www.spritecow.com/">SpriteCow</a></p>
-      </div>
-      
-      <div class="info">
-        <img src="images/sprite.png">
-      </div>
-      
-    </section>
+			</div>
+			
+		</div> <!-- END tabs pillbox switch -->
+	
+	</div> <!-- END fake container -->
+  
+</div></section><section class="container group demo-icons"><h2 id="icons">Icons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>These are <a href="http://pictos.drewwilson.com/">Pictos</a> icons. Shown here using the font, where each character is a different icon. This makes them scalable and colorable, but they are also available as images if we want to go the sprite route.</p>
+</div>
+
+<div class="info">
+  <table class="center-cells">
+		<tbody>
+			<tr class="icon">
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>		
+				<td>g</td>
+				<td>h</td>
+				<td>i</td>
+				<td>j</td>
+				<td>k</td>
+				<td>l</td>
+				<td>m</td>
+			</tr>
+			<tr>
+				<td>a</td>
+				<td>b</td>
+				<td>c</td>
+				<td>d</td>
+				<td>e</td>
+				<td>f</td>		
+				<td>g</td>
+				<td>h</td>
+				<td>i</td>
+				<td>j</td>
+				<td>k</td>
+				<td>l</td>
+				<td>m</td>
+			</tr>
+			
+		  <tr class="icon">
+				<td>n</td>
+				<td>o</td>
+				<td>p</td>
+				<td>q</td>
+				<td>r</td>
+				<td>s</td>
+				<td>t</td>
+				<td>u</td>
+				<td>v</td>
+				<td>w</td>
+				<td>x</td>
+				<td>y</td>
+				<td>z</td>
+			</tr>
+			<tr>
+				<td>n</td>
+				<td>o</td>
+				<td>p</td>
+				<td>q</td>
+				<td>r</td>
+				<td>s</td>
+				<td>t</td>
+				<td>u</td>
+				<td>v</td>
+				<td>w</td>
+				<td>x</td>
+				<td>y</td>
+				<td>z</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<table class="center-cells">
+		<tbody>
+			<tr class="icon">
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+				<td>D</td>
+				<td>E</td>
+				<td>F</td>		
+				<td>G</td>
+				<td>H</td>
+				<td>I</td>
+				<td>J</td>
+				<td>K</td>
+				<td>L</td>
+				<td>M</td>
+			</tr>
+			<tr>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+				<td>D</td>
+				<td>E</td>
+				<td>F</td>		
+				<td>G</td>
+				<td>H</td>
+				<td>I</td>
+				<td>J</td>
+				<td>K</td>
+				<td>L</td>
+				<td>M</td>
+			</tr>
+			
+			<tr class="icon">
+				<td>N</td>
+				<td>O</td>
+				<td>P</td>
+				<td>Q</td>
+				<td>R</td>
+				<td>S</td>
+				<td>T</td>
+				<td>U</td>
+				<td>V</td>
+				<td>W</td>
+				<td>X</td>
+				<td>Y</td>
+				<td>Z</td>
+			</tr>
+			<tr>
+				<td>N</td>
+				<td>O</td>
+				<td>P</td>
+				<td>Q</td>
+				<td>R</td>
+				<td>S</td>
+				<td>T</td>
+				<td>U</td>
+				<td>V</td>
+				<td>W</td>
+				<td>X</td>
+				<td>Y</td>
+				<td>Z</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<table class="center-cells">
+		<tbody>
+			<tr class="icon">
+				<td>`</td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>		
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>0</td>
+			</tr>
+			<tr>
+				<td>`</td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>		
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>0</td>
+			</tr>
+			
+			<tr class="icon">
+				<td>-</td>
+				<td>=</td>
+				<td>[</td>
+				<td>]</td>
+				<td></td>
+				<td>;</td>
+				<td>'</td>
+				<td>,</td>
+				<td>.</td>
+				<td>/</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td>-</td>
+				<td>=</td>
+				<td>[</td>
+				<td>]</td>
+				<td></td>
+				<td>;</td>
+				<td>'</td>
+				<td>,</td>
+				<td>.</td>
+				<td>/</td>
+				<td> </td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<table class="center-cells">
+		<tbody>
+			<tr class="icon">
+				<td>~</td>
+				<td>!</td>
+				<td>@</td>
+				<td>#</td>
+				<td>$</td>
+				<td>%</td>		
+				<td>^</td>
+				<td>&</td>
+				<td>*</td>
+				<td>(</td>
+				<td>)</td>
+			</tr>
+			<tr>
+				<td>~</td>
+				<td>!</td>
+				<td>@</td>
+				<td>#</td>
+				<td>$</td>
+				<td>%</td>		
+				<td>^</td>
+				<td>&</td>
+				<td>*</td>
+				<td>(</td>
+				<td>)</td>
+			</tr>
+			
+		  <tr class="icon">
+				<td>_</td>
+				<td>+</td>
+				<td>{</td>
+				<td>}</td>
+				<td>|</td>
+				<td>:</td>
+				<td>"</td>
+				<td><</td>
+				<td>></td>
+				<td>?</td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td>_</td>
+				<td>+</td>
+				<td>{</td>
+				<td>}</td>
+				<td>|</td>
+				<td>:</td>
+				<td>"</td>
+				<td><</td>
+				<td>></td>
+				<td>?</td>
+				<td> </td>
+			</tr>
+		</tbody>
+	</table>
+</div></section><section class="container group demo-notifications"><h2 id="notifications">Notifications <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>Bars, e.g. "Upgrade" bar.</p>
+</div>
+
+<div class="info">
+  
+  <div class="notification">
+    notification
+  </div>
+  <div class="notification warning">
+    notification
+  </div>
+  
+</div></section><section class="container group demo-popouts"><h2 id="help">Help Popouts <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>Hover over them for more information.</p>
+  <p>Top left requires no additional class</p>
+</div>
+
+<div class="info">
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Position</th>
+        <th>Normal</th>
+        <th>On Dark</th>
+        <th>With Tip</th>
+        <th>With Pro Feature</th>
+      </tr>
+    </thead>
+    <tr>
+      <th>Top Left / Default</th>
+      <td>
+        <div class="q">
+					<span>?</span>
+					<div class="popout">
+						<h5>View Clips</h5>
+						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+						<a href="#" class="learn-more-link">Learn more »</a>
+					</div>
+				</div>
+			</td>
+			<td class="cell-on-dark">
+			  <div class="q q-on-dark">
+					<span>?</span>
+					<div class="popout">
+						<h5>View Clips</h5>
+						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+						<a href="#" class="learn-more-link">Learn more »</a>
+					</div>
+				</div>
+			</td>
+			</td>
+			<td>
+			  
+			</td>
+			<td>
+			  
+			</td>
+    </tr>
+    <tr>
+      <th>Top Right</th>
+      <td>
+        <div class="q q-top-right">
+					<span>?</span>
+					<div class="popout">
+						<h5>View Clips</h5>
+						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+						<a href="#" class="learn-more-link">Learn more »</a>
+					</div>
+				</div>
+			</td>
+			<td class="cell-on-dark">
+			  <div class="q q-on-dark q-top-right">
+					<span>?</span>
+					<div class="popout">
+						<h5>View Clips</h5>
+						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+						<a href="#" class="learn-more-link">Learn more »</a>
+					</div>
+				</div>
+			</td>
+      <td>
+			  
+			</td>
+			<td>
+			  
+			</td>
+    </tr>
+    <tr>
+      <th>Bottom Left</th>
+      <td>
+        <div class="q q-bottom-left">
+					<span>?</span>
+					<div class="popout">
+						<h5>View Clips</h5>
+						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+						<a href="#" class="learn-more-link">Learn more »</a>
+					</div>
+				</div>
+      </td>
+      <td class="cell-on-dark">
+			  <div class="q q-on-dark q-bottom-left">
+					<span>?</span>
+					<div class="popout">
+						<h5>View Clips</h5>
+						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+						<a href="#" class="learn-more-link">Learn more »</a>
+					</div>
+				</div>
+			</td>
+      <td>
+			  
+			</td>
+			<td>
+			  
+			</td>
+    </tr>
+    <tr>
+      <th>Bottom Right</th>
+      <td>
+        <div class="q q-bottom-right">
+					<span>?</span>
+					<div class="popout">
+						<h5>View Clips</h5>
+						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+						<a href="#" class="learn-more-link">Learn more »</a>
+					</div>
+				</div>
+      </td>
+      <td class="cell-on-dark">
+			  <div class="q q-on-dark q-bottom-right">
+					<span>?</span>
+					<div class="popout">
+						<h5>View Clips</h5>
+						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+						<a href="#" class="learn-more-link">Learn more »</a>
+					</div>
+				</div>
+			</td>
+      <td>
+			  
+			</td>
+			<td>
+			  
+			</td>
+    </tr>
+  </table>
+
+</div></section><section class="container group demo-sprites"><h2 id="sprite">Sprite <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>This is the global site sprite. Sprites are excellent for site performance (less HTTP Requests).</p>
+  
+  <p>Good resource for getting position/dimensions: <a href="http://www.spritecow.com/">SpriteCow</a></p>
+</div>
+
+<div class="info">
+  <img src="images/sprite.png">
+</div></section><section class="container group demo-accordion"><h2 id="accordion">Accordion <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>What's perfect pitch?</p>
+
+	<p>When you throw an accordion into the middle of a pond and not hit any of the ducks.</p>
+</div>
+
+<div class="info">
+  
+  <table class="equal vtop">
     
-    <section class="container group demo-accordion">
-      
-      <h2 id="accordion">Accordion <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p></p>
-      </div>
-      
-      <div class="info">
-        
-        <table class="equal vtop">
-          
-        <tr>
-          <th></th>
-          <th>Multiple</th>
-          <th>Single</th>
-        </tr>
-        
-        <tr>
-          <th>Flexible Growth</th>
-          <td>
-            <aside class="accordion multiple">
-    					<div class="key">
-	    					<h3 data-panel="ac1">
-	    						<a class="press" href="#panel-1">First Key</a>
-	    						<div class="q q-on-dark">
-	        					<span>?</span>
-	        					<div class="popout">
-	        						<h5>View Clips</h5>
-	        						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-	        						<a href="#" class="learn-more-link">Learn more »</a>
-	        					</div>
-	        				</div>
-	    					</h3>
+ 	 <tr>
+	    <th></th>
+	    <th>Multiple</th>
+	    <th>Single</th>
+	  </tr>
+  
+	  <tr>
+	    <th>Flexible Growth</th>
+	    <td>
+	      <aside class="accordion multiple">
+					<div class="key">
+						<h3 data-panel="ac1">
+							<a class="press" href="#panel-1">First Key</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-	    					<section id="panel-1">
-	    						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-	    					</section><!-- #ac1 -->
-	    				</div><!-- ac3 key -->
+						<section id="panel-1">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+						</section><!-- #ac1 -->
+					</div><!-- ac3 key -->
 
-	    				<div class="key">
-	    					<h3 data-panel="ac2">
-	    						<a class="press" href="#panel-2">Second Key</a>
-	    						<div class="q q-on-dark">
-	        					<span>?</span>
-	        					<div class="popout">
-	        						<h5>View Clips</h5>
-	        						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-	        						<a href="#" class="learn-more-link">Learn more »</a>
-	        					</div>
-	        				</div>
-	    					</h3>
+					<div class="key">
+						<h3 data-panel="ac2">
+							<a class="press" href="#panel-2">Second Key</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-	    					<section id="panel-2">
-	    						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-	    					</section><!-- #ac2 -->
-	    				</div><!-- ac2 key -->
+						<section id="panel-2">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
+						</section><!-- #ac2 -->
+					</div><!-- ac2 key -->
 
-	    				<div class="key">
-	    					<h3 data-panel="ac3">
-	    						<a class="press" href="#panel-3">Third Key</a>
-	    						<div class="q q-on-dark">
-	        					<span>?</span>
-	        					<div class="popout">
-	        						<h5>View Clips</h5>
-	        						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-	        						<a href="#" class="learn-more-link">Learn more »</a>
-	        					</div>
-	        				</div>
-	    					</h3>
+					<div class="key">
+						<h3 data-panel="ac3">
+							<a class="press" href="#panel-3">Third Key</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-	    					<section id="panel-3">
-	    					  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-	    					  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-	    					</section><!-- #ac3 -->
-	    				</div><!-- ac3 key -->
-	    			</aside> <!-- accordion multiple flexible -->
-					</td>
-          <td>
-            <aside class="accordion single">
-      				<div class="key">
-      					<h3 data-panel="ac4">
-      						<a class="press" href="#panel-4">First Key</a>
-      					</h3>
+						<section id="panel-3">
+						  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
+						  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
+						</section><!-- #ac3 -->
+					</div><!-- ac3 key -->
+				</aside> <!-- accordion multiple flexible -->
+			</td>
+	    <td>
+	      <aside class="accordion single">
+					<div class="key">
+						<h3 data-panel="ac4">
+							<a class="press" href="#panel-4">First Key</a>
+						</h3>
 
-      					<section id="panel-4">
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      					</section><!-- #ac1 -->
-      				</div><!-- ac3 key -->
+						<section id="panel-4">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+						</section><!-- #ac1 -->
+					</div><!-- ac3 key -->
 
-      				<div class="key">
-      					<h3 data-panel="ac5">
-      						<a class="press" href="#panel-5">Second Key</a>
-      					</h3>
+					<div class="key">
+						<h3 data-panel="ac5">
+							<a class="press" href="#panel-5">Second Key</a>
+						</h3>
 
-      					<section id="panel-5">
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      					</section><!-- #ac2 -->
-      				</div><!-- ac2 key -->
+						<section id="panel-5">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+						</section><!-- #ac2 -->
+					</div><!-- ac2 key -->
 
-      				<div class="key">
-      					<h3 data-panel="ac6">
-      						<a class="press" href="#panel-6">Third Key</a>
-      					</h3>
+					<div class="key">
+						<h3 data-panel="ac6">
+							<a class="press" href="#panel-6">Third Key</a>
+						</h3>
 
-      					<section id="panel-6">
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      					</section><!-- #ac3 -->
-      				</div><!-- ac3 key -->
-      			</aside><!-- accordion multiple -->
-          </td>
-        </tr> 
-        
-        <tr>
-          <th>Static Growth</th>
-          <td>
-            <aside class="accordion static multiple">
-      				<div class="key">
-      					<h3 data-panel="ac7">
-      						<a class="press" href="#panel-7">Example of Tabs</a>
-      						<div class="q q-on-dark">
-          					<span>?</span>
-          					<div class="popout">
-          						<h5>View Clips</h5>
-          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-          						<a href="#" class="learn-more-link">Learn more »</a>
-          					</div>
-          				</div>
-      					</h3>
+						<section id="panel-6">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+						</section><!-- #ac3 -->
+					</div><!-- ac3 key -->
+				</aside><!-- accordion multiple -->
+	    </td>
+	  </tr> 
+  
+	  <tr>
+	    <th>Static Growth</th>
+	    <td>
+	      <aside class="accordion static multiple">
+					<div class="key">
+						<h3 data-panel="ac7">
+							<a class="press" href="#panel-7">Example of Tabs</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-      					<section id="panel-7">
-      					  
-      					  <div class="tabs pillbox">
+						<section id="panel-7">
+					  
+						  <div class="tabs pillbox">
 
-                    <nav class="thirds group">
-            					<a class="active" href="#panel-20">Tab One</a>
-            					<a href="#panel-21">Tab Two</a>
-            					<a href="#panel-22">Tab Three</a>
-            				</nav>
+	              <nav class="thirds group">
+	      					<a class="active" href="#panel-20">Tab One</a>
+	      					<a href="#panel-21">Tab Two</a>
+	      					<a href="#panel-22">Tab Three</a>
+	      				</nav>
 
-            				<div class="panels">
+	      				<div class="panels">
 
-            				  <div class="panel open" id="panel-20">
-                        <p>Biltong swine venison boudin tri-tip. Turkey ham hock tenderloin boudin, capicola fatback ham brisket rump tongue frankfurter drumstick pork belly.</p>
-                      </div>
+	      				  <div class="panel open" id="panel-20">
+	                  <p>Biltong swine venison boudin tri-tip. Turkey ham hock tenderloin boudin, capicola fatback ham brisket rump tongue frankfurter drumstick pork belly.</p>
+	                </div>
 
-                      <div class="panel" id="panel-21">
-                        <p>strip steak salami, short loin turducken swine ham cow ball tip beef. Turkey drumstick pastrami capicola chicken, boudin short loin. Fatback pork belly kielbasa short ribs. Ground round fatback rump, shoulder brisket turducken turkey corned beef venison.</p>
-                      </div>
+	                <div class="panel" id="panel-21">
+	                  <p>strip steak salami, short loin turducken swine ham cow ball tip beef. Turkey drumstick pastrami capicola chicken, boudin short loin. Fatback pork belly kielbasa short ribs. Ground round fatback rump, shoulder brisket turducken turkey corned beef venison.</p>
+	                </div>
 
-                      <div class="panel" id="panel-22">
-                        <p>Short ribs bacon pastrami tri-tip shoulder. Hamburger prosciutto short ribs kielbasa, sausage t-bone shank ham pork chop sirloin bresaola fatback turkey.</p>
-                      </div>
+	                <div class="panel" id="panel-22">
+	                  <p>Short ribs bacon pastrami tri-tip shoulder. Hamburger prosciutto short ribs kielbasa, sausage t-bone shank ham pork chop sirloin bresaola fatback turkey.</p>
+	                </div>
 
-            				</div>
+	      				</div>
 
-          				</div>
-      						
-      					</section><!-- #ac1 -->
-      				</div><!-- ac3 key -->
+	    				</div>
+						
+						</section><!-- #ac1 -->
+					</div><!-- ac3 key -->
 
-      				<div class="key">
-      					<h3 data-panel="ac8">
-      						<a class="press" href="#panel-8">Second Key</a>
-      						<div class="q q-on-dark">
-          					<span>?</span>
-          					<div class="popout">
-          						<h5>View Clips</h5>
-          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-          						<a href="#" class="learn-more-link">Learn more »</a>
-          					</div>
-          				</div>
-      					</h3>
+					<div class="key">
+						<h3 data-panel="ac8">
+							<a class="press" href="#panel-8">Second Key</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-      					<section id="panel-8">
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      					</section><!-- #ac2 -->
-      				</div><!-- ac2 key -->
+						<section id="panel-8">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+						</section><!-- #ac2 -->
+					</div><!-- ac2 key -->
 
-      				<div class="key">
-      					<h3 data-panel="ac9">
-      						<a class="press" href="#panel-9">Third Key</a>
-      						<div class="q q-on-dark">
-          					<span>?</span>
-          					<div class="popout">
-          						<h5>View Clips</h5>
-          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-          						<a href="#" class="learn-more-link">Learn more »</a>
-          					</div>
-          				</div>
-      					</h3>
+					<div class="key">
+						<h3 data-panel="ac9">
+							<a class="press" href="#panel-9">Third Key</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-      					<section id="panel-9">
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      					</section><!-- #ac3 -->
-      				</div><!-- ac3 key -->
-      			</aside><!-- accordion multiple static -->
-          </td>
-          <td>
-            <aside class="accordion static single">
-      				<div class="key">
-      					<h3 data-panel="ac10">
-      						<a class="press" href="#panel-10">First Key</a>
-      						<div class="q q-on-dark">
-          					<span>?</span>
-          					<div class="popout">
-          						<h5>View Clips</h5>
-          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-          						<a href="#" class="learn-more-link">Learn more »</a>
-          					</div>
-          				</div>
-      					</h3>
+						<section id="panel-9">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+						</section><!-- #ac3 -->
+					</div><!-- ac3 key -->
+				</aside><!-- accordion multiple static -->
+	    </td>
+	    <td>
+	      <aside class="accordion static single">
+					<div class="key">
+						<h3 data-panel="ac10">
+							<a class="press" href="#panel-10">First Key</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-      					<section id="panel-10">
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      					</section><!-- #ac1 -->
-      				</div><!-- ac3 key -->
+						<section id="panel-10">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+						</section><!-- #ac1 -->
+					</div><!-- ac3 key -->
 
-      				<div class="key">
-      					<h3 data-panel="ac11">
-      						<a class="press" href="#panel-11">Second Key</a>
-      						<div class="q q-on-dark">
-          					<span>?</span>
-          					<div class="popout">
-          						<h5>View Clips</h5>
-          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-          						<a href="#" class="learn-more-link">Learn more »</a>
-          					</div>
-          				</div>
-      					</h3>
+					<div class="key">
+						<h3 data-panel="ac11">
+							<a class="press" href="#panel-11">Second Key</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-      					<section id="panel-11">
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      					</section><!-- #ac2 -->
-      				</div><!-- ac2 key -->
+						<section id="panel-11">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+						</section><!-- #ac2 -->
+					</div><!-- ac2 key -->
 
-      				<div class="key">
-      					<h3 data-panel="ac12">
-      						<a class="press" href="#panel-12">Scrolling Content</a>
-      						<div class="q q-on-dark">
-          					<span>?</span>
-          					<div class="popout">
-          						<h5>View Clips</h5>
-          						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-          						<a href="#" class="learn-more-link">Learn more »</a>
-          					</div>
-          				</div>
-      					</h3>
+					<div class="key">
+						<h3 data-panel="ac12">
+							<a class="press" href="#panel-12">Scrolling Content</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-      					<section id="panel-12">
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-      					</section><!-- #ac3 -->
-      				</div><!-- ac3 key -->
-      			</aside><!-- accordion single static -->
-          </td>
-        </tr>
+						<section id="panel-12">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+						</section><!-- #ac3 -->
+					</div><!-- ac3 key -->
+				</aside><!-- accordion single static -->
+	    </td>
+	  </tr>
 
-				<tr>
-					<th>Flexible (Light)</th>
-					<td colspan="2">
-						<aside class="accordion multiple light">
-    					<div class="key">
-	    					<h3 data-panel="ac40">
-	    						<a class="press" href="#panel-40">First Key</a>
-	    						<div class="q q-on-dark">
-	        					<span>?</span>
-	        					<div class="popout">
-	        						<h5>View Clips</h5>
-	        						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-	        						<a href="#" class="learn-more-link">Learn more »</a>
-	        					</div>
-	        				</div>
-	    					</h3>
+		<tr>
+			<th>Flexible (Light)</th>
+			<td colspan="2">
+				<aside class="accordion multiple light">
+					<div class="key">
+						<h3 data-panel="ac40">
+							<a class="press" href="#panel-40">First Key</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-	    					<section id="panel-40">
-	    						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-	    					</section><!-- #ac1 -->
-	    				</div><!-- ac3 key -->
+						<section id="panel-40">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
+						</section><!-- #ac1 -->
+					</div><!-- ac3 key -->
 
-	    				<div class="key">
-	    					<h3 data-panel="ac41">
-	    						<a class="press" href="#panel-41">Second Key</a>
-	    						<div class="q q-on-dark">
-	        					<span>?</span>
-	        					<div class="popout">
-	        						<h5>View Clips</h5>
-	        						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-	        						<a href="#" class="learn-more-link">Learn more »</a>
-	        					</div>
-	        				</div>
-	    					</h3>
+					<div class="key">
+						<h3 data-panel="ac41">
+							<a class="press" href="#panel-41">Second Key</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-	    					<section id="panel-41">
-	    						<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-	    					</section><!-- #ac2 -->
-	    				</div><!-- ac2 key -->
+						<section id="panel-41">
+							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
+						</section><!-- #ac2 -->
+					</div><!-- ac2 key -->
 
-	    				<div class="key">
-	    					<h3 data-panel="ac42">
-	    						<a class="press" href="#panel-42">Third Key</a>
-	    						<div class="q q-on-dark">
-	        					<span>?</span>
-	        					<div class="popout">
-	        						<h5>View Clips</h5>
-	        						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-	        						<a href="#" class="learn-more-link">Learn more »</a>
-	        					</div>
-	        				</div>
-	    					</h3>
+					<div class="key">
+						<h3 data-panel="ac42">
+							<a class="press" href="#panel-42">Third Key</a>
+							<div class="q q-on-dark">
+	    					<span>?</span>
+	    					<div class="popout">
+	    						<h5>View Clips</h5>
+	    						<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite presentation software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+	    						<a href="#" class="learn-more-link">Learn more »</a>
+	    					</div>
+	    				</div>
+						</h3>
 
-	    					<section id="panel-42">
-	    					  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-	    					  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-	    					</section><!-- #ac3 -->
-	    				</div><!-- ac3 key -->
-	    			</aside><!-- accordion multiple flexible light -->
-					</td>
-				</tr>
-  			
-		  </table>
-  			
-      </div>
-      
-    </section>
-    
-    <section class="container group animations">
-      
-      <h2 id="animations">Animations <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>Reusable bits of common animations</p>
-        <p>Ideas:</p>
-        <ul>
-          <li>Shake</li>
-          <li>Fade in/out</li>
-          <li>Slide in/out</li>
-        </ul>
-      </div>
-      
-      <div class="info">
-        
-      </div>
-      
-    </section>
-    
-    <section class="container group spinners">
-      
-      <h2 id="spinners">Spinners <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>For when stuff is loading.</p>
-      </div>
-      
-      <div class="info">
-        
-        <form id="spinner-test">
-          <input type="text" value="Adding ..." id="test-spinner-text">
-          <input type="submit" value="Test Notification Spinner">
-        </form>
-        
-        <br>
-        
-        <table class="equal center-cells">
-          <tr>
-            <td><img src="images/spinner_gray_16.gif"></td>
-            <td><img src="images/spinner_gray_30.gif"></td>
-            <td><img src="images/spinner_gray_66.gif"></td>
-            <td><img src="images/spinner_gray_160.gif"></td>
-          </tr>
-          <tr class="bg-brand-dark">
-            <td><img src="images/spinner_16_onGreen.gif"></td>
-            <td><img src="images/spinner_30_onGreen.gif"></td>
-            <td><img src="images/spinner_66_onGreen.gif"></td>
-            <td><img src="images/spinner_160_onGreen.gif"></td>
-          </tr>
-        </table>
-        
-      </div>
-      
-    </section>
-    
-		<section class="container group scroll-follow">
-      
-      <h2 id="scroll-follow">Scroll-Follow <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>Coming soon.</p>
-      </div>
-      
-      <div class="info">
-        
-        
-        
-      </div>
-      
-    </section>
+						<section id="panel-42">
+						  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
+						  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
+						</section><!-- #ac3 -->
+					</div><!-- ac3 key -->
+				</aside><!-- accordion multiple flexible light -->
+			</td>
+		</tr>
+	
+	</table>
+	
+</div></section><section class="container group animations"><h2 id="animations">Animations <a href="#top" class="back-to-top">^ Back to Top</a></h2>
 
-    <section class="container group slides">
-      
-      <h2 id="slides">Sliders <a href="#top" class="back-to-top">^ Back to Top</a></h2>
-      
-      <div class="about">
-        <p>There are utilizing jQuery UI.</p>
-      </div>
-      
-      <div class="info">
-        
-        <div id="slider-1"></div>
-        
-        <div id="slider-2"></div>
-        
-      </div>
-      
-    </section>
-    
-    <footer>
-      <div class="container">
-        &copy;2011 SurveyMonkey
-      </div>
-    </footer>
-    
-    <!-- Does not require jQuery -->
-        
-    <script src="js/elastictxt.js"></script>
-    
-    
-    <!-- required for everything. jQuery! Yay! -->
-    <script src="js/jquery-1.7.min.js"></script>
-    
-    <!-- for popouts -->
-    <script src="js/jquery.hoverIntent.js"></script>
-    <script src="js/popouts.js"></script>
-    
-    <!-- for accordions -->
-    <script src="js/accordion.js"></script>
-    
-    <!-- for tabs -->
-    <script src="js/tabs.js"></script>
-    
-    <!-- for spinners -->
-    <script src="js/spinners.js"></script>
-    
-    <!-- for button menus -->
-    <script src="js/button-menus.js"></script>
-    
-    <!-- for sliders -->
-    <script src="js/jquery-ui-1.8.16.core-widget-mouse-slider.min.js"></script>
-    <script src="js/sliders.js"></script>
-    
-    <!-- just for this demo page -->
-    <script src="js/demo.js"></script>
-    
-  </body>
+<div class="about">
+  <p>Reusable bits of common animations</p>
+  <p>Ideas:</p>
+  <ul>
+    <li>Shake</li>
+    <li>Fade in/out</li>
+    <li>Slide in/out</li>
+  </ul>
+</div>
 
-</html>
+<div class="info">
+  
+</div></section><section class="container group spinners"><h2 id="spinners">Spinners <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>For when stuff is loading.</p>
+</div>
+
+<div class="info">
+  
+  <form id="spinner-test">
+    <input type="text" value="Adding ..." id="test-spinner-text">
+    <input type="submit" value="Test Notification Spinner">
+  </form>
+  
+  <br>
+  
+  <table class="equal center-cells">
+    <tr>
+      <td><img src="images/spinner_gray_16.gif"></td>
+      <td><img src="images/spinner_gray_30.gif"></td>
+      <td><img src="images/spinner_gray_66.gif"></td>
+      <td><img src="images/spinner_gray_160.gif"></td>
+    </tr>
+    <tr class="bg-brand-dark">
+      <td><img src="images/spinner_16_onGreen.gif"></td>
+      <td><img src="images/spinner_30_onGreen.gif"></td>
+      <td><img src="images/spinner_66_onGreen.gif"></td>
+      <td><img src="images/spinner_160_onGreen.gif"></td>
+    </tr>
+  </table>
+  
+</div></section><section class="container group scroll-follow"><h2 id="scroll-follow">Scroll-Follow <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>Coming soon.</p>
+</div>
+
+<div class="info">
+  
+  
+  
+</div></section><section class="container group sliders"><h2 id="slides">Sliders <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>There are utilizing jQuery UI.</p>
+</div>
+
+<div class="info">
+  
+  <div id="slider-1"></div>
+  
+  <div id="slider-2"></div>
+  
+</div></section><footer><div class="container">&copy;2011 SurveyMonkey</div></footer><!-- Does not require jQuery--><script src="js/elastictxt.js"></script><!-- Required For everything. jQuery! Yay!--><script src="js/jquery-1.7.min.js"></script><!-- For Popouts--><script src="js/jquery.hoverIntent.js"></script><script src="js/popouts.js"></script><!-- For accordions--><script src="js/accordion.js"></script><!-- For tabs--><script src="js/tabs.js"></script><!-- For spinners--><script src="js/spinners.js"></script><!-- For button menus--><script src="js/button-menus.js"></script><!-- For sliders--><script src="js/jquery-ui-1.8.16.core-widget-mouse-slider.min.js"></script><script src="js/sliders.js"></script><!-- For this demo page--><script src="js/demo.js"></script></body></html>

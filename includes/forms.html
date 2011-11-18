@@ -1,0 +1,138 @@
+<h2 id="forms">Form Elements <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+
+<div class="about">
+  <p>This is based on <a href="http://formalize.me/">Formalize</a>.</p>
+  <p>The autofocus attribute works but it's annoying on this page.</p>
+</div>
+
+<div class="info">
+  
+  <form>
+
+    <header>
+      <h2>Title of the Form</h2>
+      <div>Descriptive text for the form</div>
+    </header>
+
+    <ul>
+
+      <li>
+        <label for="Field1">
+          Input[type=text]
+        </label>
+        <div>
+          <input id="Field1" name="Field1" type="text" placeholder="placeholder text">
+        </div>
+      </li>
+  
+      <li>
+        <label for="Field2">
+          Textarea
+        </label>
+        <div>
+          <textarea id="Field2" name="Field2"></textarea>
+        </div>
+      </li>
+      
+      <li>
+        <label class="desc" id="title105" for="Field105">
+          Select
+        </label>
+        <div>
+          <select id="Field105" name="Field105"> 
+            <option value="First Choice" selected="selected">
+              First Choice
+            </option>
+            <option value="Second Choice" >
+              Second Choice
+            </option>
+            <option value="Third Choice" >
+              Third Choice
+            </option>
+          </select>
+        </div>
+        </li>
+        
+      <li>
+        <fieldset>
+          
+          <![if !IE | (gte IE 8)]>
+            <legend id="title3" class="desc">
+              Radio
+            </legend>
+          <![endif]>
+          <!--[if lt IE 8]>
+            <label id="title3" class="desc">
+              Radio
+            </label>
+          <![endif]-->
+          
+          <div>
+            <input id="radioDefault_3" name="Field3" type="hidden" value="">
+            <span>
+              <input id="Field3_0" name="Field3" type="radio" checked="checked">
+              <label class="choice" for="Field3_0" >
+                First Choice
+              </label>
+            </span>
+            <span>
+              <input id="Field3_1" name="Field3" type="radio">
+              <label class="choice" for="Field3_1" >
+                Second Choice
+              </label>
+            </span>
+            <span>
+              <input id="Field3_2" name="Field3" type="radio">
+              <label class="choice" for="Field3_2" >
+                Third Choice
+              </label>
+            </span>
+          </div>
+          
+        </fieldset>
+      </li>
+      
+      <li>
+        <fieldset>
+          <![if !IE | (gte IE 8)]>
+            <legend id="title5" class="desc">
+              Checkbox
+            </legend>
+          <![endif]>
+          <!--[if lt IE 8]>
+            <label id="title5" class="desc">
+              Checkbox
+            </label>
+          <![endif]-->
+      
+          <div>
+            <span>
+              <input id="Field5" name="Field5" type="checkbox">
+              <label class="choice" for="Field5">First Choice</label>
+            </span>
+            <span>
+              <input id="Field6" name="Field6" type="checkbox">
+              <label class="choice" for="Field6">Second Choice</label>
+            </span>
+            <span>
+              <input id="Field7" name="Field7" type="checkbox">
+              <label class="choice" for="Field7">Third Choice</label>
+            </span>
+          </div>
+          
+        </fieldset>
+      </li>
+
+    </ul>
+  
+    <input type="submit" value="input[type=submit]">
+    &nbsp;
+    <input type="button" value="input[type=button]">
+    &nbsp;
+    <input type="reset" value="input[type=reset]">
+    &nbsp;
+    <button>Button</button>
+  
+  </form>
+  
+</div>
