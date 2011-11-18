@@ -1,22 +1,26 @@
 @import "functions.less";
 
 .btn {
-  padding: 6px 12px;
+  padding: 0.5em 1em;
   .border-radius(4px);
   text-shadow: 0 1px 0 #FFFFFF;
   outline: none;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 1.0em;
   font-weight: bold;
-  line-height: 18px;
+  line-height: 1.5;
   white-space: nowrap;
   text-decoration: none;
   color: #333;
   display: inline-block;
   border: solid 1px #BBB;
   .gradient(#f0f0ea, #d5d7ce);
+  
+  /* Hope this doesn't cause problems, it's useful for button menus */
+  position: relative;
 }
 .btn:hover {
+  z-index: 1;
 	border: solid 1px #999; 
 	text-decoration: none;
 	.gradient(#F5F5EE, #DCDED5);
@@ -50,7 +54,7 @@ input.btn {
   vertical-align: top;
 }
 .btn-menu .btn-menu-right {
-  border-left: none;
+  margin-left: -1px;
   /* Not a great function for this yet, since we we're
      resetting some but leaving other corners alone */
   -webkit-top-left-border-radius:    0;
@@ -302,7 +306,7 @@ input.btn {
 	border: 0;
 	.gradient(#42CBCC, #14A4A3);
 }
-.teal:active {
+.teal:active, .teal.open {
 	.gradient(#14A4A3, #42CBCC);
 }
 
@@ -316,7 +320,7 @@ input.btn {
 	border: 0;
 	.gradient(#A4A4A4, #787878);
 }
-.dark-grey:active {
+.dark-grey:active, .dark-grey.open {
   .gradient(#787878, #A4A4A4);
 }
 
@@ -329,7 +333,7 @@ input.btn {
 	border: solid 1px #999; 
 	.gradient(#FCFC85, #EDCE38);
 }
-.yellow:active {
+.yellow:active, .yellow.open {
 	.gradient(#F7E258, #FAF476);
 }
 
@@ -343,7 +347,7 @@ input.btn {
 	border: 0;
 	.gradient(#B4D141, #819D37);
 }
-.green:active {
+.green:active, .green.open {
 	.gradient(#819D37, #B4D141);
 }
 
@@ -364,5 +368,5 @@ input.btn {
   border: 0;
 }
 .shadow {
-  .drop-shadow(0, 2px, 2px, 0.25);
+  .drop-shadow(0, 2px, 2px, 0, 0.25);
 }

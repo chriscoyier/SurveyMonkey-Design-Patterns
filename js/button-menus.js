@@ -32,11 +32,17 @@
 
       relatedMenu = $("#" + el.data("menu"));
       buttonPosition = el.position();
+      
+      var menuLeftPos = buttonPosition.left;
+      // One pixel shift for this type
+      if (el.hasClass("btn-only-arrow")) { menuLeftPos--; }
+      
+      var menuTopPos = buttonPosition.top + el.outerHeight();
 
       relatedMenu.css({
 
-        left: buttonPosition.left,
-        top: buttonPosition.top + el.outerHeight()
+        left: menuLeftPos,
+        top: menuTopPos
 
       }).addClass("open");
       

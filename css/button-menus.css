@@ -36,6 +36,8 @@ a[data-menu].open {
   padding: 0;
   list-style: none;
   float: left;
+  max-height: 300px;
+  overflow-y: auto;
   -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
@@ -56,6 +58,7 @@ a[data-menu].open {
   color: #00898B;
   padding: 5px 50px 5px 10px;
   border-bottom: 1px solid #ccc;
+  white-space: nowrap;
 }
 .button-menu > li > a:hover {
   text-decoration: none;

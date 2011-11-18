@@ -18,6 +18,10 @@ a[data-menu].open {
   padding: 0;
   list-style: none;
   float: left;
+  
+  max-height: 300px;
+  overflow-y: auto;
+  
   .drop-shadow(0, 2px, 3px, 0, 0.3);
   > li {
     margin: 0;
@@ -34,6 +38,7 @@ a[data-menu].open {
     color: #00898B;
     padding: 5px 50px 5px 10px;
     border-bottom: 1px solid #ccc;
+    white-space: nowrap;
     
     &:hover {
       text-decoration: none;

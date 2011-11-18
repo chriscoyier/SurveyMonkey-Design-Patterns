@@ -70,6 +70,27 @@
   .rotate(90deg);
 }
 
+/* Light version */
+.light .key {
+  background: #EAEAE8;
+}
+.light .key:hover {
+  background: white;
+}
+.light .key h3 .press:before {
+  border-left-color: #a4a4a4;
+}
+.light .key h3 .press {
+  color: #333;
+  text-transform: none;
+}
+.light .key section {
+  color: #333;
+}
+.light .key.open {
+  background: #F2F2F0;
+}
+
 /* Help popouts */
 .key h3 .q {
   position: absolute;
@@ -103,20 +124,18 @@
   
 }
 
-/* Let's get this party started */
+/* Scrollbars */
 .static .key section::-webkit-scrollbar {
   width: 12px;
 }
- 
-/* Track */
-.static .key section::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-  .border-radius(12px);
-}
- 
-/* Handle */
-.static .key section::-webkit-scrollbar-thumb {
-  .border-radius(12px);
-  background: @bg-brand;
-  .box-shadow(inset 0 0 6px rgba(0,0,0,0.5));
-}
+  /* Track */
+  .static .key section::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    .border-radius(12px);
+  }
+  /* Handle */
+  .static .key section::-webkit-scrollbar-thumb {
+    .border-radius(12px);
+    background: #333;
+    .box-shadow(inset 0 0 6px rgba(0,0,0,0.5));
+  }
