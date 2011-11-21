@@ -7,14 +7,12 @@
 
 .key {
   background: #8A867A;
-  max-height: 42px;
   border-bottom: 1px solid #C2C1BB;
-  .transition(max-height 0.4s ease-out);
+  // .transition(max-height 0.4s ease-in);
 }
 
 .key.open {
   background: #9E9B90;
-  max-height: 600px;
   cursor: default;
 }
 
@@ -103,26 +101,12 @@
 /* Content */
 .key section {
   color: white;
-  .screen-reader-text();
+  height: 0;
+  overflow: hidden;
   padding: 0 10px;
 }
-.key.open section {
-  position: static;
-}
-
-/* Static height accordions */
-.static .key {
-  height: 3.2em;
-  .transition(height 0.35s ease-out);
-  max-height: none;
-}
-.static .key.open {
-  height: 33em;
-}
-.static .key section {
-  overflow-y: auto;
-  height: 29em;
-  
+#panel-1 {
+  height: auto;
 }
 
 /* Scrollbars */

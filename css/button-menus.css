@@ -21,7 +21,7 @@
 .cloak {
   visibility: hidden;
 }
-.disabled {
+.disabled, :disabled {
   opacity: 0.5;
 }
 a[data-menu].open {

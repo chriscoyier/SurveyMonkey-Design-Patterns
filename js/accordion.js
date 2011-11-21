@@ -1,5 +1,32 @@
 (function($) {
   
+  var speed = 200;
+  
+  jQuery.fn.animateAuto = function(prop, speed, callback) {
+
+      var elem, height, width;
+
+      return this.each(function(i, el) {
+        
+          el = jQuery(el), elem = el.clone().css({
+            "height":"auto",
+            "width":"auto"})
+            .appendTo(el.parent()); // weird? didn't work when appending to body
+                      
+          height = elem.outerHeight(),
+          width  = elem.outerWidth();
+          elem.remove();
+          
+          if (prop === "height")
+              el.animate({"height": height}, speed, callback);
+          else if (prop === "width")
+              el.animate({"width": width}, speed, callback);  
+          else if (prop === "both")
+              el.animate({"width": width,"height": height}, speed, callback);
+      });  
+      
+  }
+  
   var doc = $(document),
       el, panelToClose, panelToOpen, clickedPanel, 
       parentAccordion, anyPanelsOpen;
@@ -28,7 +55,7 @@
           
           if (clickedPanel.hasClass("open")) {
             
-            base.closePanel(el.data("panel"));
+            base.closePanel(clickedPanel);
             
           } else {
             
@@ -36,10 +63,10 @@
             
             // There is an open panel
             if (anyPanelsOpen.length) {
-              base.closePanel(anyPanelsOpen.find("> h3").data("panel"));
+              base.closePanel(anyPanelsOpen);
             };
             
-            base.openPanel(el.data("panel"));
+            base.openPanel(clickedPanel);
                         
           };
           
@@ -54,9 +81,9 @@
           clickedPanel = el.closest(".key"); 
           
           if (clickedPanel.hasClass("open")) {
-            base.closePanel(el.data("panel"));
+            base.closePanel(clickedPanel);
           } else {
-            base.openPanel(el.data("panel"));
+            base.openPanel(clickedPanel);
           };
           
         });
@@ -72,21 +99,36 @@
     // If you need the open/close to behave like the type of slider it is
     // (e.g. "single" or "multiple") may be better to trigger click on the h3 element
     
-    base.openPanel = function(panelClass) {
-      
-      el = $("[data-panel=" + panelClass + "]");
-            
-      el.closest(".key").addClass("open");
-      doc.trigger(panelClass + "-open", el);
+    base.openPanel = function(el) {
+        
+      el.addClass("open")
+
+      if (el.closest(".accordion").hasClass("static")) {
+
+        el
+          .find("> section")
+          .animate({"height": 400}, speed);
+
+      } else {
+
+        el
+          .find("> section")
+          .animateAuto("height", speed);
+
+      }
+
+      doc.trigger(el.attr('id') + "-open", el);
       
     };
     
-    base.closePanel = function(panelClass) {
-      
-      el = $("[data-panel=" + panelClass + "]");
+    base.closePanel = function(el) {
             
-      el.closest(".key").removeClass("open");
-      doc.trigger(panelClass + "-close", el);
+      el
+        .removeClass("open")
+        .find("> section")
+        .animate({"height": 0}, speed);
+      
+      doc.trigger(el.attr('id') + "-close", el);
       
     };
     
