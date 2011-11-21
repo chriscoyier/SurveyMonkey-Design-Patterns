@@ -173,9 +173,14 @@
   top: 1em;
 }
 /* Content */
+.key.init section {
+  height: 0;
+}
+.key.init.open section {
+  height: auto;
+}
 .key section {
   color: white;
-  height: 0;
   overflow: hidden;
   padding: 0 10px;
 }

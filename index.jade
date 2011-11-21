@@ -81,6 +81,9 @@ html
 		section(class="container group demo-typography")
 			include includes/typography.html
 		
+		section(class="container group scroll-follow", id="motherfucker")
+			include includes/scroll-follows.html
+	
 		section(class="container group demo-grids")
 			include includes/grids.html
 		
@@ -111,9 +114,6 @@ html
 		section(class="container group spinners")
 			include includes/spinners.html
 		
-		section(class="container group scroll-follow")
-			include includes/scroll-follows.html
-		
 		section(class="container group sliders")
 			include includes/sliders.html
 			
@@ -125,13 +125,13 @@ html
 		
 		
 		// Required for everything. jQuery! Yay!
-		script(src="js/jquery-1.7.min.js")
+		script(src="js/libraries/jquery-1.7.min.js")
 		
 		// Global
 		script(src="js/global.js")
 		
 		// For popouts
-		script(src="js/jquery.hoverIntent.js")
+		script(src="js/plugins/jquery.hoverIntent.js")
 		script(src="js/popouts.js")
 		
 		// For accordions
@@ -147,8 +147,13 @@ html
 		script(src="js/button-menus.js")
 		
 		// For sliders
-		script(src="js/jquery-ui-1.8.16.core-widget-mouse-slider.min.js")
+		script(src="js/plugins/jquery-ui-1.8.16.core-widget-mouse-slider.min.js")
 		script(src="js/sliders.js")
+		
+		// For scroll-follow
+		script(src="js/plugins/withinViewport.js")
+		script(src="js/plugins/jQuery.withinViewport.js")
+		script(src="js/scroll-follow.js")
 		
 		// For this demo page
 		script(src="js/demo.js")

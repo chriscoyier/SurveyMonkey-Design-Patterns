@@ -44,6 +44,15 @@
       
       var el = base.$el;
       
+      
+      el.find(".key").each(function() {
+        if (!$(this).hasClass("open")) {
+          $(this).find("> section").height("0");
+        }
+      })
+      
+      el.removeClass("init");
+      
       if (el.hasClass("single")) {
       
         el.delegate("h3", "click", function(e) {
@@ -113,7 +122,12 @@
 
         el
           .find("> section")
-          .animateAuto("height", speed);
+          .animateAuto("height", speed, function() {
+            
+            // After animating open
+            el.find("> section").removeAttr("style");
+            
+          });
 
       }
 

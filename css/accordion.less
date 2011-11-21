@@ -8,7 +8,6 @@
 .key {
   background: #8A867A;
   border-bottom: 1px solid #C2C1BB;
-  // .transition(max-height 0.4s ease-in);
 }
 
 .key.open {
@@ -99,9 +98,14 @@
 }
 
 /* Content */
+.key.init section {
+  height: 0;
+}
+.key.init.open section {
+  height: auto;
+}
 .key section {
   color: white;
-  height: 0;
   overflow: hidden;
   padding: 0 10px;
 }

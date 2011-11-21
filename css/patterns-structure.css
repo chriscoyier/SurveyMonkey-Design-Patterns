@@ -118,6 +118,10 @@ section.container > h2 {
 .cell-on-dark {
   background: #848377;
 }
+/* Scroll-Follow */
+.scroll-follow {
+  min-height: 1000px;
+}
 footer {
   background: #5B5A4B;
   padding: 10px 0;
