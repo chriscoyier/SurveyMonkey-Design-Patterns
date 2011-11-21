@@ -1,4 +1,5 @@
 @import "functions.less";
+@import "toolbox.less";
 @import "colors-values.less";
 
 /* Not as smooth as I might like.
@@ -102,11 +103,11 @@
 /* Content */
 .key section {
   color: white;
-  visibility: hidden;
+  .screen-reader-text();
   padding: 0 10px;
 }
 .key.open section {
-  visibility: visible;
+  position: static;
 }
 
 /* Static height accordions */
