@@ -13,7 +13,7 @@
   font-weight: bold;
   line-height: 1.5;
   white-space: nowrap;
-  text-decoration: none;
+  text-decoration: none !important;
   color: #333;
   display: inline-block;
   border: solid 1px #BBB;
@@ -27,7 +27,7 @@
 
   position: relative;
 }
-.btn:hover {
+.btn:not(.disabled):hover {
   z-index: 1;
   border: solid 1px #999;
   text-decoration: none;
@@ -38,7 +38,7 @@
   background: -ms-linear-gradient(top, #f5f5ee, #dcded5);
   background: -o-linear-gradient(top, #f5f5ee, #dcded5);
 }
-.btn:active, .btn.open {
+.btn:not(.disabled):active, .btn.open {
   border: solid 1px #999;
   background-color: #dcded5;
   background: -webkit-gradient(linear, left top, left bottom, from(#dcded5), to(#f5f5ee));
@@ -317,7 +317,7 @@ input.btn {
   background: -ms-linear-gradient(top, #35c0c0, #049795);
   background: -o-linear-gradient(top, #35c0c0, #049795);
 }
-.teal:hover {
+.teal:not(.disabled):hover {
   border: 0;
   background-color: #42cbcc;
   background: -webkit-gradient(linear, left top, left bottom, from(#42cbcc), to(#14a4a3));
@@ -326,7 +326,7 @@ input.btn {
   background: -ms-linear-gradient(top, #42cbcc, #14a4a3);
   background: -o-linear-gradient(top, #42cbcc, #14a4a3);
 }
-.teal:active, .teal.open {
+.teal:not(.disabled):active, .teal.open {
   background-color: #14a4a3;
   background: -webkit-gradient(linear, left top, left bottom, from(#14a4a3), to(#42cbcc));
   background: -webkit-linear-gradient(top, #14a4a3, #42cbcc);
@@ -345,7 +345,7 @@ input.btn {
   background: -ms-linear-gradient(top, #989898, #666666);
   background: -o-linear-gradient(top, #989898, #666666);
 }
-.dark-grey:hover {
+.dark-grey:not(.disabled):hover {
   border: 0;
   background-color: #a4a4a4;
   background: -webkit-gradient(linear, left top, left bottom, from(#a4a4a4), to(#787878));
@@ -354,7 +354,7 @@ input.btn {
   background: -ms-linear-gradient(top, #a4a4a4, #787878);
   background: -o-linear-gradient(top, #a4a4a4, #787878);
 }
-.dark-grey:active, .dark-grey.open {
+.dark-grey:not(.disabled):active, .dark-grey.open {
   background-color: #787878;
   background: -webkit-gradient(linear, left top, left bottom, from(#787878), to(#a4a4a4));
   background: -webkit-linear-gradient(top, #787878, #a4a4a4);
@@ -372,7 +372,7 @@ input.btn {
   background: -ms-linear-gradient(top, #f8f777, #dfc235);
   background: -o-linear-gradient(top, #f8f777, #dfc235);
 }
-.yellow:hover {
+.yellow:not(.disabled):hover {
   border: solid 1px #999;
   background-color: #fcfc85;
   background: -webkit-gradient(linear, left top, left bottom, from(#fcfc85), to(#edce38));
@@ -381,7 +381,7 @@ input.btn {
   background: -ms-linear-gradient(top, #fcfc85, #edce38);
   background: -o-linear-gradient(top, #fcfc85, #edce38);
 }
-.yellow:active, .yellow.open {
+.yellow:not(.disabled):active, .yellow.open {
   background-color: #f7e258;
   background: -webkit-gradient(linear, left top, left bottom, from(#f7e258), to(#faf476));
   background: -webkit-linear-gradient(top, #f7e258, #faf476);
@@ -400,7 +400,7 @@ input.btn {
   background: -ms-linear-gradient(top, #adc93f, #799334);
   background: -o-linear-gradient(top, #adc93f, #799334);
 }
-.green:hover {
+.green:not(.disabled):hover {
   border: 0;
   background-color: #b4d141;
   background: -webkit-gradient(linear, left top, left bottom, from(#b4d141), to(#819d37));
@@ -409,7 +409,7 @@ input.btn {
   background: -ms-linear-gradient(top, #b4d141, #819d37);
   background: -o-linear-gradient(top, #b4d141, #819d37);
 }
-.green:active, .green.open {
+.green:not(.disabled):active, .green.open {
   background-color: #819d37;
   background: -webkit-gradient(linear, left top, left bottom, from(#819d37), to(#b4d141));
   background: -webkit-linear-gradient(top, #819d37, #b4d141);

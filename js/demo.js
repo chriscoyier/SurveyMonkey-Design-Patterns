@@ -1,4 +1,3 @@
-// IIFE to ensure safe usage of $
 (function($) {
 
   var doc = $(document);

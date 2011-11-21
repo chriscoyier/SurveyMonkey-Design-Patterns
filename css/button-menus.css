@@ -18,6 +18,12 @@
 .hide {
   display: none;
 }
+.cloak {
+  visibility: hidden;
+}
+.disabled {
+  opacity: 0.5;
+}
 a[data-menu].open {
   -webkit-border-bottom-right-radius: 0px;
   -webkit-border-bottom-left-radius: 0px;
@@ -37,13 +43,15 @@ a[data-menu].open {
   list-style: none;
   float: left;
   max-height: 300px;
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.button-menu.long {
   overflow-y: auto;
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
 }
 .button-menu > li {
   margin: 0;

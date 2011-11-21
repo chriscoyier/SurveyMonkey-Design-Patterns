@@ -18,6 +18,12 @@
 .hide {
   display: none;
 }
+.cloak {
+  visibility: hidden;
+}
+.disabled {
+  opacity: 0.5;
+}
 /* Default */
 .tabs {
   margin: 0 0 20px 0;
@@ -97,7 +103,7 @@
   font-size: 0.85em;
   font-weight: bold;
   text-align: center;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #9E9B90;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;

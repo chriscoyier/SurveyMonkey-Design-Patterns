@@ -12,7 +12,7 @@
     allButtons.removeClass("open");
   }
   
-  doc.on("click", "a[data-menu]", function(e) {
+  doc.on("click", "a[data-menu]:not(.disabled)", function(e) {
     
     e.preventDefault();
     

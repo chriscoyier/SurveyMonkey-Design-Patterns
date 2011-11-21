@@ -20,7 +20,10 @@ a[data-menu].open {
   float: left;
   
   max-height: 300px;
-  overflow-y: auto;
+  
+  &.long {
+    overflow-y: auto;
+  }
   
   .drop-shadow(0, 2px, 3px, 0, 0.3);
   > li {
