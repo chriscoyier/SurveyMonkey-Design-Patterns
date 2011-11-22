@@ -44,14 +44,6 @@
       
       var el = base.$el;
       
-      el.find(".key").each(function() {
-        if (!$(this).hasClass("open")) {
-          $(this).find("> section").height("0");
-        }
-      })
-      
-      el.removeClass("init");
-      
       if (el.hasClass("single")) {
       
         el.delegate("h3", "click", function(e) {
@@ -137,9 +129,10 @@
     base.closePanel = function(el) {
             
       el
-        .removeClass("open")
         .find("> section")
-        .animate({"height": 0}, speed);
+        .animate({"height": 0}, speed, function(){
+            el.removeClass("open")
+        });
       
       doc.trigger(el.attr('id') + "-close", el);
       
