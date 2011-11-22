@@ -44,7 +44,6 @@
       
       var el = base.$el;
       
-      
       el.find(".key").each(function() {
         if (!$(this).hasClass("open")) {
           $(this).find("> section").height("0");
@@ -116,7 +115,7 @@
 
         el
           .find("> section")
-          .animate({"height": 400}, speed);
+          .animate({"height": 410}, speed);
 
       } else {
 
