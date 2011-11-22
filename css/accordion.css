@@ -178,10 +178,10 @@
   overflow-y: auto;
   padding: 0 10px;
 }
-.init .key section {
+.key section {
   height: 0;
 }
-.init .key.open section {
+.key.open section {
   height: auto;
 }
 /* Scrollbar */
