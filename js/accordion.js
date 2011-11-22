@@ -100,8 +100,12 @@
     // (e.g. "single" or "multiple") may be better to trigger click on the h3 element
     
     base.openPanel = function(el) {
-        
-      el.addClass("open")
+      
+      el
+        .find("> section")
+          .height(0)
+          .end()
+        .addClass("open");
 
       if (el.closest(".accordion").hasClass("static")) {
 
