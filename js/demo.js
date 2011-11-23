@@ -13,18 +13,19 @@
   
 
   /* Accordions */
-  
   // Assumes standard accordian HTML structure
   // All panels closed by default
   $(".accordion").accordion();
   
-  // API for opening particular panel (no logic)
-  // $(".accordion").accordion("ac5");
+  // API for opening particular panel
+	//	(no logic, needs to be called on element already initialized with accordion)
+  // EXAMPLE: $(".accordion").accordion("key-2");
+	// Or, give any particular key a class of "open" in the markup
   
   // Example custom event 
   // pattern = class-open or class-close
-  doc.on("ac2-open", function(event, el) {
-    // console.log("This panel opened: " + el);
+  doc.on("key-2-open", function(event, el) {
+    console.log("This panel opened: " + el);
   });
   
  
@@ -35,12 +36,10 @@
   $(".tabs, .pillbox").tabs();
   
   
+
   /* Spinners */
-  
   $("#spinner-test").submit(function(e) {
-    
     e.preventDefault();
-    
     $.spinner({
       text: $("#test-spinner-text").val(),
       action: "show"
@@ -52,14 +51,20 @@
         action: "hide"
       });
     }, 2000);
-    
   });
-  
+
+
   
   /* Forms */
-  
   new ElasticText({
     node: document.getElementById('Field2')
   });
+
+
+	/* Button Menus */
+	// Callback event for state changing menus
+	doc.on("do-thing-1-open", function(el) {
+		console.log("I'm doing a thing", el);
+	});
 
 })(jQuery);

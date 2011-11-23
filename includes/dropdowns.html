@@ -80,130 +80,168 @@
 	
 	<h3>Menu Buttons</h3>
 
-	<!-- Semantically, this is weird. It's just a list in the middle of nowhere
-       no specifically connected to the above button -->
+	<table>
+		<tr>
+			<td>
+				<span class="btn-menu">
+			      <a class="btn btn-menu-left btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark grey" href="#" data-menu="menu-1">Button<span></span></a>
+			      <a class="btn btn-menu-right grey" href="#">Button</a>
+			  </span>
+			  <!-- Semantically, this is weird. It's just a list in the middle of nowhere
+			       no specifically connected to the above button -->
+			  <ul class="button-menu" id="menu-1">
+			    <li><a href="#">State A</a>
+			      <div class="q">
+							<span>?</span>
+							<div class="popout">
+								<h5>View Clips</h5>
+								<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+								<a href="#" class="learn-more-link">Learn more »</a>
+							</div>
+						</div>
+			    </li>
+			    <li><a href="#">State B</a>
+			      <div class="q">
+							<span>?</span>
+							<div class="popout">
+								<h5>View Clips</h5>
+								<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+								<a href="#" class="learn-more-link">Learn more »</a>
+							</div>
+						</div>
+			    </li>
+			    <li><a href="#">State C</a>
+			      <div class="q">
+							<span>?</span>
+							<div class="popout">
+								<h5>View Clips</h5>
+								<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+								<a href="#" class="learn-more-link">Learn more »</a>
+							</div>
+						</div>
+			    </li>
+			  </ul>
+			</td>
+			<td>
+				Menu of buttons, one with a dropdown, one without
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="btn-menu">
+			      <a href="#" class="btn btn-menu-left yellow">Button</a>
+			      <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow yellow" data-menu="menu-2"><span></span></a>
+			  </span>
+
+			  <ul class="button-menu" id="menu-2">
+			    <li><a href="#">State A</a>
+			    </li>
+			    <li><a href="#">State B</a>
+			    </li>
+			    <li><a href="#">State C</a>
+			    </li>
+			  </ul>
+			</td>
+			<td>
+				Button-based dropdowns can take any arrow or color classes regular buttons can (requires buttons.css)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark btn-small" data-menu="menu-3">Button<span></span></a>
+
+			  <ul class="button-menu" id="menu-3">
+			    <li><a href="#">State A</a>
+			    </li>
+			    <li><a href="#">State B</a>
+			      <div class="q">
+							<span>?</span>
+							<div class="popout">
+								<h5>View Clips</h5>
+								<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+								<a href="#" class="learn-more-link">Learn more »</a>
+							</div>
+						</div>
+			    </li>
+			    <li><a href="#">State C</a>
+			      <div class="q">
+							<span>?</span>
+							<div class="popout">
+								<h5>View Clips</h5>
+								<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+								<a href="#" class="learn-more-link">Learn more »</a>
+							</div>
+						</div>
+			    </li>
+			  </ul>
+			</td>
+			<td>
+				Mini button (requires buttons.css) / Doesn't change size of dropdown
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="btn-menu">
+			      <a href="#" class="btn btn-menu-left">Really Long List</a>
+			      <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow" data-menu="menu-5"><span></span></a>
+			  </span>
+
+			  <ul class="button-menu long" id="menu-5">
+			    <li><a href="#">Menu Item</a></li>
+			    <li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+			  </ul>
+			</td>
+			<td>
+				If list is going to be long, add "long" class name to the &lt;ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark disabled" data-menu="menu-6">Button<span></span></a>
+
+			  <ul class="button-menu" id="menu-6">
+			    <li><a href="#">State A</a></li>
+			    <li><a href="#">State B</a></li>
+			    <li><a href="#">State C</a></li>
+			  </ul>
+			</td>
+			<td>
+				Just adding class name of "disabled" to button will kill all functionality
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark" data-menu="menu-7">I Change State<span></span></a>
+
+			  <ul class="button-menu state-change" id="menu-7">
+			    <li><a id="do-thing-1" href="#">State A</a></li>
+			    <li><a id="do-thing-2" href="#">State B</a></li>
+			    <li><a id="do-thing-3" href="#">State C</a></li>
+			  </ul>
+			</td>
+			<td>
+				Menu that "changes state"
+			</td>
+	</table>
+  
 	
-	<span class="btn-menu">
-      <a class="btn btn-menu-left btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark grey" href="#" data-menu="menu-1">Button<span></span></a>
-      <a class="btn btn-menu-right grey" href="#">Button</a>
-  </span>
-  
-  <ul class="button-menu" id="menu-1">
-    <li><a href="#">State A</a>
-      <div class="q">
-				<span>?</span>
-				<div class="popout">
-					<h5>View Clips</h5>
-					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-					<a href="#" class="learn-more-link">Learn more »</a>
-				</div>
-			</div>
-    </li>
-    <li><a href="#">State B</a>
-      <div class="q">
-				<span>?</span>
-				<div class="popout">
-					<h5>View Clips</h5>
-					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-					<a href="#" class="learn-more-link">Learn more »</a>
-				</div>
-			</div>
-    </li>
-    <li><a href="#">State C</a>
-      <div class="q">
-				<span>?</span>
-				<div class="popout">
-					<h5>View Clips</h5>
-					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-					<a href="#" class="learn-more-link">Learn more »</a>
-				</div>
-			</div>
-    </li>
-  </ul>
-  
-  <br><br>
-
-  <span class="btn-menu">
-      <a href="#" class="btn btn-menu-left yellow">Button</a>
-      <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow yellow" data-menu="menu-2"><span></span></a>
-  </span>
-  
-  <ul class="button-menu" id="menu-2">
-    <li><a href="#">State A</a>
-    </li>
-    <li><a href="#">State B</a>
-    </li>
-    <li><a href="#">State C</a>
-    </li>
-  </ul>
-  
-  <br><br>
-
-  <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark btn-small" data-menu="menu-3">Button<span></span></a>
-  
-  <ul class="button-menu" id="menu-3">
-    <li><a href="#">State A</a>
-    </li>
-    <li><a href="#">State B</a>
-      <div class="q">
-				<span>?</span>
-				<div class="popout">
-					<h5>View Clips</h5>
-					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-					<a href="#" class="learn-more-link">Learn more »</a>
-				</div>
-			</div>
-    </li>
-    <li><a href="#">State C</a>
-      <div class="q">
-				<span>?</span>
-				<div class="popout">
-					<h5>View Clips</h5>
-					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-					<a href="#" class="learn-more-link">Learn more »</a>
-				</div>
-			</div>
-    </li>
-  </ul>
-
-	<br><br>
-
-  <span class="btn-menu">
-      <a href="#" class="btn btn-menu-left">Really Long List</a>
-      <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow" data-menu="menu-5"><span></span></a>
-  </span> &emsp;&emsp; <code>.long</code> on related menu, no tooltips
-  
-  <ul class="button-menu long" id="menu-5">
-    <li><a href="#">Menu Item</a></li>
-    <li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-  </ul>   
-
-	<br><br>
-  
-	<a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark disabled" data-menu="menu-6">Button<span></span></a>
-  
-  <ul class="button-menu" id="menu-6">
-    <li><a href="#">State A</a></li>
-    <li><a href="#">State B</a></li>
-    <li><a href="#">State C</a></li>
-  </ul>
 	
 </div>

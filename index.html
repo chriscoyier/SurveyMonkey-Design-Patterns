@@ -458,131 +458,169 @@
 	
 	<h3>Menu Buttons</h3>
 
-	<!-- Semantically, this is weird. It's just a list in the middle of nowhere
-       no specifically connected to the above button -->
+	<table>
+		<tr>
+			<td>
+				<span class="btn-menu">
+			      <a class="btn btn-menu-left btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark grey" href="#" data-menu="menu-1">Button<span></span></a>
+			      <a class="btn btn-menu-right grey" href="#">Button</a>
+			  </span>
+			  <!-- Semantically, this is weird. It's just a list in the middle of nowhere
+			       no specifically connected to the above button -->
+			  <ul class="button-menu" id="menu-1">
+			    <li><a href="#">State A</a>
+			      <div class="q">
+							<span>?</span>
+							<div class="popout">
+								<h5>View Clips</h5>
+								<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+								<a href="#" class="learn-more-link">Learn more »</a>
+							</div>
+						</div>
+			    </li>
+			    <li><a href="#">State B</a>
+			      <div class="q">
+							<span>?</span>
+							<div class="popout">
+								<h5>View Clips</h5>
+								<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+								<a href="#" class="learn-more-link">Learn more »</a>
+							</div>
+						</div>
+			    </li>
+			    <li><a href="#">State C</a>
+			      <div class="q">
+							<span>?</span>
+							<div class="popout">
+								<h5>View Clips</h5>
+								<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+								<a href="#" class="learn-more-link">Learn more »</a>
+							</div>
+						</div>
+			    </li>
+			  </ul>
+			</td>
+			<td>
+				Menu of buttons, one with a dropdown, one without
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="btn-menu">
+			      <a href="#" class="btn btn-menu-left yellow">Button</a>
+			      <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow yellow" data-menu="menu-2"><span></span></a>
+			  </span>
+
+			  <ul class="button-menu" id="menu-2">
+			    <li><a href="#">State A</a>
+			    </li>
+			    <li><a href="#">State B</a>
+			    </li>
+			    <li><a href="#">State C</a>
+			    </li>
+			  </ul>
+			</td>
+			<td>
+				Button-based dropdowns can take any arrow or color classes regular buttons can (requires buttons.css)
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark btn-small" data-menu="menu-3">Button<span></span></a>
+
+			  <ul class="button-menu" id="menu-3">
+			    <li><a href="#">State A</a>
+			    </li>
+			    <li><a href="#">State B</a>
+			      <div class="q">
+							<span>?</span>
+							<div class="popout">
+								<h5>View Clips</h5>
+								<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+								<a href="#" class="learn-more-link">Learn more »</a>
+							</div>
+						</div>
+			    </li>
+			    <li><a href="#">State C</a>
+			      <div class="q">
+							<span>?</span>
+							<div class="popout">
+								<h5>View Clips</h5>
+								<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
+								<a href="#" class="learn-more-link">Learn more »</a>
+							</div>
+						</div>
+			    </li>
+			  </ul>
+			</td>
+			<td>
+				Mini button (requires buttons.css) / Doesn't change size of dropdown
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="btn-menu">
+			      <a href="#" class="btn btn-menu-left">Really Long List</a>
+			      <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow" data-menu="menu-5"><span></span></a>
+			  </span>
+
+			  <ul class="button-menu long" id="menu-5">
+			    <li><a href="#">Menu Item</a></li>
+			    <li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+					<li><a href="#">Menu Item</a></li>
+			  </ul>
+			</td>
+			<td>
+				If list is going to be long, add "long" class name to the &lt;ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark disabled" data-menu="menu-6">Button<span></span></a>
+
+			  <ul class="button-menu" id="menu-6">
+			    <li><a href="#">State A</a></li>
+			    <li><a href="#">State B</a></li>
+			    <li><a href="#">State C</a></li>
+			  </ul>
+			</td>
+			<td>
+				Just adding class name of "disabled" to button will kill all functionality
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark" data-menu="menu-7">I Change State<span></span></a>
+
+			  <ul class="button-menu state-change" id="menu-7">
+			    <li><a id="do-thing-1" href="#">State A</a></li>
+			    <li><a id="do-thing-2" href="#">State B</a></li>
+			    <li><a id="do-thing-3" href="#">State C</a></li>
+			  </ul>
+			</td>
+			<td>
+				Menu that "changes state"
+			</td>
+	</table>
+  
 	
-	<span class="btn-menu">
-      <a class="btn btn-menu-left btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark grey" href="#" data-menu="menu-1">Button<span></span></a>
-      <a class="btn btn-menu-right grey" href="#">Button</a>
-  </span>
-  
-  <ul class="button-menu" id="menu-1">
-    <li><a href="#">State A</a>
-      <div class="q">
-				<span>?</span>
-				<div class="popout">
-					<h5>View Clips</h5>
-					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-					<a href="#" class="learn-more-link">Learn more »</a>
-				</div>
-			</div>
-    </li>
-    <li><a href="#">State B</a>
-      <div class="q">
-				<span>?</span>
-				<div class="popout">
-					<h5>View Clips</h5>
-					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-					<a href="#" class="learn-more-link">Learn more »</a>
-				</div>
-			</div>
-    </li>
-    <li><a href="#">State C</a>
-      <div class="q">
-				<span>?</span>
-				<div class="popout">
-					<h5>View Clips</h5>
-					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-					<a href="#" class="learn-more-link">Learn more »</a>
-				</div>
-			</div>
-    </li>
-  </ul>
-  
-  <br><br>
-
-  <span class="btn-menu">
-      <a href="#" class="btn btn-menu-left yellow">Button</a>
-      <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow yellow" data-menu="menu-2"><span></span></a>
-  </span>
-  
-  <ul class="button-menu" id="menu-2">
-    <li><a href="#">State A</a>
-    </li>
-    <li><a href="#">State B</a>
-    </li>
-    <li><a href="#">State C</a>
-    </li>
-  </ul>
-  
-  <br><br>
-
-  <a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark btn-small" data-menu="menu-3">Button<span></span></a>
-  
-  <ul class="button-menu" id="menu-3">
-    <li><a href="#">State A</a>
-    </li>
-    <li><a href="#">State B</a>
-      <div class="q">
-				<span>?</span>
-				<div class="popout">
-					<h5>View Clips</h5>
-					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-					<a href="#" class="learn-more-link">Learn more »</a>
-				</div>
-			</div>
-    </li>
-    <li><a href="#">State C</a>
-      <div class="q">
-				<span>?</span>
-				<div class="popout">
-					<h5>View Clips</h5>
-					<p>View Clips are saved versions of individual question summaries you wish to share or export for printing or importing into your favorite <a href="#">presentation</a> software like PowerPoint. You can save multiple versions of the same question (with different filters or chart types, for example).</p>
-					<a href="#" class="learn-more-link">Learn more »</a>
-				</div>
-			</div>
-    </li>
-  </ul>
-
-	<br><br>
-
-  <span class="btn-menu">
-      <a href="#" class="btn btn-menu-left">Really Long List</a>
-      <a href="#" class="btn btn-menu-right btn-menu-down btn-arrow btn-arrow-standard-vert btn-arrow-standard-down-dark btn-only-arrow" data-menu="menu-5"><span></span></a>
-  </span> &emsp;&emsp; <code>.long</code> on related menu, no tooltips
-  
-  <ul class="button-menu long" id="menu-5">
-    <li><a href="#">Menu Item</a></li>
-    <li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-		<li><a href="#">Menu Item</a></li>
-  </ul>   
-
-	<br><br>
-  
-	<a href="#" class="btn btn-arrow btn-arrow-right btn-arrow-small-vert btn-arrow-small-down-dark disabled" data-menu="menu-6">Button<span></span></a>
-  
-  <ul class="button-menu" id="menu-6">
-    <li><a href="#">State A</a></li>
-    <li><a href="#">State B</a></li>
-    <li><a href="#">State C</a></li>
-  </ul>
 	
 </div></section><section class="container group demo-Forms"><h2 id="forms">Form Elements <a href="#top" class="back-to-top">^ Back to Top</a></h2>
 
@@ -1728,7 +1766,7 @@ height: 80px;
 	    <th>Flexible Growth</th>
 	    <td>
 		
-	      <aside class="accordion multiple">
+	      <aside class="accordion multiple init">
 		
 					<div class="key open" id="key-1">
 						<h3>
@@ -1771,9 +1809,9 @@ height: 80px;
 						</section>
 					</div><!-- key -->
 
-					<div class="key">
+					<div class="key" id="key-2">
 						<h3>
-							<a class="press" href="#panel-2">Second Key</a>
+							<a class="press" href="#key-2-section">Second Key</a>
 							<div class="q q-on-dark">
 	    					<span>?</span>
 	    					<div class="popout">
@@ -1790,7 +1828,7 @@ height: 80px;
 
 					<div class="key" id="key-2">
 						<h3>
-							<a class="press" href="#panel-3">Third Key</a>
+							<a class="press" href="#key-3-section">Third Key</a>
 							<div class="q q-on-dark">
 	    					<span>?</span>
 	    					<div class="popout">
@@ -1812,50 +1850,50 @@ height: 80px;
 			
 	    <td>
 		
-	      <aside class="accordion single">
-					<div class="key">
-						<h3 data-panel="ac4">
-							<a class="press" href="#panel-4">First Key</a>
+	      <aside class="accordion single init">
+					<div class="key" id="key-4">
+						<h3>
+							<a class="press" href="#key-4-section">First Key</a>
 						</h3>
 
-						<section id="panel-4">
+						<section id="key-4-section">
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-						</section><!-- #ac1 -->
-					</div><!-- ac3 key -->
+						</section>
+					</div>
 
-					<div class="key">
-						<h3 data-panel="ac5">
-							<a class="press" href="#panel-5">Second Key</a>
+					<div class="key" id="key-5">
+						<h3>
+							<a class="press" href="#key-5-section">Second Key</a>
 						</h3>
 
-						<section id="panel-5">
+						<section id="key-5-section">
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-						</section><!-- #ac2 -->
-					</div><!-- ac2 key -->
+						</section>
+					</div>
 
-					<div class="key">
-						<h3 data-panel="ac6">
-							<a class="press" href="#panel-6">Third Key</a>
+					<div class="key" id="key-6">
+						<h3>
+							<a class="press" href="#key-6-section">Third Key</a>
 						</h3>
 
-						<section id="panel-6">
+						<section id="key-6-section">
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-						</section><!-- #ac3 -->
-					</div><!-- ac3 key -->
-				</aside><!-- accordion multiple -->
+						</section>
+					</div>
+				</aside><!-- accordion single flexible -->
 	    </td>
 	  </tr> 
   
 	  <tr>
 	    <th>Static Growth</th>
 	    <td>
-	      <aside class="accordion static multiple">
-					<div class="key">
+	      <aside class="accordion static multiple init">
+					<div class="key" id="key-7">
 						<h3>
-							<a class="press" href="#panel-7">I am key #1</a>
+							<a class="press" href="key-7-section">I am key #1</a>
 							<div class="q q-on-dark">
 	    					<span>?</span>
 	    					<div class="popout">
@@ -1866,14 +1904,14 @@ height: 80px;
 	    				</div>
 						</h3>
 
-						<section id="panel-7">
+						<section id="key-7-section">
 					  	I AM A PANEL
-						</section><!-- #ac1 -->
-					</div><!-- ac3 key -->
+						</section>
+					</div>
 
-					<div class="key">
+					<div class="key" id="key-8">
 						<h3>
-							<a class="press" href="#panel-8">Second Key</a>
+							<a class="press" href="key-8-section">Second Key</a>
 							<div class="q q-on-dark">
 	    					<span>?</span>
 	    					<div class="popout">
@@ -1884,13 +1922,13 @@ height: 80px;
 	    				</div>
 						</h3>
 
-						<section id="panel-8">
+						<section id="key-8-section">
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-						</section><!-- #ac2 -->
-					</div><!-- ac2 key -->
+						</section>
+					</div>
 
-					<div class="key">
+					<div class="key" id>
 						<h3>
 							<a class="press" href="#panel-9">Third Key</a>
 							<div class="q q-on-dark">
@@ -1907,15 +1945,18 @@ height: 80px;
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-						</section><!-- #ac3 -->
-					</div><!-- ac3 key -->
+						</section>
+					</div>
 				</aside><!-- accordion multiple static -->
+				
 	    </td>
+	
 	    <td>
-	      <aside class="accordion static single">
-					<div class="key">
+		
+	      <aside class="accordion static single init">
+					<div class="key" id="key-10">
 						<h3>
-							<a class="press" href="#panel-10">First Key</a>
+							<a class="press" href="#key-10-section">First Key</a>
 							<div class="q q-on-dark">
 	    					<span>?</span>
 	    					<div class="popout">
@@ -1926,14 +1967,14 @@ height: 80px;
 	    				</div>
 						</h3>
 
-						<section id="panel-10">
+						<section id="key-10-section">
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-						</section><!-- #ac1 -->
-					</div><!-- ac3 key -->
+						</section>
+					</div>
 
-					<div class="key">
+					<div class="key" id="key-11">
 						<h3>
-							<a class="press" href="#panel-11">Second Key</a>
+							<a class="press" href="key-11-section">Second Key</a>
 							<div class="q q-on-dark">
 	    					<span>?</span>
 	    					<div class="popout">
@@ -1944,15 +1985,15 @@ height: 80px;
 	    				</div>
 						</h3>
 
-						<section id="panel-11">
+						<section id="key-11-section">
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-						</section><!-- #ac2 -->
-					</div><!-- ac2 key -->
+						</section>
+					</div>
 
-					<div class="key">
+					<div class="key" id="key-12">
 						<h3>
-							<a class="press" href="#panel-12">Scrolling Content</a>
+							<a class="press" href="key-12-section">Scrolling Content</a>
 							<div class="q q-on-dark">
 	    					<span>?</span>
 	    					<div class="popout">
@@ -1963,15 +2004,15 @@ height: 80px;
 	    				</div>
 						</h3>
 
-						<section id="panel-12">
+						<section id="key-12-section">
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
-						</section><!-- #ac3 -->
-					</div><!-- ac3 key -->
+						</section>
+					</div>
 				</aside><!-- accordion single static -->
 	    </td>
 	  </tr>
@@ -1979,10 +2020,10 @@ height: 80px;
 		<tr>
 			<th>Flexible (Light)</th>
 			<td colspan="2">
-				<aside class="accordion multiple light">
-					<div class="key">
+				<aside class="accordion multiple light init">
+					<div class="key" id="key-14">
 						<h3>
-							<a class="press" href="#panel-40">First Key</a>
+							<a class="press" href="#key-14-section">First Key</a>
 							<div class="q q-on-dark">
 	    					<span>?</span>
 	    					<div class="popout">
@@ -1993,14 +2034,14 @@ height: 80px;
 	    				</div>
 						</h3>
 
-						<section id="panel-40">
+						<section id="key-14-section">
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs.</p>
 						</section><!-- #ac1 -->
 					</div><!-- ac3 key -->
 
-					<div class="key">
+					<div class="key" id="key-15">
 						<h3>
-							<a class="press" href="#panel-41">Second Key</a>
+							<a class="press" href="#key-15-section">Second Key</a>
 							<div class="q q-on-dark">
 	    					<span>?</span>
 	    					<div class="popout">
@@ -2011,14 +2052,14 @@ height: 80px;
 	    				</div>
 						</h3>
 
-						<section id="panel-41">
+						<section id="key-15-section">
 							<p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-						</section><!-- #ac2 -->
-					</div><!-- ac2 key -->
+						</section>
+					</div>
 
-					<div class="key">
+					<div class="key" id="key-16">
 						<h3>
-							<a class="press" href="#panel-42">Third Key</a>
+							<a class="press" href="#key-16-section">Third Key</a>
 							<div class="q q-on-dark">
 	    					<span>?</span>
 	    					<div class="popout">
@@ -2029,11 +2070,11 @@ height: 80px;
 	    				</div>
 						</h3>
 
-						<section id="panel-42">
+						<section id="key-16-section">
 						  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
 						  <p>Bacon ipsum dolor sit amet ham fatback venison, bacon pork loin pancetta pork tongue leberkäse pig short loin chicken. Chuck pancetta rump shoulder pork loin. Ground round turkey pig, prosciutto swine biltong jowl ribeye spare ribs. Jerky capicola bacon shank bresaola. Meatloaf rump t-bone, corned beef strip steak chuck hamburger pork chop sirloin ham hock drumstick ham spare ribs short ribs. Capicola sausage tri-tip turkey t-bone, venison chicken. Rump filet mignon flank kielbasa, biltong tenderloin strip steak hamburger chuck shankle tail shank.</p>
-						</section><!-- #ac3 -->
-					</div><!-- ac3 key -->
+						</section>
+					</div>
 				</aside><!-- accordion multiple flexible light -->
 			</td>
 		</tr>

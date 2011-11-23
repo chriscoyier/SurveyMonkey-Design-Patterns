@@ -53,5 +53,22 @@
   doc.on("mouseleave", ".button-menu", function() {
     closeEverything();
   });
+
+	doc.on("click", ".state-change a", function(e) {
+		
+		e.preventDefault();
+		
+		var el = $(this);
+		
+		var closestID = el.closest(".button-menu").attr("id");
+		
+		var relatedButton = $("[data-menu='" + closestID + "']");
+		
+		relatedButton.html(el.text() + "<span></span>"); // span == arrow
+		
+		// Custom event
+		doc.trigger(el.attr("id") + "-open", el);
+		
+	});
   
 })(jQuery);
