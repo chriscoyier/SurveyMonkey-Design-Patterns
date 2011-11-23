@@ -72,6 +72,9 @@ table.center-cells td, table.center-cells th {
 .vtop td {
   vertical-align: top;
 }
+.narrow {
+  width: 1px;
+}
 .selling-points-box {
   width: 424px;
   margin: 40px 20px 40px 0;

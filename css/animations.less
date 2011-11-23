@@ -1,0 +1,24 @@
+@import "functions.less";
+@import "colors-values.less";
+
+.an-flash {
+	.transition(background-color 0.5s ease);
+}
+.an-flash:active {
+	background: @bg-dark;
+	.transition(background-color 0s ease);
+}
+
+.an-shake {
+	.animate(shake, 1s, 0, ease);
+}
+@import "animation-shake.css";
+
+.an-fade-in {
+	opacity: 1;
+	.transition(opacity 1s ease);
+}
+.an-fade-out {
+	opacity: 0;
+	.transition(opacity 1s ease);
+}

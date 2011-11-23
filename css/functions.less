@@ -72,12 +72,12 @@
 	background-image: -o-linear-gradient(left, @startColor, @endColor);
 }
 
-.animate (@duration: 0.2s, @ease: ease) {
-	-webkit-transition: all @duration @ease;
-	-moz-transition:    all @duration @ease;
-	-ms-transition:     all @duration @ease;
-	-o-transition:      all @duration @ease;
+.animate (@name, @duration: 1s, @delay: 0, @ease: ease) {
+	-webkit-animation: @name @duration @delay @ease;
+	-moz-animation:    @name @duration @delay @ease;
+	-ms-animation:     @name @duration @delay @ease;
 }
+
 .transition (@transition) {
 	-webkit-transition: @transition;  
 	-moz-transition:    @transition;

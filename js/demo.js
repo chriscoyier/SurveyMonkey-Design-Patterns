@@ -66,5 +66,22 @@
 	doc.on("do-thing-1-open", function(el) {
 		console.log("I'm doing a thing", el);
 	});
+	
+	
+	
+	/* Animations */
+	doc.on("click", "#shake-button", function() {
+		$("#shake-target").addClass("an-shake");
+		setTimeout(function() {
+			$("#shake-target").removeClass("an-shake");
+		}, 2500)
+	});
+	
+	doc.on("click", "#fade-in-button", function() {
+		$("#fade-in-target").addClass("an-fade-in").removeClass("disappear an-fade-out");
+	});
+	doc.on("click", "#fade-out-button", function() {
+		$("#fade-in-target").removeClass("an-fade-in").addClass("an-fade-out");
+	});
 
 })(jQuery);

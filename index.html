@@ -1,6 +1,6 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>SurveyMonkey Design Patterns</title><link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/typography.css"><link rel="stylesheet" href="css/toolbox.css"><link rel="stylesheet" href="css/patterns-structure.css"><link rel="stylesheet" href="css/patterns-structure-mq.css"><link rel="stylesheet" href="css/header.css"><link rel="stylesheet" href="css/footer.css"><link rel="stylesheet" href="css/accordion.css"><link rel="stylesheet" href="css/buttons.css"><link rel="stylesheet" href="css/button-menus.css"><link rel="stylesheet" href="css/tables.css"><link rel="stylesheet" href="css/grids.css"><link rel="stylesheet" href="css/Forms.css"><link rel="stylesheet" href="css/notifications.css"><link rel="stylesheet" href="css/dropdowns.css"><link rel="stylesheet" href="css/colors.css"><link rel="stylesheet" href="css/icons.css"><link rel="stylesheet" href="css/tabs.css"><link rel="stylesheet" href="css/help-popout.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/spinners.css"><link rel="stylesheet" href="css/sliders.css"></head><body id="top"><div class="notification"><strong>Please note:</strong> VERY MUCH a work in progress. Do not use.
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>SurveyMonkey Design Patterns</title><link rel="stylesheet" href="css/normalize.css"><link rel="stylesheet" href="css/typography.css"><link rel="stylesheet" href="css/toolbox.css"><link rel="stylesheet" href="css/patterns-structure.css"><link rel="stylesheet" href="css/patterns-structure-mq.css"><link rel="stylesheet" href="css/accordion.css"><link rel="stylesheet" href="css/buttons.css"><link rel="stylesheet" href="css/button-menus.css"><link rel="stylesheet" href="css/colors.css"><link rel="stylesheet" href="css/dropdowns.css"><link rel="stylesheet" href="css/tables.css"><link rel="stylesheet" href="css/grids.css"><link rel="stylesheet" href="css/Forms.css"><link rel="stylesheet" href="css/notifications.css"><link rel="stylesheet" href="css/icons.css"><link rel="stylesheet" href="css/tabs.css"><link rel="stylesheet" href="css/help-popout.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/spinners.css"><link rel="stylesheet" href="css/sliders.css"></head><body id="top"><div class="notification"><strong>Please note:</strong> VERY MUCH a work in progress. Do not use.
 <a href="https://surveymonkey.wufoo.com/forms/feedback-on-design-patterns/">Feedback</a></div><header class="patterns-header"><div class="container"><h1><a href="#" class="logo">SurveyMonkey</a> Design Patterns
-</h1><ul class="group"><li><a href="#accordion">Accordion</a></li><li><a href="#sprite">Animations</a></li><li><a href="#buttons">Buttons</a></li><li><a href="#colors">Color Palette</a></li><li><a href="#dropdowns">Dropdown Menus</a></li><li><a href="#Forms">Form Elements</a></li><li><a href="#help">Help Popouts</a></li><li><a href="#grids">Grids</a></li><li><a href="#icons">Icons</a></li><li><a href="#lightboxes">Lightboxes</a></li><li><a href="#notifications">Notifications</a></li><li><a href="#scroll-follow">Scroll-Follow Content</a></li><li><a href="#slides">Sliders</a></li><li><a href="#spinners">Spinners</a></li><li><a href="#sprite">Sprite</a></li><li><a href="#tables">Tables</a></li><li><a href="#tabs">Tabs</a></li><li><a href="#typography">Typography</a></li></ul></div></header><section class="container group demo-accordion"><h2 id="accordion">Accordion <a href="#top" class="back-to-top">^ Back to Top</a></h2>
+</h1><ul class="group"><li><a href="#accordion">Accordion</a></li><li><a href="#animations">Animations</a></li><li><a href="#buttons">Buttons</a></li><li><a href="#colors">Color Palette</a></li><li><a href="#dropdowns">Dropdown Menus</a></li><li><a href="#Forms">Form Elements</a></li><li><a href="#help">Help Popouts</a></li><li><a href="#grids">Grids</a></li><li><a href="#icons">Icons</a></li><li><a href="#lightboxes">Lightboxes</a></li><li><a href="#notifications">Notifications</a></li><li><a href="#scroll-follow">Scroll-Follow Content</a></li><li><a href="#slides">Sliders</a></li><li><a href="#spinners">Spinners</a></li><li><a href="#sprite">Sprite</a></li><li><a href="#tables">Tables</a></li><li><a href="#tabs">Tabs</a></li><li><a href="#typography">Typography</a></li></ul></div></header><section class="container group demo-accordion"><h2 id="accordion">Accordion <a href="#top" class="back-to-top">^ Back to Top</a></h2>
 
 <div class="about">
   <p>What's perfect pitch?</p>
@@ -340,17 +340,28 @@
 </div></section><section class="container group animations"><h2 id="animations">Animations <a href="#top" class="back-to-top">^ Back to Top</a></h2>
 
 <div class="about">
-  <p>Reusable bits of common animations</p>
-  <p>Ideas:</p>
-  <ul>
-    <li>Shake</li>
-    <li>Fade in/out</li>
-    <li>Slide in/out</li>
-  </ul>
+  <p>Reusable bits of common animations. These are CSS based, but could be switched to jQuery.</p>
 </div>
 
 <div class="info">
   
+	<table>
+		<tr>
+			<td class="narrow"><div class="animation-example an" id="shake-target"></div></td>
+			<td><button id="shake-button">Shake</button> applies class .an-shake</td>
+		</tr>
+		<tr>
+			<td><div class="animation-example an disappear" id="fade-in-target"></div></td>
+			<td><button id="fade-in-button">Fade In</button> start with class .disappear - gain class .an-fade-in<br>
+				  <button id="fade-out-button">Fade Out</button> add class .an-fade-out
+			</td>
+		</tr>
+		<tr>
+			<td><div class="animation-example an an-flash"></div></td>
+			<td>Flash</td>
+		</tr>
+	</table>
+
 </div></section><section id="load-buttons" class="container group demo-buttons"><h2 id="buttons">Buttons <a href="#top" class="back-to-top">^ Back to Top</a></h2>
 
 <div class="about">

@@ -21,6 +21,9 @@
 .cloak {
   visibility: hidden;
 }
+.disappear {
+  opacity: 0;
+}
 .disabled, :disabled {
   opacity: 0.5;
 }
