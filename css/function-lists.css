@@ -1,0 +1,52 @@
+.function-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.function-list li {
+  position: relative;
+}
+.function-list li.active .list-item {
+  background: white;
+  color: #333;
+}
+.function-list li:not(.disabled):not(.active) .list-item:hover {
+  background: #e8f4f4;
+}
+.function-list .list-item {
+  display: block;
+  color: #666666;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #eaeae8;
+  padding: 8px;
+  font-weight: bold;
+}
+.function-list .list-item:hover {
+  text-decoration: none;
+}
+.function-list .function {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  width: 9px;
+}
+.function-list .function span {
+  height: 10px;
+}
+.function-list .function.function-text {
+  padding: 2px 0 0 1px;
+  width: 22px;
+  text-align: center;
+}
+.function-list.modal li .list-item {
+  border-left: 8px solid #dadad8;
+}
+.function-list.modal.active .list-item {
+  border-left-color: black;
+}

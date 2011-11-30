@@ -34,8 +34,9 @@
   border-bottom: 1px solid #C2C1BB;
 }
 .key.open {
-  background: #9E9B90;
+  background: #9e9b90;
   cursor: default;
+  padding-bottom: 10px;
 }
 .key a {
   outline: 0;
