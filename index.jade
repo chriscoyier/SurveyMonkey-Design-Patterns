@@ -18,6 +18,7 @@ html
 		link(rel="stylesheet", href="css/colors.css")
 		link(rel="stylesheet", href="css/dropdowns.css")
 		link(rel="stylesheet", href="css/forms.css")
+		link(rel="stylesheet", href="css/function-lists.css")
 		link(rel="stylesheet", href="css/grids.css")
 		link(rel="stylesheet", href="css/help-popout.css")
 		link(rel="stylesheet", href="css/icons.css")
@@ -46,7 +47,8 @@ html
 					li: a(href="#buttons") Buttons
 					li: a(href="#colors") Color Palette
 					li: a(href="#dropdowns") Dropdown Menus
-					li: a(href="#Forms") Form Elements
+					li: a(href="#forms") Form Elements
+					li: a(href="#function-lists") Function Lists
 					li: a(href="#help") Help Popouts
 					li: a(href="#grids") Grids
 					li: a(href="#icons") Icons
@@ -75,9 +77,12 @@ html
 		section(class="container group demo-dropdowns")
 			include includes/dropdowns.html
 		
-		section(class="container group demo-Forms")
-			include includes/Forms.html
+		section(class="container group demo-forms")
+			include includes/forms.html
 
+		section(class="container group function-lists")
+			include includes/function-lists.html
+		
 		section(class="container group demo-popouts")
 			include includes/popouts.html
 
