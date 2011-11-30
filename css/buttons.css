@@ -38,7 +38,7 @@
   background: -ms-linear-gradient(top, #f5f5ee, #dcded5);
   background: -o-linear-gradient(top, #f5f5ee, #dcded5);
 }
-.btn:not(.disabled):active, .btn.open {
+.btn:not(.disabled):active, .btn:not(.disabled).open {
   border: solid 1px #999;
   background-color: #dcded5;
   background: -webkit-gradient(linear, left top, left bottom, from(#dcded5), to(#f5f5ee));
@@ -126,7 +126,7 @@ input.btn {
   *display: inline;
 }
 .btn-arrow-right {
-  padding-right: 6px;
+  padding-right: 10px;
 }
 .btn-arrow-right > span {
   margin-left: 6px;
@@ -327,7 +327,7 @@ input.btn {
   background: -ms-linear-gradient(top, #42cbcc, #14a4a3);
   background: -o-linear-gradient(top, #42cbcc, #14a4a3);
 }
-.teal:not(.disabled):active, .teal.open {
+.teal:not(.disabled):active, .teal:not(.disabled).open {
   background-color: #14a4a3;
   background: -webkit-gradient(linear, left top, left bottom, from(#14a4a3), to(#42cbcc));
   background: -webkit-linear-gradient(top, #14a4a3, #42cbcc);
@@ -355,7 +355,7 @@ input.btn {
   background: -ms-linear-gradient(top, #a4a4a4, #787878);
   background: -o-linear-gradient(top, #a4a4a4, #787878);
 }
-.dark-grey:not(.disabled):active, .dark-grey.open {
+.dark-grey:not(.disabled):active, .dark-grey:not(.disabled).open {
   background-color: #787878;
   background: -webkit-gradient(linear, left top, left bottom, from(#787878), to(#a4a4a4));
   background: -webkit-linear-gradient(top, #787878, #a4a4a4);
@@ -382,7 +382,7 @@ input.btn {
   background: -ms-linear-gradient(top, #fcfc85, #edce38);
   background: -o-linear-gradient(top, #fcfc85, #edce38);
 }
-.yellow:not(.disabled):active, .yellow.open {
+.yellow:not(.disabled):active, .yellow:not(.disabled).open {
   background-color: #f7e258;
   background: -webkit-gradient(linear, left top, left bottom, from(#f7e258), to(#faf476));
   background: -webkit-linear-gradient(top, #f7e258, #faf476);
@@ -410,7 +410,7 @@ input.btn {
   background: -ms-linear-gradient(top, #b4d141, #819d37);
   background: -o-linear-gradient(top, #b4d141, #819d37);
 }
-.green:not(.disabled):active, .green.open {
+.green:not(.disabled):active, .green:not(.disabled).open {
   background-color: #819d37;
   background: -webkit-gradient(linear, left top, left bottom, from(#819d37), to(#b4d141));
   background: -webkit-linear-gradient(top, #819d37, #b4d141);

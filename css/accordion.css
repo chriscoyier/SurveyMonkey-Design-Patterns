@@ -26,6 +26,7 @@
 }
 .disabled, :disabled {
   opacity: 0.5;
+  cursor: default;
 }
 /* Not as smooth as I might like.
    Max heigh transition for fluid content is kinda blahhhhh */
