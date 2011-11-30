@@ -67,6 +67,7 @@ input.btn {
   word-spacing: -0.43em;
   /* IE < 8 && gecko: collapse white-space between units */
 
+  white-space: nowrap;
 }
 .btn-menu .btn {
   letter-spacing: normal;
