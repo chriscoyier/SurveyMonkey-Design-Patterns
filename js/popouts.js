@@ -1,24 +1,34 @@
-(function($) {
+(function ($){
+    $.fn.popout = function(options){
+       
+       var settings = $.extend({},{
+          enterDelay:750,
+          leaveDelay:750
+       },options);
+    
+       return this.each(function(){
+           
+           var $elem = $(this);
+           var isHovered = true;
 
-  /* Requires hoverIntent plugin */
-  /* Not working super well */
-  
-  var config = {    
-       over: openPopup,   
-       timeout: 750,    
-       out: closePopup  
-  },
-  allQs = $('.q');
-
-  function openPopup(el) {
-    allQs.removeClass("open");
-    $(el.currentTarget).addClass("open");
-  };
-
-  function closePopup(el) {
-    $(el.currentTarget).removeClass("open");
-  };
-
-  allQs.hoverIntent(config);
+           $elem.hover(function(){
+               isHovered = true;
+               setTimeout(function(){
+                   if(isHovered){
+                       $elem.addClass("open");
+                   }
+               },settings.enterDelay);
+           },function(){
+               isHovered = false;
+               setTimeout(function(){
+                   if(!isHovered){
+                       $elem.removeClass("open");
+                   }
+               },settings.leaveDelay);   
+           });
+       });
+    }
 
 })(jQuery);
+
+$('.q').popout();
