@@ -1,0 +1,33 @@
+@import "animation-shake.css";
+.an-flash {
+  -webkit-transition: background-color 0.5s ease;
+  -moz-transition: background-color 0.5s ease;
+  -ms-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+}
+.an-flash:active {
+  background: #5b5a4b;
+  -webkit-transition: background-color 0s ease;
+  -moz-transition: background-color 0s ease;
+  -ms-transition: background-color 0s ease;
+  -o-transition: background-color 0s ease;
+}
+.an-shake {
+  -webkit-animation: shake 1s 0 ease;
+  -moz-animation: shake 1s 0 ease;
+  -ms-animation: shake 1s 0 ease;
+}
+.an-fade-in {
+  opacity: 1;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+}
+.an-fade-out {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease;
+  -moz-transition: opacity 1s ease;
+  -ms-transition: opacity 1s ease;
+  -o-transition: opacity 1s ease;
+}

@@ -86,6 +86,18 @@ section.container > h2 {
 .about li {
   font-size: 12px;
 }
+/* Animations */
+.animation-example {
+  width: 75px;
+  height: 75px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  background: #a9bd38;
+}
 /* Colors */
 .color-swatch {
   width: 100px;

@@ -1,15 +1,11 @@
 @font-face {
-	font-family: 'Pictos';
-	src: url('pictos-web.eot');
-	src: local('☺'), 
-	     url('../fonts/pictos-web.woff') format('woff'), 
-	     url('../fonts/pictos-web.ttf') format('truetype'), 
-	     url('../fonts/pictos-web.svg#webfontIyfZbseF') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: 'Pictos';
+  src: url('pictos-web.eot');
+  src: local('☺'), url('../fonts/pictos-web.woff') format('woff'), url('../fonts/pictos-web.ttf') format('truetype'), url('../fonts/pictos-web.svg#webfontIyfZbseF') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-
 .icon {
-	font-family: 'Pictos', sans-serif;
-	font-size: 30px;
+  font-family: 'Pictos', sans-serif;
+  font-size: 30px;
 }

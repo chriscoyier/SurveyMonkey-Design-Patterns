@@ -100,6 +100,9 @@
     // (e.g. "single" or "multiple") may be better to trigger click on the h3 element
     
     base.openPanel = function(el) {
+			
+			// API Usage
+			if (typeof(el) == 'string') { el = $("#" + el); }
       
       el
         .find("> section")
