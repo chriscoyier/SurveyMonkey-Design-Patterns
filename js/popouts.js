@@ -1,34 +1,19 @@
 (function ($){
-    $.fn.popout = function(options){
-       
-       var settings = $.extend({},{
-          enterDelay:750,
-          leaveDelay:750
-       },options);
-    
-       return this.each(function(){
-           
-           var $elem = $(this);
-           var isHovered = true;
-
-           $elem.hover(function(){
-               isHovered = true;
-               setTimeout(function(){
-                   if(isHovered){
-                       $elem.addClass("open");
-                   }
-               },settings.enterDelay);
-           },function(){
-               isHovered = false;
-               setTimeout(function(){
-                   if(!isHovered){
-                       $elem.removeClass("open");
-                   }
-               },settings.leaveDelay);   
-           });
-       });
-    }
-
+    $(document).on("mouseenter",".q",function(){
+        var $elem = $(this);
+        $elem.data("isHovered",true);
+        setTimeout(function(){
+            if($elem.data("isHovered")){
+                $elem.addClass("open");
+            }
+        },750);
+    }).on("mouseleave",".q",function(){
+        var $elem = $(this);
+        $elem.data("isHovered",false);
+        setTimeout(function(){
+           if(!$elem.data("isHovered")){
+               $elem.removeClass("open");
+           }
+        },750); 
+    });
 })(jQuery);
-
-$('.q').popout();
