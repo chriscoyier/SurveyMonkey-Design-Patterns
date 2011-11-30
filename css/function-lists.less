@@ -12,6 +12,12 @@
 				color: #333;
 			}
 		}
+		&.upgrade {
+			.list-item {
+				background: #fdfbcb;
+				color: #ba8253;
+			}
+		}
 		&:not(.disabled):not(.active) {
 			.list-item {
 				&:hover {
@@ -38,8 +44,12 @@
 		bottom: 4px;
 		width: 9px;
 		// down arrow
-		span { 
+		&.btn-arrow-standard-down-dark span { 
 			height: 10px;
+		}
+		&.btn-arrow-standard-right-dark span { 
+			height: 12px;
+			margin-left: 2px;
 		}
 		// + or - 
 		&.function-text {
@@ -53,10 +63,15 @@
 			.list-item {
 				border-left: 8px solid #dadad8;
 			}
-		}
-		&.active {
-			.list-item {
-				border-left-color: black;
+			&.active {
+				.list-item {
+					border-left-color: black;
+				}
+			}
+			&.upgrade {
+				.list-item {
+					border-left-color: #e9d14b;
+				}
 			}
 		}
 	}
