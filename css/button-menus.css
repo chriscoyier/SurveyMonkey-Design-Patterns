@@ -26,6 +26,7 @@
 }
 .disabled, :disabled {
   opacity: 0.5;
+  cursor: default;
 }
 a[data-menu].open {
   -webkit-border-bottom-right-radius: 0px;
